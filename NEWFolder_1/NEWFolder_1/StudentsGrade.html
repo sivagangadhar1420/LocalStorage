@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        /* .container{
+                    background-color: brown;
+                    height: 35rem;
+                    width: 70rem;
+                    color: white;
+                    padding: 2rem;
+                    display: inline-block;
+                     }
+                .box
+                    {
+                    border: 3px solid yellow;
+                    height: 35rem;
+                    width: 70rem;
+                 } */
+
+                 .container{
+                     background-color: yellow;
+                 }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> 
+        <div class="box">
+    <hr style="left: 20px; border: 5px solid red; width: 90px; top: 80px;transform: rotate(90deg);  position: absolute;">
+    <h3 style="height: 2rem; width:  1rem; border: none; margin-left: 30px;">Students Grade</h3>
+
+    <input type="text" name="" id="">
+</div>
+</div> -->
+
+<div class="container my-5">
+    
+  <div class="row">
+    <hr style="left: 70px; border: 5px solid red; width: 90px; top:10rem;transform: rotate(90deg);  position: absolute;">
+    <h1 class="form-text col-sm-4" style="margin-top:6rem;">Students Grades Calc</h1>
+
+      <div class="col-sm-8 my-3">
+      <form action="">
+          <label for="name" class="label-control">Name:</label>
+          <input type="text" name="" id="st1" class="form-control">
+          <label for="inp1"><b>Telugu:</b></label>
+          <input type="text" name="" id="inp1" class="form-control"><br>
+          <label for="inp1"><b>Hindi:</b></label>
+        <input type="text" name="" id="inp2" class="form-control"><br>
+        <label for="inp1"><b>English:</b></label>
+        <input type="text" name="" id="inp3" class="form-control"><br>
+        <label for="inp1"><b>Maths:</b></label>
+        <input type="text" name="" id="inp4" class="form-control"><br>
+    </form>
+    <button class="btn btn-danger" id="btn1">submit</button>
+    <h4 id="name">Name Of Student</h4>
+
+    <h4 class="form-text" id="mar">Total Marks Of Student:</h4>
+
+    <h4 id="per">Percentage Of Student:</h4>    
+    <h4 id="res">Result Of student:</h4>
+    <h4 id="avg">Average Of subject:</h4>
+</div>
+  </div>
+    
+</div>  
+<script>
+    var btn=document.getElementById('btn1').addEventListener('click', ()=>{
+    let txtfld1=document.getElementById('inp1').value;
+let txtfld2=document.getElementById('inp2').value;
+let txtfld3=document.getElementById('inp3').value;
+    let txtfld4=document.getElementById('inp4').value;
+    // var ttl= eval(txtfld1) + eval(txtfld2) + eval(txtfld3) + eval(txtfld4);
+    var ttl = parseFloat(txtfld1) + parseFloat(txtfld2) + parseFloat(txtfld3) + parseFloat(txtfld4);
+            document.getElementById('mar').innerText = "TotalMarks:"+ ttl;
+   var per= (ttl/400)*100;
+            document.getElementById('per').innerText = "Percentage:" +per;
+let grade="";
+if(per <= 100 && per >=80){
+    grade = 'A';
+    }
+else if(per <= 79 && per >= 65){
+    grade = 'B';
+
+}
+
+else if(per <= 64 && per >= 55){
+    grade = 'C';
+
+}
+
+else{
+    grade = "F";
+}
+document.getElementById('res').innerText ="Grade:"+ grade;
+let avgsub="";
+if(txtfld1 >= 35 && txtfld2 >= 35 && txtfld3 >= 35 && txtfld4 >= 35){
+    avgsub = "Pass";
+
+}
+else{
+    avgsub = "Fail";
+}
+
+document.getElementById('avg').innerText = "SubJectaverage:"+avgsub;
+var st1 = document.getElementById('st1').value;
+document.getElementById('name').innerHTML = "Name Of student :" + st1;
+})
+</script> 
+              
+
+</body>
+</html>

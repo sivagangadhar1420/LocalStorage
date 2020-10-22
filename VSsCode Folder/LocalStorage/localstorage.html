@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table tr td{
+        border: 2px solid red;
+    }
+    </style>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    
+    <input type="text" name="name" id="name1">
+    <input type="button" name="" id="sub"  value="submit">
+    <table id="demo"> </table>
+    
+    <script>
+
+        // localStorage.setItem("name","dome");
+        // localStorage.setItem("name1","John");
+        // console.log(localStorage.getItem('name'));
+        // localStorage.clear();
+        // localStorage.removeItem('name');
+        
+        var d2=document.getElementById("demo");
+        var header = d2.createTHead();
+        var row = header.insertRow(0);
+        var cell123=row.insertCell(0);
+         var cell = row.insertCell(1);
+          var cell1 = row.insertCell(2);
+        cell123.innerHTML = "slNo"; 
+           cell.innerHTML = "<b>Name</b>";
+            cell1.innerHTML = "<b>SurName</b>";
+            var d1=document.getElementById("name");
+        var d4=document.getElementById("name1");
+        var d3=document.getElementById("sub");
+        d3.addEventListener("click" ,()=>{
+            var ke=d1.value;
+            var val = d4.value;
+            // console.log(ke)
+            // console.log(val)
+        
+         if(ke && val)
+         {
+            // localStorage.setItem("unam", ke);
+            // var pr=document.getElementById("demo");
+        var m=localStorage.setItem(ke,val);
+       location.reload();
+       }
+        });
+        for(var i=0; i<localStorage.length; i++){
+        
+            var key=localStorage.key(i);
+            var value=localStorage.getItem(key);
+            var c = `${key}  :  ${value} <br>`;
+        
+        var row = d2.insertRow(length-1);
+        var cell16=row.insertCell(0)
+        var cell4 = row.insertCell(1);
+        var cell5 = row.insertCell(2);
+        cell16.innerHTML=   `${i}`
+        cell4.innerHTML =  `${key}`;
+        cell5.innerHTML = `${value}`;
+
+            // localStorage.removeItem('aass');
+//  localStorage.clear();
+ 
+        }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        // var a=20;
+        // console.log(a)
+        // {
+        //     var a=40;
+        //     console.log(a);
+        //     var a=30;
+        //     console.log(a)
+        //     var a=40;
+        //     console.log(a)
+        // }   
+       
+    // let a=40;
+    //     console.log(a);
+    //     a=30;
+    //     console.log(a)
+    //     add();
+    //          function add()  {
+    //         //  a=20;
+    //          console.log(a);
+            //  let a=20;
+            //  let a=30;
+            //  console.log(a+b)
+            
+            // console.log(a);
+            //  a=40;
+            // console.log(a)
+            // 
+        // }  
+
+    //     console.log(a)  
+    //     a=60;
+    //     console.log(a);
+    // let a=10;
+    // {
+    //     console.log(a);
+    //     let a=20;
+
+    // }
+// var a=function(a){
+//     return a; 
+// }
+// var b=a(10);
+// console.log(b)
+
+
+    </script>
+</body>
+</html>

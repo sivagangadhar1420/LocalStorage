@@ -1,0 +1,38 @@
+>Angular:
+:Angualar is a structeral frameWork which is used to create dyanamic web applications and it is used to create a single page applications...& it is is based typescript 
+    It allows developpers to use html as a template Language to express the application....All data rendering on  one age only...
+:Angular  provides mobile suppoert applications 
+:Faster than Angualar Js  with upgraded features ...
+>Why WE Use
+:Angukar Is a frameWork which is used to create a single page application on client Side .
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>AnularJS:(2010)
+:Angular JS is Javascript Based ...It  doesnt supports The dynamic web pages ...& data will rendereing on multiple pages.
+:Angular Js not provides Mobile supprt the Mobile applications.
+ >Component
+ :Component is a logical piece of code for Angular Application 
+:It Consists of three Elements Html, TheLogic ,And Css for Styles.
+
+>Module 
+:Module is a collection of Components, Directives Services, pipes... which are elatd to Angular Application.
+>If we crete an Header Component It will automatically generate module.ts file.
+
+>Directives
+Component Directive
+structeral Directives,
+Attributes  Directives
+:ngIf ngFor, ngStyles
+
+>Hooks
+ngOninit, ngDestroy,noOncange, ngDocheck,ngAfterViewInit , ngAfterViewInitChecked,ngAfterViewInit
+
+
+
+
+
+
+
+  

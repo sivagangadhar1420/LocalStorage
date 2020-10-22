@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Grid-auto-rows , grid-auto-column , grid-auto-flow*/
+         .naming{
+            display: grid;
+            width: 900px;
+            background-color: indigo;
+            /* grid-template-columns: 400px 400px; */
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-rows: 80px;
+            /* justify-content: space-evenly; */
+            /* grid-auto-flow: column dense; */
+            grid-auto-flow: column;
+            /* grid-auto-columns: 100px; */
+        
+            
+            }
+
+.n11{
+            background-color: gray;
+            border: 3px solid red;
+        }
+
+        .n12{
+            background-color: black;
+            color: honeydew;
+            border: 3px solid red;
+        }
+
+        .n13{
+            background-color:blue;
+            /* grid-row: span 3; */
+            border: 3px solid red;
+            
+        }
+        .n14{
+            background-color: green;
+            border: 3px solid red;
+        }
+        .n15{
+            background-color:yellow;
+            border: 3px solid red;
+        }
+        .n16{
+            background-color:violet;
+            border: 3px solid red;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="naming">
+        <div class="n11">Grid1</div>
+        <div class="n12">Grid2</div>
+        <div class="n13">Grid3</div>
+        <div class="n14">Grid4</div>
+        <div class="n15">Grid5</div>
+        <div class="n16">Grid6</div>
+        <div class="n17">Grid7</div>
+    </div>
+    
+</body>
+</html>

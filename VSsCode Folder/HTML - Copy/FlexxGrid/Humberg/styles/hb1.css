@@ -1,0 +1,119 @@
+input {
+    position: absolute;
+    margin-top: 10px;
+    visibility: hidden;
+     /* opacity: -1; */
+}
+img{
+    object-fit: cover;
+    /* object-fit: contain; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* height: 80vh; */
+    width:  90%;
+    /* overflow: auto; */
+    
+    /* margin: 20px 0px 0px 70px;  */
+    margin: 20px 0px;
+
+}
+h2{
+    font-size: 40px;
+    background-color: lightgrey;
+    color: lime;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+}
+.menu-list .list-items{
+    display: flex;
+    list-style-type: none;
+    position:relative;
+}
+li{
+   margin: 10px;
+   padding: 7px;
+}
+li a{
+    text-decoration: none;
+}
+.togglebtn{
+      font-size: relative;
+       margin: 20px;
+       margin-top: 10px;
+       display: none;
+       position: absolute;
+       } 
+  .togglebtn i{
+      background-color: lawngreen;
+      margin-top: -30px;
+        font-size: 35px;
+        
+  }
+
+ .hidebutton{
+     margin:20px;
+     position: absolute;
+    top: -65px;
+    right: 30px;
+    background-color: lightblue;
+    
+    }
+    .hidebutton i{
+        font-size: 40px;
+        background-color: lightgreen;
+        display: none;
+    }
+  
+
+@media(max-width:880px){
+    img{
+        margin: 40px 20px 0px 30px;
+        position: relative;
+    }
+    .togglebtn, .hidebutton i{
+        display: flex;
+    }
+    /* .hidebutton i{
+        display: flex;
+    
+    } */
+    
+  
+      .menu-list .list-items{
+        display: none;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+  
+#toggle:checked ~ .menu-list .list-items{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 1s;
+    }
+   
+}
+    
+
+
+  
+
+    /* #toggle:checked + .togglebtn i::before,
+    #toggle:checked + .togglebtn i::before{
+        top:0;
+        transform: rotate(90deg);
+    }
+    */
+
+
+
+

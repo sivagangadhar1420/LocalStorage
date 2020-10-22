@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1{
+                text-decoration-line: overline underline;
+                text-decoration-style: wavy;
+                /* text-decoration-style: dashed; */
+                    /* text-decoration-color: crimson; */
+                    /* text-shadow:2px 2px forestgreen; */
+                    /* text-decoration-thickness: 52px; */
+                    /* text-decoration-skip: 20px; */
+                    text-underline-offset: 5px;
+        }
+        /* ul li{
+            background-color: forestgreen;
+
+        } */
+    ul li::marker{
+            color: red;
+            /* font-size: 40px; */
+
+        }
+        p{
+            color:green;
+            font-size: 30px;
+        }
+        .demo{
+            color:yellowgreen;
+            font-size: 40px;
+        }
+        #demo{
+            color:darkblue !important;
+            font-size: 40px;
+        }
+        /* @supports(text-underline-offset: 2px){ */
+            /* @supports(display: inline){ */
+                /* @supports(filter: blur(2px)) or (--webkit-filter:blur(2px)) or (text-underline-offset: 20px){
+                    @supports(filter: blur(2px)) and (--webkit-filter:blur(2px)) and (text-underline-offset: 20px){ */
+                        @supports(filter: blur(2px)) or (--webkit-filter:blur(2px)) or (not(text-underline-offset: 20px)){ 
+         
+            h2{
+                background-color: darkblue;
+            }
+        }
+        input::placeholder{
+            color:red;
+            /* background-color: darkblue; */
+            font-size: 20px;
+            overflow: auto;
+        }
+        ul:nth-last-child(1){
+            /* background-color: darkblue; */
+            /* list-style-type:  ' Test - ' !important; */
+            list-style-type: '🗽';
+            /* list-style-image: url("c.jfif"); */
+            list-style-position: inside;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d">
+        <h1>The Text Styles</h1>
+    </div>
+    <ul>
+        <li>links</li>
+        <li>links</li>
+        <li>links</li>
+        <li>links</li>
+        <li>links</li>
+    </ul>
+<p id="demo" class="demo" style="color: crimson; font-size: 40px;">The Text</p>
+<h2> The text</h2>
+<input type="text" placeholder="TypeText">
+<ul>
+    <li>someLinks</li>
+    <li>someLinks</li>
+    <li>someLinks</li>
+    <li>someLinks</li>
+</ul>
+
+
+</body>
+</html>

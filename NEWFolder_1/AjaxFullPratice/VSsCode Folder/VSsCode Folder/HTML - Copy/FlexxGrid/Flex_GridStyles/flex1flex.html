@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ft{
+            background-color: royalblue;
+            width: 600px;
+            height: 200px;
+                display: flex;
+        /* justify-content: space-between; */
+        margin: 50px;
+        /* padding: 20px; */
+        flex-wrap: wrap;
+        /* justify-content: stretch; */
+        /* align-items: center; */
+        /* align-content: center; */
+        /* align-content: stretch; */
+        flex-grow: 1;
+        
+        }
+        .fl1{
+            background-color: saddlebrown;
+            order: 1;
+            /* align-self: stretch; */
+            /* flex-grow: 1; */
+
+            
+        } .fl2{
+            background-color: crimson;
+            /* align-self: center; */
+            align-self: flex-start;
+            order: 2;
+            /* flex-grow: 1; */
+            
+        } .fl3{
+            background-color:yellowgreen;
+            align-self: center;
+            order: 6;
+            /* flex-grow: 1; */
+            
+            
+        } .fl4{
+            background-color: hotpink;
+            align-self: center;
+            /* align-self: flex-end; */
+            align-self: flex-start;
+            order: 4;
+            /* flex-grow: 1; */
+            
+        } .fl5{
+            background-color: black;
+            color: burlywood;
+            align-self: flex-end;
+            /* text-align:justify; */
+            /* align-self: center; */
+            order: 5;
+            /* flex-grow: 1; */
+            text-align: center;
+            
+        } .fl6{
+            background-color:blueviolet;
+            /* align-self: stretch; */
+            /* flex-direction: column-reverse; */
+            order: 3;
+            /* flex-grow: 3; */
+            /* flex: 3; */
+                
+        }
+        .ft > div{
+            /* margin: 5px; */
+            /* padding: 10px; */
+            /* flex-grow: 1; */
+            /* flex: 3; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ft">
+        <div class="fl1">First</div>
+        <div class="fl2">Second</div>
+        <div class="fl3">second</div>
+        <div class="fl4">Fourth</div>
+        <div class="fl5">Fifth</div>
+        <div class="fl6">second</div>
+    </div>
+    
+</body>
+</html>

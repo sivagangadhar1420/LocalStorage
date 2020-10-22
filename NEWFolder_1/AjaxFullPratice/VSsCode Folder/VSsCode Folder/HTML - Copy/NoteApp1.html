@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+    <style>
+        #br2{
+            display: none;
+        }
+        @media(max-width: 860px){
+            #br1{
+                display:none;
+                
+            }
+            nav{
+            
+            align-content: center;
+        max-width: auto;            }
+            #br2{
+                display: block;
+                margin: auto;
+                font-size: 35px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+        <!-- <ul class="navbar-nav m-auto"> -->
+        <!-- <ul class="navbar-nav mr-auto"> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="fa fa-bars"></span>
+        </button>
+      
+        <a class="navbar-brand bg-dark" id="br2" href="#" style="color: rebeccapurple;">@BrandedLogo</a>
+
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+            <a class="navbar-brand ml-auto" id="br1" href="#">@BrandedLogo</a>
+
+            <ul class="navbar-nav ml-auto">
+                 <!-- <ul class="navbar-nav m-auto "> -->
+                <!-- <ul class="navbar-nav mr-auto" id="i1"> -->
+
+                <form action="" class="form-inline">
+                    <li class="nav-item">
+
+                        <input type="text" name="" id="" class="form-control">
+                        <button class="btn btn-primary">Search</button>
+
+                    </li>
+                </form>
+
+               
+
+                <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>   -->
+
+            </ul>
+        </div>
+      
+
+        <!-- <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>  
+
+          </ul>
+          <a class="navbar-brand ml-auto" href="#">Navbar</a>
+          <form action="" class="form-inline">
+              <input type="text" name="name" id="name" class="form-control">
+            <div class="input-group mb-0">
+                <div class="input-group-append">
+                    <span class="input-group-text">&times;</span>
+                </div>
+            </div>
+          </form>
+
+  
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>    
+            <li><input type="text" name="" id=""  class="form-control"></li>
+          </ul>
+           -->
+    </nav>
+    <div class="container my-3">
+        <h2>MagicNotes</h2>
+        <div class="card-columns my-3">
+            <div class="card">            <div class="card-body">
+                <div class="card-header">Header</div>
+                <div class="card-title">Title</div>
+                <div class="form-grou">
+                    <textarea name="txt" class="form-control" id="txt1" cols="40" rows="5"></textarea>
+                </div>
+                <img src="3.jpeg" alt="img" class="card-img" style="max-height: 150px; object-fit: cover; max-width: 50rem;">
+                <div class="card-text">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body </div>
+                <button class="btn btn-primary" id="btn">SelectCard</button>
+
+                <div class="card-footer">Footer</div>
+               </div>
+            </div>
+
+            <div class="card">  
+             <div class="card-body">
+                <div class="card-header">Header</div>
+                <div class="card-title">Title</div>
+                <div class="form-group">
+                    <textarea name="txt" id="txt1"  class="form-control" cols="40" rows="5"></textarea>
+                </div>
+                <div class="card-text">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+                <button class="btn btn-primary" id="btn">SelectCard</button>
+                <div class="card-footer">Footer</div> </div>
+            
+        
+        </div>
+    </div>
+    <h2>Your Texted Notes</h2>
+    <hr style=" border:2px solid red">
+    <div class="card-columns">
+        <div class="card">
+            <div class="card-body">
+            <div class="card-header">Session1</div>
+            <div class="card-title">Topic1</div>
+                <div class="card-txt" id="ut">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+               <button class="btn btn-primary">DeleteNotes</button>
+                <div class="card-footer">Footer</div>
+              </div></div>  
+
+                  <div class="card">
+                    <div class="card-body">
+                    <div class="card-header">Session1</div>
+                    <div class="card-title">Topic1</div>
+                        <div class="card-txt">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+                       <button class="btn btn-primary">DeleteNotes</button>
+                        <div class="card-footer">Footer</div>
+                    </div></div>
+ 
+                    <!-- <div class="card">
+            
+            <div class="card-body"></div>
+            <div class="card-header">Session1</div>
+            <div class="card-title">Topic1</div>
+                <div class="card-txt">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+                <div class="card-footer">Footer</div>
+        </div>
+        <div class="card">
+            <div class="card-body"></div>
+            <div class="card-header">Session1</div>
+            <div class="card-title">Topic1</div>
+                <div class="card-txt">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+                <div class="card-footer">Footer</div>
+        </div>
+        <div class="card">
+            <div class="card-body"></div>
+            <div class="card-header">Session1</div>
+            <div class="card-title">Topic1</div>
+                <div class="card-txt">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+                <div class="card-footer">Footer</div>
+        </div>
+        <div class="card">
+            <div class="card-body"></div>
+            <div class="card-header">Session1</div>
+            <div class="card-title">Topic1</div>
+                <div class="card-txt">The Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of bodyThe Text of body</div>
+                <div class="card-footer">Footer</div>
+        </div> -->
+    </div>
+    <p>The Eempty Text</p>
+<script src="card1.js"></script>
+
+</body>
+
+</html>

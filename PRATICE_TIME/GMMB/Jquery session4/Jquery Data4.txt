@@ -1,0 +1,182 @@
+1.jQuery selector
+	1.Tag
+	2.Id
+	3.Class
+	4.Universal
+	5.this
+2.jQuery events
+3.jQuery afftects
+	1.hide,show,toggle
+	2.fadein,fadeout,fadetoggle
+	3.slideup,slidedown,slidetoggle
+	4.animate
+Today topic:
+===========
+4.Html manipulations:
+===================		
+1.Get the data from Html Tags		text(),html(),val(),attr()			Ex6.html
+2.Set Data to the Html Tags		text(),html(),val(),attr()			Ex7.html
+3.Adding data to Html tags		append(),prepend(),after(),before()		Ex8.html
+4.Removing data from Html tags	remove(),empty()				Ex9.html
+5.Css manipulation:			Ex10.html
+----------------------------
+	1.addClass()
+	2.removeClass()
+	3.toggleClass()
+	4.css()
+6.Dimensions:			Ex11.html
+---------------------
+	1.width()
+	2.height()
+	3.innerWidth()	=width+padding-left+padding-right
+	4.innerHeight()	=height+padding-top+padding-bottom
+	5.outerWidth()	=width++padding-left+padding-right+border-left+border-right
+	6.outerHeight()	=height+padding-top+padding-bottom+border-tom+border-bottom
+7.Traversing:			Ex12.html
+===========
+	By default we can access dom elements in top-bottom approach only
+	By using we Traversing,we can access html dom elements in 3 approaches
+	1.Traversing Up the DOM Tree
+	2.Traversing Down the DOM Tree
+	3.Traversing Sideways in The DOM Tree
+1.Up the DOM Tree:
+==================
+parent()
+parents()
+parentsUntil()
+2.Traversing Down the DOM Tree:
+==============================
+children()
+find()
+3.Traversing Sideways in The DOM Tree:
+===================================
+siblings()
+next()
+nextAll()
+nextUntil()
+prev()
+prevAll()
+prevUntil()
+
+8.Filters:			Ex18.html
+========
+	Used to select particular dom elements & can modify
+1.first()
+2.last()
+3.eq()
+4.filter()
+5.has()
+6.not()
+7.slice()
+
+Ajax:(Asynchronous Javascript And Xml)
+===================================
+Ajax is technology(Html,Css,Js) is used to 
+	1.send request to server &
+	2.receive response from sever 
+at background.
+
+Types of communication between Client & Server:
+------------------------------------------------------------------------
+1.Synchronous communication
+2.Asynchronous communication
+
+
+1.Synchronous communication:
+-------------------------------------------------
+A synchronous request blocks the client until operation completes i.e. browser is unresponsive. 
+In such case, javascript engine of the browser is blocked.
+
+2.Asynchronous communication:
+-----------------------------------------------
+An asynchronous request doesn’t block the client i.e. browser is responsive. 
+At that time, user can perform another operations also. 
+In such case, javascript engine of the browser is not blocked.
+
+
+
+Ajax code is written by following tools
+--------------------------------------------------------
+1.Html		:	Dom preparation
+2.Css		:	Applying styles to Dom (Optional)
+3.JS/Jquery	:	1.Used to prepare code send client request to server & receive response from client
+			2.Dom manipulation
+4.Text or HTML or XML or JSON :	Format of Data which is collected from Server
+
+
+
+Software requirements:
+====================
+1.Web browser	:	send client request to server & receive response from client
+	Ex:GC,MF,IE,...
+2.Web server	:	accept request from client & send response to client
+	Ex:Tomcat server,NodeJs server
+3.IDE		:	preparing html,css,jquery code
+	Ex:Eclipse(It must have JDK)
+
+Order of software installation:
+--------------------------------------------
+1.Jdk installation		(Jdk1.8)
+2.Eclipse  installation	(Eclipse oxygen)
+3.Tomcat installation	(Tomcat 9)
+
+In youtube type:	Java by chanti	(Session1,2,3)
+
+Steps to write code in Eclipse:
+--------------------------------------------
+1.Open eclipse
+2.New
+3.Dynamic Project
+4.Name=AjaxEx1
+5.In target runtime->Click New Runtime->Select tomcat version->Browse tomcat intsalltion directory from
+	C:\Program Files\Apache Software Foundation\Tomcat 9.0		location->finish
+6.Next
+7.Next
+8.Check web.xml checkbox 
+9.Finish
+10.RightClick on project->new->html->name=index->finish
+11.RightClick on WebContent folder->new->File->name=resume.txt->finish
+  Type following data & save the file
+	"This is Chanti resume"
+
+11.Install jquery
+	copy jquery.js file & paste into WebContent folder in project directory then prepare following code
+ in index.html page
+	<head>
+		<script src='jquery.js'></script>
+	</head>
+
+12.Prepare jquery code to get resume.txt file data inside index.html page
+
+13.To run the project
+	RightClick on project->Run->Run as Server->Next->Finish
+
+Jquery functions:
+===============
+1.load()	->Retriving/Getting data from server
+2.get()	->Retriving/Getting data from server
+3.put()	->Updating data within server
+4.post()	->Inserting data within server
+5.delete()->Deleting data within server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

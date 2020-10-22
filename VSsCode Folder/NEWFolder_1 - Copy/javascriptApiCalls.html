@@ -1,0 +1,2183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*   .container{
+            width: 700px;
+            height: 50%;
+            background-color: red;
+            display: grid;
+            grid-template-columns: 450px 150px 150px ;
+            grid-template-rows: 400px 200px;
+ }
+        .items1{
+            background-color: royalblue;
+        }
+        .items2{
+            background-color: palevioletred;
+        }
+        .items3{
+            background-color: black;
+        }
+        .items4{
+            background-color: blueviolet;
+            
+        }
+        .items5{
+            background-color: wheat;
+        }
+        .items6{
+            background-color: yellowgreen;
+        }   */
+    </style>
+</head>
+<body>
+<button id="bt1" class="id1" onclick="getData()">GetData</button>
+<button id="bt2" class="id2" onclick="fetchData()">FetchDAta</button>
+  <!--  <ul id="listing">
+        <li>Student1</li>
+        <li>Student2</li>
+  
+        <li>Student3</li>
+  
+    </ul>
+    <input type="number" id="fd">
+    <button type="button"  id="i1" onclick="funn1()">Temperature</button>
+    <input type="number" id="cd">  -->
+   <!-- <ul id="list">
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+    </ul>
+    <ul id="list1">
+        <li>List4</li>
+        <li>List5</li>
+        <li>List6</li>
+    </ul>
+    
+    <button onclick="funn1()">Click</button>
+    <script>  
+    function funn1(){
+   // var d=document.getElementById("list").children[0];
+   var d=document.getElementById("list");
+    var d1=document.getElementById("list1").firstChild;//lastChild;
+    var m=d.append(d1);
+  //  var m=d.removeChild(d.childNodes[length]);
+ // var rem=d.removeChild(d.lastElementChild)  //d.firstElementChild;
+
+
+}  
+<div class="items items1"></div>
+<div class="items items2"></div>
+<div class="items items3"></div>
+<div class="items items4"></div>
+<div class="items items5"></div>
+<div class="items items6"></div>
+<button class="b1 b11"></button>
+<button class="b1 b12"></button>
+<button class="b1 b13"></button>
+<button class="b1 b14"></button>
+<button class="b1 b15"></button>
+<div id="id1" class="id11"></div>
+<div id="id1" class="id12"></div>
+<div id="id1" class="id13"></div>
+<div id="id1" class="id14"></div>
+<input type="text" id="c1" class="c11">
+<input type="text" id="c1" class="c12">
+<input type="text" id="c1" class="c13">
+<input type="text" id="c1" class="c14">
+<input type="text" id="c1" class="c15">    
+<div class="container">
+    <div class="items items1">Item6</div>
+<div class="items items2">Item1</div>
+<div class="items items3">Item2</div>
+<div class="items items4">Item3</div>
+<div class="items items5">item4</div>
+<div class="items items6">Item5</div>
+
+</div>  -->
+<script>
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // var funn1=()=>{
+    //     setTimeout(()=>{      
+    //           var ri=[1,2,3,4,5];
+    //           console.log(ri);
+    //           setTimeout((id)=>{
+    //               var recipes=[{title:"Pasta", name:"pista", publisher:'john'}]
+    //              // console.log(recipes)
+    //             //   for(var i=0;i<recipes.length;i++){
+    //             //       console.log(ri[1]+":"+recipes[i].title+ " "+ i + " "  )
+    //             //   }
+
+    //                 console.log(`Th id is ${id} :: item is ${recipes[0].title}`)
+    //                 setTimeout(()=>{
+    //                     var relishitems={title:"italian_Pizza", publisher: "Mike"};
+    //                     console.log(relishitems)
+    //                     console.log(`${relishitems.publisher}`)
+    //                 })
+
+    //           },1000,ri[2])
+    //     },2000)
+
+    // }
+    // funn1()
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var funn1=new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             resolve([1,2,3,4,5])
+//         },1500);
+//     });
+
+// var funn2=(recID)=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout((ID)=>{
+//             var relishitems={title:"italian_Pizza", publisher: "Mike"};
+//             resolve(`${ID} : ${relishitems.title}`)
+//         },1000,recID)
+//     })
+// };
+
+// var funn3=((pub)=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout((id)=>{
+//             var relishitems={title:"italian_Pizza", publisher: "Mike"};
+//             resolve(`${id} and items: ${relishitems.title}`)
+//         },1000,pub)
+//     })
+// })
+                                                                                    
+// funn1.then((ids)=>{
+//     console.log(ids)
+//     return funn2(ids[2])
+// }).then((recipes)=>{
+//     console.log(recipes)
+//     return funn3('Mike')
+// }).then((recipe)=>{
+//     console.log(recipe)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //JavaScript Ajax(Get), Post Delete) HTTP
+
+    
+
+//SpreadOpearator 
+// var a=[1,2,3,4];
+// var b=[1,2,3,4,5,6];
+// var c=[1,2,3,4,5,6,7,8,9];
+// var d=[...a,...b,...c];
+// d.push(21,32,43,54)
+// console.log(d)
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                //Concat
+// var a=[1,2,3];
+// var b=[1,2,3,4,5,6];
+// var c=[1,2,3,4,5,6,7,8,9];
+// var d=a.concat(b,c);
+// console.log(d)
+//+++++++++++++++++++++++++++++++++++++++++++++++++
+                                //ControllingRepeating TERMS
+// var a=[1,2,3,4,5,];
+// var b=[1,3,4,5,6,9,7,6,8,23,88,78,00,99];
+// var c=[...new Set(a),...new Set(b)]
+// var ar=[];
+//ar.push(c);
+//var d=[...new Set(ar)]
+//ar.push(...new Set(c))
+//console.log(ar)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                //MapFunction
+// var a=[{name:'A', lname:'baba'}]
+// var v=a.map((m)=>{
+//     return m.name+ " " +m.lname
+// })
+// console.log(v);
+//++++++++++++++++++++++++++++++++++++++++++++
+// var a=[10,20,30];
+// var b=a.map((mn)=>{
+//     return mn * 10
+// })
+// console.log(b)
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var mp=new Map();
+// var key1='name:', key2={}, key3=(lm)=>{}
+// var val1="Ashok", val2={name:"a"}, val3='return'
+// mp.set(key1,val1)
+// mp.set(key2,val2)
+// mp.set(key3,val3);
+
+//FORLOOP
+// for(let[key, value] of mp) {
+// console.log(key, value)
+// }
+// for(let key of mp.keys()){
+//     console.log(key)
+// }
+// for(let vals of mp.values()){
+//     console.log(vals)
+// } 
+
+//FOREACH
+// mp.forEach((pm, mp)=>{
+//     console.log("key is " + mp)
+//     console.log("value is: " + pm)
+// })
+
+ //Getting Key values
+// var gv=mp.get(key1);
+// console.log(gv);
+// var gk=mp.get(key2);
+// console.log(gk)
+
+// //Getting Array Size
+// var gs=mp.size;
+// console.log(gs)
+
+//Converting into an Array
+// var ar=Array.from(mp);
+// console.log(ar);
+// var ar1=Array.from(mp.keys());
+// console.log(ar1);
+// var ar2=Array.from(mp.values());
+// console.log(ar2);
+
+//console.log(mp);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var a={name:"I am john", age:30, active:true};
+// var b={name:"I am Rohan", age:34, active:false};
+// var c={name:"I am Mohan", age:31, active:true};
+// var mp=new Map();
+// var key1="John", key2="Rohan", key3="Mohan";
+// mp.set(key1, a);
+// mp.set(key2, b);
+// mp.set(key3, c);
+// //Size
+// var sz=mp.size;
+// console.log(sz)
+// //Particulat member
+// var onn=mp.get(key2)
+// console.log(onn.age)
+// console.log(mp.get(key1))
+// console.log(mp.keys())
+// console.log(mp.values())
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//FOREACH
+// mp.forEach((pin, fin)=>{
+// console.log(fin + " " + pin.name)
+// console.log(fin + " " + pin.age)
+// })
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//FORLOOP
+// for(var key of mp.keys())
+// console.log(key)
+
+// for(var value of mp.values())
+// console.log(value)
+//console.log(value.age)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+       
+//PRINING BOTH KEYS AND VALUES
+// for(var [key, value] of mp) {
+// console.log(key, value)
+// }
+//console.log(mp)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                        //SETMETHOD
+// var st=new Set();
+// st.add('this');
+// st.add('this1');
+// st.add('birth');
+// st.add('gender');
+// st.add('age');
+// st.add(34)
+// st.add(true)
+// console.log("removal Of "+ st.has('age'));
+// console.log("removal Of "+ st.has('birthYear'));
+// console.log("Before Removal of " + st.has('this1'))
+// st.delete('this1')
+// console.log("After Removal of " + st.has('this1'))
+// //ForEach
+// var e=st.forEach((itm)=>{
+//    console.log("Items are:" + itm)
+   
+// })
+
+// var sz=st.size
+// console.log(sz)
+// console.log(st);
+// //ARRAY
+// var ar=Array.from(st);
+// console.log(ar)
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+
+// var a=[10,20,29,30,23];
+// var sum=0;
+// var cal=a.forEach((m)=>{
+//    sum += m;
+//     console.log(sum)
+// })
+// console.log(sum)
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//                                                                       //CountDownTime
+// var deadline = new Date("Apr 5, 2020 15:37:25").getTime(); 
+// var x = setInterval(function() { 
+// var now = new Date().getTime(); 
+// var t = deadline - now; 
+// var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+// var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+// var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+// var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+// document.body.innerHTML = days + "d "  
+// + hours + "h " + minutes + "m " + seconds + "s "; 
+//     if (t < 0) { 
+//         clearInterval(x); 
+//         document.body.innerHTML = "EXPIRED"; 
+//     } 
+// }, 1000); 
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+
+   
+
+//ROLLING_DICE, BudgetApp, oneMoreproject getting data with API
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+                                                          //PageLOading
+
+        // var Loaduserform=async ()=>{
+        //     var userForm=new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             resolve('pageLoaded');
+        //         },3000)
+        //     })
+        //     var userName=new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             resolve('userEntered');
+        //         },5000);
+        //     })
+        //     var verifyDetails=()=>{
+               
+        //     }
+        //     await userForm;
+        //     await userName;
+        //     var test=verifyDetails();
+        //     return test;
+        //      }
+        //       Loaduserform().then((g)=>{
+        //     console.log(g);
+        //      })
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+     //     console.log("step1");
+  //           var m=async ()=>{
+//             return new  Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+    //        resolve(`Art`);
+    //         },3000)
+    //         })
+
+    //       }
+    //      m().then((b)=>{
+    //     console.log(b)
+    //     })
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // var n=()=>{
+    //     return new Promise((resolve,reject)=>{
+    //         var a="sty";
+    //         if(a!=='sty'){
+    //             console.log("True");
+    //             resolve("FYN");
+    //         }
+    //         else{
+    //             console.log("false");
+    //             reject("Ahey..!! BOY");
+               
+    //         }
+    //     })
+    // }
+    // n().then((mn)=>{
+    //     console.log("Message sent");
+    // })
+    // .catch((Err)=>{
+    //     console.log(Err)
+    // })
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                        //FetchURLa  Creaing FakeAPI
+// var bt=document.getElementById("bt1");
+// var c2=document.getElementById("bt2");
+
+//     function getData(){
+//     console.log("Getting  data ");
+//     url='https://api.github.com/users';
+//     fetch(url).then((response)=>{
+//         console.log("Inside first FetchData");
+//         return response.json();//.text(); //text
+        
+//     }).then((smt=>{
+//         console.log("Second Fetch Data");
+//         console.log(smt);
+//     }))
+// }
+// console.log("Processing Data");
+// getData();
+// console.log("checkingData");
+
+                                        //CreatingFakeAPI
+
+// function fetchData(){
+//     url='https://dummy.restapiexample.com/api/v1/create';
+//     data='{"age":"20", "name":"Cena", "salary": "30000"}' //String  // if data is object use JSON.stringify()  otherwise use just
+//     params={
+//         method: "post",
+//         header:{
+//             'content-Type':'aplication/Text' //'json'
+//     },
+//     body: data
+//     }
+//      fetch(url,params).then((ft)=>
+//          ft.json())
+//      .then((data)=>{
+//          console.log(data)
+//      }
+//      )
+// }
+// fetchData();
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                                //FETCH DATA
+//     console.log("Step1");
+//     var funn1=async ()=>{
+//     var d=await fetch('https://api.github.com/users');
+//     var n=await d.json();
+//     //console.log(n)
+//     console.log("USers Resolved")
+   
+//    return n;
+//  }
+//     console.log("USers Resolved")
+    
+//     var a=funn1().then((m)=>{
+//         console.log(m)
+//     });
+//     console.log(a)
+//     console.log("first")
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//                                                      TRY AND CATCH IN ASYNC -AWAIT
+// console.log("Person1 shows Ticket");
+// console.log("Person2 shows Ticket")
+// console.log("Person3 shows Ticket")
+// var funn1=async ()=>{
+//     var tc=new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             reject(`ticket`);
+//     },3000)
+//          });
+//  var tcf;
+//          try{
+//            tcf=await tc;
+//          }
+//          catch(t){
+//              tcf='sad Face';
+//          }
+//          return tcf;
+// }
+// funn1().then((m)=>{
+//     console.log(`person shows his ${m}`)
+// })
+// console.log("Person5 shows his Tickets");
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+//                                                     TRY AND CATCH IN ASYNC -AWAIT
+// var funn2=async ()=>{
+//     var pr1=new Promise((resolve,reject)=>{
+//         reject(`ticket`);
+//     })
+//     var pf;
+//     try{
+//         pf=await pr1;
+//     }
+//     catch(t){
+//         pf='cancelled';
+//     }
+//     return pf;
+// }
+// funn2().then((m)=>{
+//     console.log(`Show was ${m}`)
+// })
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// console.log("How u did that");
+// var a="harry";
+// if(a !== 'harry'){
+
+//    console.log("Ok")
+//    //throw new Error("Not defined")
+// }else{
+   // console.log("Not OK")
+//     throw new Error("not OK")
+//  }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                  //TRY AND CATCH  THROW AND FINALLY
+// var a="sonySix";
+// console.log("The Whole statement");
+// if(a !=="sonySix"){
+//     throw new Error("Sony six is already defined")
+    
+// }else{
+//     console.log("Not Defined")
+// }
+// try{
+//     console.log("WE are in try block");
+    
+// //funn1();
+// }
+// catch(err){
+// console.log(err)
+// console.log("WE are in Catch block");
+// // console.log(err.name)
+// //console.log(err.message)
+// }
+// finally{
+//     console.log("We are finally deined")
+// }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var sony=((B)=>{
+// if(typeof B !== 'SocialWebSite'){
+//  throw new Error("ITs Not a Social weebsite");   
+// }
+// else{
+//     console.log("Plz switch to social website");
+// }
+// })
+// try{
+// var sw=sony("BitCoins");
+// console.log(sw);
+// }catch(err){
+//     console.log(err);
+//     console.log("Social website checking");
+// }
+// finally{
+//     throw new Error("Ahey man u even dont know about Android also")
+// }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var dam=((dollar)=>{
+//     if(typeof dollar === 'number'){
+//     console.log("Ahey u done great job")
+//         return dollar * 70;
+//     }
+//     else{
+//         throw new Error("Ahey check once plz");
+//     }
+
+// })
+// try{
+//   // var myvalue=dam(20);
+//     var myvalue=dam("Twenty");
+//     console.log(myvalue)
+// }
+// catch(err){
+//     console.log(err);
+//     console.log("Plz Enter Correct Details ")
+//    }
+//    finally{
+// throw new Error("If u r not entering  Coorect dtails i will crash entire u r program")
+//    } 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                                                    Error Will Appear In Red Color
+// var pr= new Promise((resolve,reject)=>{
+//     var a=false;
+//     if(a !=false){
+//         resolve();
+//         console.log("MessageSent")
+//     }else{
+//         reject("MeesageNot sent");
+//         console.log("MessageNotSent")
+//     }
+// })
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                                                        THEN AND CATCH
+// var pr= new Promise((resolve,reject)=>{
+//     var a=false;
+//     if(a !=false){
+//         resolve("Message Sent");
+//         //console.log("MessageSent")
+//     }else{
+//         reject("MeesageNot sent");
+//         //console.log("MessageNotSent")
+//     }
+// })
+
+// pr.then((lm)=>
+//    console.log(lm)
+// )
+// .catch((mn)=>{
+//         console.log(mn)
+//     })
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                                                      THEN AND CATCH
+// var p=new Promise((resolve,reject)=>{
+//     var a=2;
+//     if(a !== 2){
+//       console.log("success");
+//         resolve("Succes");
+//     }else{
+//      console.log("failed");
+//         reject("Reject");
+
+//     }
+// })
+// p.then((message) => { 
+//     console.log("This is in the then :  " +message);
+
+// }).catch((message)=>{
+//    console.log("This is in the catch: "  +message);
+// })
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+                                            //ASSYnchronous AWait 
+
+// console.log("Show");
+// console.log("Show1");
+// console.log("Show2");
+// var funn1=async ()=>{
+//     var cf=new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve('tickets')},2000) 
+//     })
+  
+//     var fin=await cf;
+//     return 'tickets'
+// }
+// funn1().then((as)=>{
+//     console.log(as);
+//     })
+// console.log("show4");
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// console.log("Awaiting functions")
+// var funn1=async ()=>{
+//     return new Promise((resolve,reject)=>{
+       
+//             resolve('tickets')
+
+// })
+// }
+// var d= funn1().then((m)=>{
+//     console.log(m)
+// }).catch((e)=>{
+//     console.log(e)
+// })
+// console.log("Printing")
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// console.log("Person 1 Shows Ticket");
+// console.log("Person 2 Shows Ticket");
+// console.log("Person 3 Shows Ticket");
+
+// var funn1=async ()=>{
+// var movieTickets=new Promise((resolve,reject)=>{
+   
+// setTimeout(()=>{
+// resolve('tickets')},1000) 
+// })
+// var popcorns=new Promise((resolve,reject)=>
+//                 resolve(`PopCorn`));
+// var buuterss=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("Butter")
+//         },8000)
+        
+//     })
+//     var ticketsmovie=await movieTickets;
+//     console.log(`Wife : i have the  ${ticketsmovie}`);
+//    console.log(`Husband Shall we Move`);
+//    console.log(`Wife yes.. but I am hungry`); 
+
+//    var getpopcorn=await popcorns;
+//      console.log(` H I have some ${getpopcorn}`);
+//    console.log(`W i need Some Butter Also`) 
+
+//    var getButter=await buuterss;         
+//    console.log(`Ok i will get some ${getButter} for u`)  
+//     console.log(`AHey...!!!  ):   I got some  ${getButter} for u   shall w move`);
+
+//     var [popcorn,butter]=await Promise.all([getpopcorn,getButter]);
+//     console.log(`${popcorn} , ${butter}`)
+    
+//     return ticketsmovie;
+//  }
+// funn1().then(((m)=>{
+// console.log(`person N Shows His ${m}`)
+// }))
+// console.log(`Person 5 ShowsTickets`);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// console.log("Show");
+// console.log("Show1");
+// console.log("Show2");
+// var funn1=new Promise((resolve,reject)=>{
+//     resolve("Content")
+// })
+// funn1.then((m)=>{
+//     console.log(m);
+// })
+// console.log("shahid");
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var funn1=()=>{
+//     return new Promise((resolve,reject)=>{
+//         resolve("reset")
+//     })
+// }
+// funn1().then((g)=>{
+//     console.log(g)
+// })
+// console.log("PErson")
+
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                                        //Asynchronous
+// console.log("Show");
+// console.log("Show1");
+// console.log("Show2");
+// var funn1=async ()=>{
+//     return 'movie'
+// }
+
+
+// funn1().then((as)=>{
+//     console.log(as);
+    
+// })
+// console.log("show4");
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+
+// var funn1=function(p){
+//     console.log(p)   //console.log(`${p}`);
+// }
+// funn1("Hello")
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//                                                          //Husband And Wife
+
+// console.log("Person1 Shows ticket");
+// console.log("Person2 Shows ticket");
+// function funn1(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//                 resolve('tickets');
+//         },2000)
+//     })
+// }
+// var popcorn=funn1().then((t)=>{
+//     console.log("Husband: Shall We  Move");
+// console.log("Wife Yes we will ");
+// console.log("Family Shows Tickets");
+// return new Promise((resolve,reject)=>{
+//     resolve(`Wait I dont have ${t} and i have only  Some PopCorn`);
+// })
+
+//     //console.log(`Husband brings some Food and  ${t} for his wife`);
+// })
+// var butter=popcorn.then((t)=>{
+//     console.log(t)
+//     console.log("person4 ticket")
+// console.log("person5 ticket");
+// console.log(`Wife: Dont Worry i have ${t} and i need Some Butter on my PopCorn`);
+// console.log("Ok it takes some time To get that Bp");
+// return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("Ok I got that Bp");
+//       //  resolve("popcorn")
+
+//     },3000)
+//    })
+// })
+// var movie=butter.then((m)=>{
+//     console.log(m);
+//     console.log("Now shall we move");
+//     console.log("Ok now we will");
+//     return new Promise((resolve,reject)=>{
+//         //resolve('popcorn')
+//        var t="popcorn";
+//         resolve(`Oh God So many peoples are coming so late i think we better to came early even i went for ${t}`);
+//     })
+// })
+//  var aft=movie.then((l)=>{
+//      console.log(l);
+//      return new Promise((resolve,reject)=>{
+//          setTimeout(()=>{
+//              resolve(`Movie is good`)
+//          },8000)
+//      })
+//  })
+//  var ct=aft.then((lm)=>{
+//      console.log(` After few Hours later Husband to  wife ${lm}`)
+//  })
+
+ 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// console.log("Person1 ticket");
+// console.log("Person2 ticket");
+
+// var funn1=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//                 resolve('ticket');
+//         },2000)
+//     })
+
+// funn1.then((t)=>{
+//     console.log(`person3 ${t} `)
+// })
+// console.log("person4 ticket")
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var tp=[{title:"post One", body: "this is postOne"},{title:"postTwo", body: "this is postTwo"}];
+// function funn1(st1,callback){
+//     tp.push(st1);
+//     callback();
+// }
+// function funn2()
+// {
+//     var pnt="";
+// tp.forEach((p, ind, arr)=>{
+// //pnt +=`${p.title}`
+// pnt=` ${ind} ${p.title} `
+// console.log(pnt);
+// })
+//}
+//var newpost={title: "post Three", body:"This is Three"};
+//funn1(newpost,funn2);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var tp=[{title:"post One", body: "this is postOne"},{title:"postTwo", body: "this is postTwo"}];
+// function funn1(){
+// setTimeout(()=>{
+//     tp.forEach((pt)=>{
+//         var st=`${pt.title} ${pt.body}`;
+//         console.log(st)
+//     })
+// },1000)
+// }
+// function funn2(ad){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//         tp.push(ad);
+//         var res=false;
+//         if(!res){
+//             resolve();
+//             console.log("The Message has sent");
+//         }else{
+//             reject("Error Message plz try later");
+//         }
+//     },3000);
+       
+// });
+// }
+// Asynchronous Await
+
+// async function init(){
+//     await funn2({title:"PostThree", body : "This is The Post Three" });
+// funn1();
+// }
+//  init(); 
+
+//Fetching the data
+
+// async function fetchusers(){
+// var ur=await fetch('https://jsonplaceholder.typicode.com/users');
+// var pr=await ur.json();
+// console.log(pr);
+// }
+
+// fetchusers();
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//Promises (Reesolve, Reject)
+// var p=new Promise((resolve,reject)=>{
+//     var a=2;
+//     if(a !== 2){
+//         console.log("success");
+//         resolve("Succes");
+//     }else{
+//         console.log("failed");
+//         reject("Reject");
+
+//     }
+// })
+// p.then((message) => { 
+//     console.log("This is in the then :  " +message);
+
+// }).catch((message)=>{
+//     console.log("This is in the catch: "  +message);
+// })
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var tp=[{title:"post One", body: "this is postOne"},{title:"postTwo", body: "this is postTwo"}];
+// function funn1(){
+// setTimeout(()=>{
+//     tp.forEach((pt)=>{
+//         var st=`${pt.title} ${pt.body}`;
+//         console.log(st)
+//     })
+// },1000)
+// }
+// function funn2(ad){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//         tp.push(ad);
+//         var res=true;
+//         if(!res){
+//             resolve();
+//             console.log("The Message has sent");
+//         }else{
+//             reject("Error Message plz try later MR:");
+//            console.log("MessageNot Sent")
+//         }
+//     },3000);
+       
+// });
+  
+// }
+
+//    //var createone={title:"Postthre", body: " The body of doc"}
+// //funn2(createone, funn1)
+// funn2({title:"Post three", body: " The body of doc"})
+//                                                     .then(funn1)
+//                                                     .catch((err)=>
+//                                                             {  console.log(err)
+//                                                             })
+// var pr=Promise.resolve("helloWorld");
+// var pr1=10;
+// var pr2="GoodBye"
+// var pr3=new Promise((resolve,reject)=>{
+//     setTimeout(resolve, 2000,"Good_Bye")
+//     })
+
+//     // var pr4=fetch('https://jsonplaceholder.typicode.com/todos/1').then((res)=>
+//     //     res.json()
+//     // )
+//    // var pr4=fetch('https://jsonplaceholder.typicode.com/users')
+//     // .then((res)=>
+//     //     res.json()
+//     // )
+//     var pr4=fetch('https://jsonplaceholder.typicode.com/users').then((res)=>
+//         res.json()
+//     )
+  
+    
+//     Promise.all([pr,pr1,pr2,pr3, pr4]).then((val)=>{
+//     console.log(val);
+// })
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// var tp=[{title:"post One", body: "this is postOne"},{title:"postTwo", body: "this is postTwo"}];
+// function funn1(st1,callback){
+//     tp.push(st1);
+//     callback();
+// }
+// function funn2()
+// {
+//     var pnt="";
+// tp.forEach((p, ind, arr)=>{
+// //pnt +=`${p.title}`
+// pnt=` ${ind} ${p.title} `
+// console.log(pnt);
+// })
+// }
+// var newpost={title: "post Three", body:"This is Three"};
+// funn1(newpost,funn2);
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Same Program At 166 line 
+// var tp=[{title:"post One", body: "this is postOne"},{title:"postTwo", body: "this is postTwo"}];
+// function funn1(){
+// setTimeout(()=>{
+//     tp.forEach((pt)=>{
+//         var st=`${pt.title} ${pt.body}`;
+//         console.log(st)
+//     })
+// },1000)
+// }
+// function funn2(ad,cal){
+//     setTimeout(() => {
+//         tp.push(ad);
+//     cal();
+//     }, 3000);
+  
+// }
+// //var createone={title:"Postthre", body: " The body of doc"}
+// //funn2(createone, funn1)
+// funn2({title:"Postthre", body: " The body of doc"},funn1)
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//Pushing the Data into An ArrayOf Object
+// var students=[{name:"reethu", age:90},{name:"sruthi", age:99}];
+// var g=[{name:"thu", age:300}];
+// students.push(g[0]);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//var g={name:"thu", age:300};
+//students.push(g);
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var g=[{name:"thu", age:300}];
+//  students.push(g);
+// console.log(students);
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+// function funn1(b){
+// console.log("The value of bis :" + b)
+// }
+// funn1(10)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+//Synchronous
+
+// var a=1;
+// var b=2;
+// function funn1(){
+// setTimeout(()=>{
+//     console.log("Aynchronous");
+// },2000 );
+// console.log("Print first")
+// console.log(a);
+// console.log(b);
+// }
+// funn1()
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// function funn2(){
+//     console.log("Synchronus");
+// }
+// setTimeout(()=>{
+//     console.log("async");
+// },4000)
+// funn2()
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(b){
+//     return b();
+//     }
+// funn1(()=>{
+//     console.log("The Function is stil");
+//     console.log("Hey there");
+   
+// })
+// //And Asynchronous
+// setTimeout(()=>{
+//     console.log("Hei i am late sorry");
+// },3000);
+// console.log("OK fyn")  
+
+// funn1(()=>{
+//     console.log("Print");
+
+// })
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//USER STUDENTS DATA HAS FETCHED CALLBACK 
+
+// var students=[{name:"reethu", age:90},{name:"sruthi", age:99}];
+// function funn1(st1,callback){
+// setTimeout(()=>{
+//     students.push(st1);
+//     console.log("Students has been Enrolled");
+//     callback();
+// },5000)
+// }
+// function funn2(){
+//     setTimeout(()=>{
+//         var str= " " ;
+//         students.forEach((student)=>{
+//         str += `<li>Name: ${student.name}
+//              AgeIs : ${student.age}  </li> ` 
+//         });
+//         document.getElementById("listing").append(str);
+//        // document.getElementById("listing").innerHTML=str;  
+//         console.log(str);
+//         console.log("students data has fetched");
+//     },2000)
+// }
+// var newstudent = {name:"syed", age:30};
+// funn1(newstudent, funn2)
+// //funn2();
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var a=[12,30,40,60];
+// var d=a.forEach((itm, ind,arr)=>{
+//     console.log("Is:" + ind + " : " +itm  )
+
+// })
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var a=[12,30,40,60];
+// var sum=0;
+// var d=a.forEach((itm)=>{
+//     sum += itm;
+//     console.log( sum)
+// })
+// console.log(sum)
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//var a=["ar", "br", 'gr'];
+// for(var i=0;i<a.length; i++){
+//     console.log( i +" : "+ a[i])
+// }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var d=a.forEach((itm, ind,arr)=>{
+//     console.log("Is:" + ind + " : " +itm  )
+// })
+// console.log(a)
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ //var a=[12,30,40,60];
+// var d=a.forEach((itm, ind, arr)=>{
+//     arr[ind]=itm * 10;
+//     //console.log(a)
+// })
+// console.log(a)
+
+// for(var i=0;i<a.length; i++){
+//     a[i]= a[i] * 10;
+// }
+// console.log(a)
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//RandomMethod
+// var ran=Math.floor(Math.random() * 10)+1;
+// var m=(Math.random() *10) +1;
+
+// //ceil method
+// // var p=ran.toPrecision(4)
+// //var p=ran.toFixed(4)
+
+// console.log(m)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function funn1(Question, Answer, Correct){
+//     this.Question=Question;
+//     this.Answer=Answer;
+//     this.Correct=Correct;
+//     }
+//     funn1.prototype.displayQuestion=function(){
+//         console.log(this.Question) 
+//     for(var i=0;i<this.Answer.length; i++){
+//         console.log(i + " " + this.Answer[i])
+//     }
+//      }
+//   var q1=new funn1("IS JavaScript collest Programming in the World...!!!!???", ['yes', 'No'], 0);
+    
+//     var q2=new funn1("IS this this answer for above question...!!!!???", ['yes', 'No'], 0);
+    
+//      var q3=new funn1("What does the best for coding", ['coding', 'Boring',  'crazy'], 0);
+//     var iq=[q1,q2,q3];
+//     var n=Math.floor(Math.random()*iq.length);
+//     iq[n].displayQuestion(); 
+
+//KeepingScores
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++OR
+//ThisOne 
+//(function(){  Protection function used to not included this program to anyone
+// function funn1(Question, Answer, Correct){
+//     this.Question=Question;
+//     this.Answer=Answer;
+//     this.Correct=Correct;
+// }
+// funn1.prototype.displayQuestions=function(){
+//     console.log(this.Question);
+//     for(var i=0;i<this.Answer.length; i++){
+//         console.log(i + " : " + this.Answer[i])
+//     }
+// }
+//     funn1.prototype.checkAnswer=function(answer) {
+//         if (answer === this.Correct) {
+//             console.log('Answer was  Correct');
+//             }
+//         else {
+//         console.log('Answer was InCorrect Try Again'); 
+//             }
+//     }    
+// var q1=new funn1("Question1: How Are You :", ['Fyn', 'NotGood'],1);  // 0  it will take only one index remaing it will print false
+// var q2=new funn1("Question2: So.. How U r doing", ['well', 'good', 'doingGood'], 2);
+// var q3=new funn1("Question3: its so pleasure to meet u", ['OK', 'Same To u', 'meeToo'], 2);  // ['OK', 'Same To u', 'meeToo'], 2(0,1,2) - if u give 0,1,2  if condition is true print first console correct  otherwise it go to  else condition);
+// var sto=[q1,q2,q3];
+
+// var ran=Math.floor(Math.random() * sto.length); 
+// sto[ran].displayQuestions();
+// var answers=parseInt(prompt("Enter A Word to check"));
+// sto[ran].checkAnswer(answers);
+
+// function nextQuestion(){
+//     var ran=Math.floor(Math.random() * sto.length); 
+// sto[ran].displayQuestions();
+// var answers=prompt("Enter A Word to check");
+// if(answers !== 'exit'){
+//     sto[ran].checkAnswer(parseInt(answers));
+//     nextQuestion();
+// }
+// }
+// nextQuestion();
+
+//})();
+
+  //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//     var tm={name:"john", yearBirth:1980, job:"teacher",
+//     YB:function(a){
+//     return 2020-a } ,
+//     calcAge:function(){
+//     this.ages= 2020- this.yearBirth
+//     } ,
+//     presentation:function(meeting,day ){
+//  if(meeting === 'Board'){
+//             console.log(`${day} Ladies and GentleMan  i am ${this.name}  How are You all i amm  ${this.job} here  and i am  ${this.age} yearold ` )
+//             console.log(day+" Ladies and GentleMan " + this.name + " How are You all i amm "+ this.job + "and i am " + this.age+ " yearold  " )
+//         }
+//         else if(meeting === "Normal"){
+//             console.log(day+ " Ladies and GentleMan " + this.name + " How are You all i amm "+ this.job + "and i am " + this.age+ " yearold & This is  Just Normal meeting"  )
+//           }
+//   }
+//     }
+//     var emilys={name:'Emily', age:30, job:'designer'};
+
+//     tm.age=tm.YB(1990);
+//     tm.calcAge()
+//     //tm.presentation('Board', 'Goodmorning')
+    //tm.presentation("Normal", "GoodEvening")
+    //CALL
+    //tm.presentation.call(emilys, "Board", 'GoodMorning');
+    //BIND
+    // var dm=tm.presentation.bind(tm,"Board", "evening")()
+    // var dm=tm.presentation.bind(emilys,"Normal", "evening")()
+    
+    // console.log(tm);
+    // //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function funn1(retirement){
+//     return function(yearBirth){
+//         var a=" Years left to retire"
+//         var limit=2020-yearBirth;
+//         console.log( ( retirement-limit  )  + a);
+
+//     }
+// }
+// var india=funn1(66) (1990)  
+// var us=funn1(60) (1970)
+//OR
+//var g=funn1(66) 
+//g=(1990)  
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(retire){
+//     var agelimit=2020-retire;
+// console.log( 65-agelimit+ " Left to retire");
+//     }
+//    var g= funn1(1995) 
+//    var m=funn1(1980);
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function funn1(a){
+//     var score=(Math.random() * 10 ) +1;
+//     console.log(score >=5 -a)
+//         }
+// funn1(4);
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//Switch case
+// function questions(job,name){
+//     switch(job){
+//         case 'teacher': 
+//         return ("teacher" + name);
+    
+//         default:
+//     "Do somwethihng "+ name
+//     }
+    
+// }
+// var qt=questions('teacher', "john");
+// console.log(qt)
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function questions(job){
+//   return function(name){
+   // if(job === "designer"){
+//      console.log("Please explain about u r role " + name);
+//   }
+//     }
+//     else if(job === "swimmer"){
+//         return function(name){
+//      console.log("Please explain about u r role  with water " + name);
+//   }
+//     }
+//     else if(job === "sportsperson"){
+//         return function(name){
+//          console.log("Please explain about u r role in cricket " + name);
+//   }
+//     }
+// }
+// var iq=questions("designer")('ab')
+// var ir=questions("swimmer")("abd")
+// var is=questions("sportsperson")('virat');
+// var id=questions("sportsperson")('kohili');
+
+
+//Printing The Highest Number
+// function funn1(){
+// var years=[1990,1980,1970,1960];
+// for(var i=0;i<years.length;i++){
+//     if(years[i]<=1970){
+//      console.log(years[i]);
+//          }
+//     }}
+// funn1()
+
+//PraticeThisOne
+// var years=[1990,1980,1970,1960];
+// var newArr=[];
+// function funn1(){
+//     var pur=[]
+// for(var i=0;i<years.length;i++){
+// pur.push(2020-years[i]<=40);
+// newArr.push(2020-years[i])
+//  } 
+// return pur
+
+// }
+
+// var g=funn1();
+// console.log(newArr);
+// console.log(g)
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// function funn2(){
+//     var p=[]
+//     for(var i=0;i<years.length;i++){
+//         var d=(2020-years[i]);
+//         if(d>=48){
+//         console.log(d)
+
+//         }
+// p.push(d)
+// }
+// console.log(p)
+//     }
+// funn2();
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//PraticeThisOne
+// var years=[1990,1980,1970,1960];
+
+// function funn1(arr,fn){
+//     var newArr=[];
+//  for(var i=0; i< arr.length; i++){
+//     newArr.push(fn(arr[i]));  //fn is call back
+//     }
+//     return newArr;
+// }
+// function calcAge(ca){
+//     return 2020-ca
+// }
+// function isgreater(el){ 
+//    return el >=38;
+
+//    //Imp 
+// // (   function isgreater(el, limit){
+// //        return el>=limit;
+// //    }   )   
+   
+// }
+// function maxrates(el){
+//     if(el>=45 && el<=81){
+//         return Math.round(206.9-(0.67 * el))
+//     }
+//     else{
+//         return -1;
+//     }
+// }
+// var ages=funn1(years,calcAge);
+// console.log(ages)
+// var gt=funn1(ages,isgreater);  //IMP
+// console.log(gt)
+// var mt=funn1(ages,maxrates)
+// console.log(mt)
+
+// //Imp  
+// var gt=funn1(ages, isgreater.bind(this,38));
+// console.log(gt)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+                                               //CAllback functions
+
+// function funn1(a,b){  (1421- Line)
+//     return b(a);
+// }
+// function funn2(d){
+//     console.log("the value is:  "+ d);
+// }
+// funn1(20,funn2);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn2(b)
+// {
+// var a=20;
+// b(a);
+//  }
+// function funn1(a){
+//     console.log("The value of a is: "+ a);
+// }
+// funn2(funn1);
+//++++++++++++++++
+
+// function funn1(g){
+//     console.log("The value of a is: "+ g);
+// }
+// function funn2(a,call){
+// call(a);
+// }
+// funn2(20,funn1);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// function funn1(call){
+//     var a=101;
+//     call(a);
+// }
+// funn1(function show(d){
+//     console.log("The of a is:" +d);
+// })
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(a){
+//     console.log("The value of a is: "+ a);
+// }
+// function funn2(cal){
+//     var m=20;
+//     cal(m)
+// }
+//funn2(funn1)
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// // function funn1(d){
+//     var g=20;
+//     d(g);
+// }
+// funn1(a=>{
+//    console.log("The aIs :" +a);   
+//   })
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var funn1=(d=>{
+//     console.log("the Val is: "+ d);
+// })
+// var fumm2=(cal =>{
+//     var g=20;
+//     cal(g);
+// })
+// fumm2(funn1)
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(a){
+// console.log("The value is: " +a);
+// }
+// var funn2=(cal=>{
+//     var val=20;
+//     cal(val);
+// })
+// funn2(funn1);    
+//++++++++++++++++++++
+// function funn1(a,b){
+// b(a)
+//     }
+// funn1(20,(a)=>{
+//     console.log("the value is: " +a)
+// });
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var funn1=((friend , time)=>{
+//     console.log(`Iam busy right now  i am talking to ${friend} while ${time}  minutes ago` );
+// })
+// var funn2=((b,a)=>{
+//     var g="virat";
+//     var t=20;
+//     b(g,t);
+// })
+
+// funn2(funn1);
+// var funn1=((friend , time)=>{
+//     console.log(`Iam busy right now  i am talking to ${friend} while ${time}  minutes ago` );
+// })
+// var funn2=((a,t,call)=>{
+//     call(a,t);
+// })
+
+// funn2( 'virat',20, funn1);
+//++++++++++++++++++++++++++++++
+// var funn1=((frnd,callfrnd)=>{
+//     console.log(`How r u ${frnd} `);
+//     callfrnd();
+// })
+// var funn2=((a)=>{
+//     console.log(`Hey Boy `);
+// })
+// funn1("AB",funn2);
+//++++++++++++++++++++++++++++++++++++
+// var funn1=((frnd,callfrnd)=>{
+//     console.log(`How r u ${frnd} `);
+//     callfrnd(frnd);
+// })
+// var funn2=((a)=>{
+//     console.log(`Hey Boy ${a}`);
+// })
+// funn1("AB",funn2);
+//CallBack functions
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+                                                                //Synchronous 
+ 
+// function funn1(b){
+//     return b();
+//      }
+// funn1(()=>{
+//     console.log("The Function is stil");
+//     console.log("Hey there");
+   
+// })
+// //And Asynchronous
+// setTimeout(()=>{
+//     console.log("Hei i am late sorry");
+// },3000);
+// console.log("OK fyn")  
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                                                    // //AnnonymousFunction
+// var funn1=function(dm){
+//     console.log("The value of a is: " + dm)
+// }
+// funn1(20)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//ArrowFunctions
+// var funn1=((a,b=20)=>{
+//     console.log("Print the " + eval(a+b));
+//     console.log("Print the " + a + b);
+// })
+// funn1(1)
+//+++++++++++++++++++++++++
+// var funn1=((a,b)=>{
+//     console.log("Print the " + eval(a+b));
+//     console.log("Print the " + a + b);
+// })
+// funn1(1,10)
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+                                                            //ProtoType
+//TheProtoType Chain in the Console
+// var a=function(id,name,birthyear){
+//     this.id=id;
+//     this.name=name;
+//     this.birthyear=birthyear;
+
+//     this.names=function(){
+//         return this.name+ "Reddy";
+//     },
+//     this.naming=function(){
+//         return this.name +" KommaReddy "
+//     }
+//     this.lastNamed=function(){
+//         return lastName= " Reddys"
+//     }
+// }
+// a.prototype.calcAge=function(){
+// //return (2020-this.birthyear);  //(2)
+// this.age=(2020-this.birthyear)  //(1)
+// }
+// a.prototype.lack=function(){
+//    return lastName="Reddy"
+// }
+// var d=new a(1,"vishwak", 1990);
+// var e=new a(2,"kumar", 1980);
+// var f=new a(3,"vishnu", 1960);
+// d.name  =  d.names()  +  d.naming()   + d.lack()  +  d.lastNamed() ;
+// d.lastNamed=d.lack();
+// e.name=e.names()+e.naming();
+// f.name=f.names()+f.naming();
+//d.age=d.calcAge();  (2)
+//d.calcAge()  // (1)
+
+//console.log(d,e,f);
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var a=[{name:"vk", name1:"Cheeku"}, {name:"abd", name1:"MR.360"}];
+// for(var i=0; i<a.length; i++){
+//     a[i].Name2="NewElement";
+//     console.log(a[i])
+// }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var a=function(id,name){
+//     this.id=id;
+//     this.name=name;
+// }
+// a.prototype.funn1=function(){
+//     return this.name+"kumar";
+// }
+
+// var john=new a(1,'raj');
+// john.name=john.funn1()
+// console.log(john);
+
+// function bunn1(id,name){
+//     this.id=id;
+//     this.name=name;
+// }
+// a.prototype.funn1=function(y){
+//     return "kumar"+this.name;
+// }
+
+// var john=new bunn1(1,'raj');
+// console.log(john)
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+// var ob1=function(name, id){
+//     this.name=name;
+//     this.id=id;
+// }
+// ob1.prototype.color="white";
+// var d=new ob1("raj", 1)
+// var e=new ob1("kumar" , 2)
+// console.log(d, e)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                                    //SwitchCase
+// var funn1=function(custody, punishment){
+// switch(custody){
+//     case 'rapist':
+//     return punishment + " need to punish them";
+//     case 'kidnaper':
+//     return punishment + " need to punish them";
+//     default:
+//     return punishment + " do something Else" ;
+//     }
+// }
+// var g=funn1('rapist', 'Fired');
+
+// var f=funn1('kidnaper', "Kick");
+// console.log(g);
+// console.log(f)
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var done=function(job, name){
+//             switch(job){
+//             case 'teacher':
+//             return name +  'teaches  u'
+//             case 'SportsPerson':
+//              return name + ' wiil drives you'
+//              case 'Spidy':
+//              return name + ' wiil pit u';
+//             default:
+//             return 'do somthing Else'
+//          }
+//      }
+//     var g= done('teacher', 'Vivek');
+//     var h=done('SportsPerson', 'Vk')
+//     var i=done('Spidy', ' ARMy')
+//    console.log(g);
+//     console.log(h);
+//     console.log(i);
+   //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+//ProtType
+// var person=function(name, id,year){
+//     this.name=name;
+//     this.id=id;
+//     this.year=year
+//     }
+// person.prototype.calcAge=function(){
+//    return (2020-this.year)
+// }
+
+// person.prototype.lastname=function(){
+//     return lastname="smith"
+// }
+  
+// var john=new person("john", 12345,1997);
+// var Doe=new person("Doe", 12346,1998);
+//  john.age=john.calcAge();
+// //john.age=18;  
+// //Doe.age=Doe.CalcAge()
+// Doe.age=Doe.calcAge();
+// john.lastname=john.lastname();
+// Doe.lastname=Doe.lastname();
+// console.log(john)
+// console.log(Doe)
+// var sg={name:"sg", birthyear:1997, calcage:function (){
+// return 2020-this.birthyear
+// // (1)this.age=2020-this.birthyear;
+// }}
+// //(1) sg.calcage();
+// sg.age=sg.calcage();
+// console.log(sg);
+
+
+
+// function funn1(id,name){
+// this.id=id;
+// this.name=name;
+// }
+                                                                // // funn1.prototype.getName=function(){  //( prototype) 
+                                                                // //     return this.name;
+                                                                // // }
+// var a=new funn1(1,'ajju');
+
+// var b=new funn1(1,'vijju');
+    
+// document.write(JSON.stringify(a)+ " " + JSON.stringify(b)); 
+
+//function funn1(y){
+// console.log(2020-y)
+// console.log(this)
+// }
+
+// funn1(1980)
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//FahrenHeat Temperature
+     
+    //   function funn1(){
+    //     let ft=document.getElementById("fd").value;
+    //     let ft1=(ft-32)*5/9;
+    // document.getElementById("cd").value=ft1;
+    // }
+     //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //  var a={
+    //          name:'raj',
+    //          birthyear:1980,
+    //         ageed:function(){
+    //       return 2018-this.birthyear
+    //  //  (1) this.age=2020-this.birthyear
+    //      }
+    //  }
+    //  a.name="rajKumar";
+    //  a.age=a.ageed()
+    // //(1) a.ageed();
+    //  //a.age=20; //Adding  ; a.age=40 //Replacing or updating ; delete a.age; //Deleting 
+    // //a.ages=a.ageed()
+    //  console.log(a)
+    // //console.log( a.age(1990));
+
+     //Bills Calculator
+     
+//      function funn1(bill){
+         
+//          if(bill<50){
+//              var per= 0.2;
+//              }
+//              else if(bill >= 50 && bill <=200 ){
+//                 var per=.15;  
+//                 return per*bill
+//              }
+//              else{
+//                  var per= .1
+//              }
+//              return per*bill
+//          }
+//       //  var a=funn1(50);
+//    //  console.log(funn1(50));
+// //    var arr=[124,48,268];
+//    var tips=[funn1(arr[0]),
+//                  funn1(arr[1]),
+//                 funn1(arr[2])];
+//    var final=[arr[0] + tips[0],
+//    arr[1] + tips[1],
+//    arr[2] + tips[2]]
+// console.log(final,arr )
+
+
+  //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx   
+    // function funn1(by){
+    //     return 2018-by
+    // }
+    // var a1=funn1(1980)
+    
+    // var a2=funn1(1981)
+    
+    // var a3=funn1(1982)
+    // console.log(" First: " +     a1, " Second " + a2,"Third" +a3)
+
+
+    // function retirement(year, name){
+    //  //var age=funn1(year)  //Call back function
+    //   var age=(2020-year);
+    //  var retireAge=65-age
+    //  if(retireAge>0){
+    //     console.log(name+ " Will retire in "+ retireAge + "  years");
+    //  }
+    //  else{
+    //      console.log(name+"IS already Retired")
+    //  }
+    // }
+    //  retirement(1990,"john");
+    //  retirement(1998,'mike');
+    //  retirement(1929,'Doe');
+
+
+    // //  function retirements(year, name){
+    //  //var age=funn1(year)  //Call back function
+    //   var joiningdate=2020-year;
+    //   var remainyears=65-joiningdate;
+    //  if(remainyears>0){
+    //      console.log(name+ " will retire very Soonly" + remainyears)
+    //    }
+    //   else{
+    //          console.log( name   + " isRetireds" + remainyears)
+    //      }
+    //     }
+    
+    //  retirements(1990,"john");
+    //  retirements(1998,'mike');
+    //  retirements(1929,'Doe');
+
+     
+//      
+//       for(var i=0; i<=5;i++){
+//          for(var j=1;j<=i; j++){
+//              document.write(j )
+
+//          }document.write( "<br>")
+
+//      } 
+
+//      for(var a=1;a<=5;a++){
+//    for(var b=1; b<=a; b++){
+//      document.write(" * ")
+//    }document.write("<br>")
+//  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   //  var a=0;
+    //     do{
+    // document.write(a +"<br>")
+    //  a=a+1
+    //     }
+        
+    //     while(a<=10)
+
+  //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+     
+     
+       // var a=10;
+    //    var a=10;
+    //     do{
+    //         document.write(a+"Hello Maam" +" <br>");
+    //         //a++;     //    a=a+2;
+    //         // a--;   //  a=a-2;
+    //        // a=a+1
+    //        a=a-2;
+        
+    //     }while(a<=5);
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                //SwitchCAses
+//    var age=25;
+//     switch(true){
+//         case (age>=8 && age<=10 ):
+//         console.log("Too OLD");
+//         break;
+//         case age>=11 && age<=18 :
+//         console.log("Teen");
+//         break;
+//         case age>=19 && age<=25 :
+//         console.log("Young");
+//         case age>=26 && age<=35 :
+//         break;
+//         console.log("OLd");
+//         break;
+//      default:
+//     console.log("TOOOld")
+//     }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var done=function(job, name){
+//             switch(job){
+//             case 'teacher':
+//             return name +  'teaches  u'
+//             case 'SportsPerson':
+//              return name + ' wiil drives you'
+//              case 'Spidy':
+//              return name + ' wiil pit u';
+//             default:
+//             return 'do somthing Else'
+//          }
+//      }
+//     var g= done('teacher', 'Vivek');
+//     var h=done('SportsPerson', 'Vk')
+//     var i=done('Spidy', ' ARMy')
+//    console.log(g);
+//     console.log(h);
+//     console.log(i);
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//     var funn1=function(duty,day){
+//         switch(duty){
+//             case 'teacher':
+//             return duty + " His doing"
+//             case 'designer':
+//         return  duty + "HisDoing"
+//             default:
+//             return 'doSomethingelese';
+//         }
+//     }
+// var m=funn1('teacher','monday')
+// console.log(m)
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++===
+
+//     var age=10;
+// switch(true){
+//     case (age>=18 && age <=30):
+//     console.log("he is Is valid");
+//     break;
+//     case (age>=0 &&  age<=15):
+//     console.log("he is NotValid" );
+//     break;
+//     default:
+// console.log("OhBoy..")
+// }
+// //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var funn1=function(day, who){
+//     switch(day){
+//         case 'Monday':
+//    console.log( day + " is  " + who + "duty");
+//    break;
+//    case 'Tuesday':
+//    console.log(  day+ "  is  " + who + "duty" );
+//    break;
+//    default:
+//    console.log("Please Choose Right person")
+//     }
+// }
+// var m=funn1("Tuesday" , "Rakshith");
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+     
+    
+   
+
+// == and ===
+// console.log(""  === "") ;
+// console.log(""  == "") ;
+// console.log({}  === {}); //console.log({}  == {}) ;
+// console.log([]  == []);  // console.log([]  === []) ;
+// console.log(4  === 2*2) ;
+
+// var a=5;
+// if(a!==5){
+// console.log("yes")
+// }
+// else{
+//     console.log("no")
+// }
+
+
+
+
+
+
+        //Objects
+// var obj=
+//     {firstName:"John", lastName:"Doe", age:20, 
+//         hobbies:["Gamings"],
+//         living:{
+//          'city': "hyd", "town ": "mindship",
+//         },
+            
+//             fullname:function(){
+//               return this.firstName+  " " + this.lastName }
+// };
+// console.log(obj);
+// document.write(obj.fullname());
+
+// document.write(obj.living.city);
+
+//Array Of Objects
+
+ 
+// var obj=
+//     [{firstName:"Gangadhar", lastName:"Doe", age:20},
+//     {firstName:"Jyothhi", lastName:"Doe", age:20}];
+//     for(var i=0; i<obj.length; i++){
+// var s=obj[i].firstName;
+// document.write(s);
+// }
+// console.log(obj);
+
+//SpecialArray
+// let products = [
+//   {
+//     name: "chair",
+//     inventory: 5,
+//     unit_price: 45.99
+//   },
+//   {
+//     name: "table",
+//     inventory: 10,
+//     unit_price: 123.75
+//   },
+//   {
+//     name: "sofa",
+//     inventory: 2,
+//     unit_price: 399.50
+//   }
+// ];
+// function listProducts(prods) {
+//   let product_names = [];
+//   for (let i=0; i<prods.length; i+=1) {
+//    product_names.push(prods[i].name);
+//   }
+//   return product_names;
+// }
+// console.log(listProducts(products));
+// function totalValue(prods) {
+//   let inventory_value = 0;
+//   for (let i=0; i<prods.length; i+=1) {
+//     inventory_value += prods[i].inventory * prods[i].unit_price;
+//   }
+//   return inventory_value;
+// }
+// console.log(totalValue(products));
+
+
+// var a=[1,2,3,4,4,5];
+// var b=[1,2,3,4,5,6,7,8,9,8,7,6,55];
+// var m=[...a, ...b];
+// var d=[...new Set(m)]
+// console.log(d);
+
+/*   
+var a=[1,2,3,4,5];
+for(var i=0;i<5;i++){
+    var p=prompt("Enter aValue");
+    a.push(p); 
+      }
+      var c=[...new Set(a)];
+      console.log(c)
+    
+     */
+//     console.log(a)
+  
+//     var b =[]
+//         for(i = 0; i<=5; i++)
+//         {
+//           var a = prompt("enter the value of a")
+//           b.push(a)
+        
+//         }
+    
+//   //console.log(b)
+//        var c= [...new Set(b)];
+//        console.log(c);  
+
+       //SpreadOperator
+// // var ar=["one", "two", "one"]
+// // var br=["three", "two", "four"]
+// // var con=ar.concat(br)
+// // var st=new Set(con)
+// // console.log(st)
+
+// // var a=new Set(["fill", "funn", "fill"]);
+// // Array.from(a)
+// // console.log(a)
+
+// // Array//var hg=Array.from("con");
+//var a=[1,2,3,4,5];
+//var b=[1,2,3,6,99];
+//var c=a.concat(b)
+//var c=[...a,...b];
+//var d=[...new Set(c)];
+//console.log(d);
+
+
+// var a=[];
+// var b=[1,2,3,4,5,6,5,4,3,2,22,33,44,55,99];
+// var m=a.concat(b);
+// var s=[...new Set(m)];
+// console.log(s)
+//var c=[...a,...b];
+//var d=[...new Set(c)];
+//console.log(d)
+
+/* 
+var b =[1,2];
+for(i = 0; i<=5; i++)
+{
+var a =prompt("enter the value of a");
+b.push(a);
+
+}
+console.log(b)
+
+var c = [...new Set(b)];
+       console.log(c);      */
+
+// var a=[1,2,3,5];
+// var b=[1,3,4,6,6,6];
+// var d=a.concat(b);
+// var c=new Set(d);
+// console.log(c)
+
+        
+//      /*
+    //    var a=[1,2,3];
+    //     var b=[2,3,4]
+    //    function funn1(){
+    //      console.log(a+","+ b)
+         
+    //       }
+    //       funn1(...a,...b);  
+
+    //InsteadOf COnCatination
+    // var a=[1,2,3];
+    // var b=[1,2,3,4,5];
+    // var d=[1,2,3,4,587,98]
+    // var c=[...a, ...b, ...d] 
+    // console.log(c)
+         
+       //    NewONE     
+        //  var a=[1,2,3,4,3,2,5];
+        // var b=[];
+        // b.push(a)
+        // //console.log(b);
+        // var c=[...new Set(a)];
+        // console.log(c);
+
+  // SpreadOperator
+// var ar=["one", "two", "one"]
+// var br=["three", "two", "two","four"]
+// // var con=ar.concat(br)
+// var con=[...ar, ...br]
+//  var st=[...new Set(con)]                                               // ar.push(br);
+//                                                 //var st=[...new Set(ar)];
+// console.log(st)
+//Array//var hg=Array.from("con");
+
+
+// var a=[1,0,2,3,4,56,7];
+// var b=[1,2,3,4,5,6,7,8,9];
+// for(var i=0; i<a.length; i++){
+//     for(var j=0;j<b.length; j++){
+//         if(a[i]=== b[j]){
+//       console.log(a[i])
+//         }
+//     }
+// }
+
+
+
+
+    </script>
+</body>
+</html>

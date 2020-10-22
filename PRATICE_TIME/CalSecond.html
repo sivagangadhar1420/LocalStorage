@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            text-align: center;
+            background-color: crimson;
+            border-radius: 30px;
+            width: 18rem;
+            margin-top: 3rem;
+            padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+                margin-left:35%;
+                /* display: flex; */
+              }
+        table{
+            margin: auto;
+            
+            
+        
+        }
+       
+        input{
+             width: 16.9rem;
+            height: 2rem;  
+            font-size: 2rem; 
+            background-color: darkgreen;
+            color: darkgrey;
+            border-radius: 20px;
+
+            }
+        button{
+                text-align: center;
+                align-items: center;
+                font-size: 2rem;
+            height: 3rem;
+            width: 3.9rem;
+            /* padding: 1rem; */ 
+            background-color: blue;   
+            
+            border-radius: 20px;
+            }
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" name="nm" id="nm">
+        </form>
+        <table>
+            <tr>
+                <td><button>(</button></td>
+                <td><button><</button></td>
+                <td><button>C</button></td>
+                <td><button>/</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>X</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>+</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>/</button></td>
+                <td><button value="=">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var txtfld=document.getElementById('nm');
+        var btn=document.getElementsByTagName('button');
+        let ttlval="";
+                for(var tb of btn){
+               tb.addEventListener('click', (e)=>{
+                    var btnTxt = e.target.innerText;
+                    
+                    // console.log(btnTxt);
+                    //  txtfld.value += btnTxt;  
+                    if(btnTxt == 'X'){
+                        btnTxt = '*';
+                        ttlval += btnTxt;
+                        txtfld.value = ttlval; 
+            
+                    }
+                    else if(btnTxt == "C"){
+                            btnTxt = "";
+                            ttlval = btnTxt;
+                            txtfld.value = ttlval;
+                             }
+
+                    else if(btnTxt == "="){
+                            txtfld.value = eval(ttlval);    
+                    }
+                    else if(btnTxt == '<'){
+                        btnTxt = txtfld.value.slice(0, length-1);
+                        ttlval = btnTxt;
+                        txtfld.value = ttlval;
+                    }
+                    else{
+                        ttlval += btnTxt;
+                        txtfld.value = ttlval; 
+                    }
+                })
+             }
+           
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+We already learned a lot about angular and thus far we really built a single page application. 
+We use directives and so on to change portions off this page. But in the end we always 
+were on the same page.
+If you looked at the you are at the top it was always localhost for 4200.
+
+
+Now what if you wanted to have a page where you actually display several pages like you have a slash
+
+
+users or a slash a Callan's page.
+
+Now you might think that for days you indeed 
+need multiple pages multiple index aged him of files or
+.460
+something like this.
+
+
+
+But you don't angler ships with its own router 
+which allows you to change your.
+
+Indeed you were Albar and still only use one page but then Xchange 
+major parts are a lot of parts off
+
+490
+that page so that to the user it really looks like a new page was loaded because maybe only the header
+it is the same but behind the scenes it is still javascript 
+changing a lot of parts in your dorm in
+
+
+your page making it look like a new page was rendered but 
+you're still in the angular world in your
+
+
+single page application.
+
+00:
+Let's take a 
+closer look.In this module

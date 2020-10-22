@@ -1,0 +1,313 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+<style>
+  table, td, th{
+    border: 3px solid green;
+    border-collapse: collapse;
+  }
+  table{
+      height: 100px;
+      width: 30%;
+      
+  }
+  .tab{
+      background-color:red;
+  }
+  
+</style>
+
+<script>
+
+ function validated(){
+var uemail=document.getElementById("mail");
+var upassword=document.getElementById("pwds");
+var cpassword=document.getElementById("spwd");
+
+if(uemail.value.trim() === ''){
+    document.getElementById("lb").innerHTML="Please Enter Your Mail...Please";
+    document.getElementById("lb").style.visibility="visible";
+    document.getElementById("mail").style.border="2px solid red";
+    return false;
+   }
+   else{
+     document.getElementById("lb").innerHTML="ValidMail";
+    document.getElementById("lb").style.color="green";
+    document.getElementById("lb").style.visibility="visible";
+    
+    document.getElementById("mail").style.border="2px solid green";
+    
+       }
+   if(upassword.value.trim() === ''){
+    document.getElementById("pas").innerHTML="Please Enter Your Password...Please";
+    document.getElementById("pas").style.visibility="visible";
+    return false;
+      }
+    
+      else if(upassword.value.trim().length<5){
+          document.getElementById("pas").innerHTML="passwordToshort";
+          document.getElementById("pas").style.visibility="visible";
+           document.getElementById("pas").style.border="2px solid red";
+          return false;
+}
+else{
+     document.getElementById("pas").innerHTML="ValidPassword";
+    document.getElementById("pas").style.color="green";
+    document.getElementById("pas").style.visibility="visible";
+    document.getElementById("pwds").style.border="2px solid green";
+}
+  
+ if(upassword.value!=cpassword.value){
+    document.getElementById("sp").innerHTML="Password Doesnt Match";
+    document.getElementById("sp").style.visibility="visible";
+    document.getElementById("sp").style.color="red";
+    document.getElementById("spwd").style.color="red";
+    document.getElementById("spwd").style.border="2px solid red";
+     return false;
+}
+else{
+     document.getElementById("sp").innerHTML="ValidPassword";
+    document.getElementById("sp").style.color="green";
+    document.getElementById("sp").style.visibility="visible";
+    
+    document.getElementById("spwd").style.border="2px solid red";
+}
+// var z=document.getElementById("t");
+// var x=document.getElementById("mail");
+
+//   var yell=z.innerHTML=x;
+
+var fname = document.getElementById("mail").value;
+var lname=document.getElementById("pwds").value;
+var cname=document.getElementById("spwd").value;
+
+       
+document.write("U rname eis " + fname + "<br>");
+//document.write("<br>")
+document.write("ur password is: " + lname + "<br>");
+document.write("ConfirmationPassword is:" + cname );
+ }
+ 
+
+ function see(){
+              var z=document.getElementById("mail").value;
+            document.getElementById("1").innerHTML=z;
+            var y=document.getElementById("pwds").value;
+            document.getElementById("2").innerHTML=y;
+            var x=document.getElementById("spwd").value;
+            document.getElementById("3").innerHTML=x;
+
+              
+ }
+
+ 
+
+
+
+
+//   //  event.target.username.value // event.preventDfault()// prevent the browser    
+           /*  function validated(){
+           //uemail.addEventListener("mouseenter", function(st){
+           //  st.style.border="2px solid yellow";
+         //  })
+           
+         var uemail= document.getElementById("mail");
+         
+         var upassword=document.getElementById("pwds");
+          // var fill=document.getElementById("fm");
+
+
+            if(uemail.value.trim()===''){ //|| isNaN(uemail)){   //NaN NotA Number 
+             document.getElementById("mail").style.border="1px solid red";
+             document.getElementById("lb").innerHTML="Invalid";
+             document.getElementById("lb").style.color="red";
+
+            //  document.getElementById("fill").addEventListener("mouseleave",(s)=>{
+            //s.style.border="1px solid red";
+            // })
+            //.style.border="1px solid red";
+                document.getElementById("lb").style.visibility="visible";
+                alert("Please Enter U r Email");
+                return false;
+         }
+         else{
+             document.getElementById("mail").style.border="2px solid green";
+        document.getElementById("lb").style.color="green";
+             document.getElementById("lb").style.visibility="visible";
+             document.getElementById("lb").innerHTML="ValidDetails";
+     }
+           if(upassword.value.trim()===''){
+              document.getElementById("pwds").style.border="1px solid red";
+             document.getElementById("pas").style.visibility="visible";
+                alert("pleas provide u password");
+               return false;
+            }
+            else if(upassword.value.trim().length<5){
+                alert("The Password  was to short");
+                 return false;
+            }else{
+
+                return true;
+            }
+          var sp=document.getElementById("spwd").value;
+          if(upassword!==sp){
+                document.getElementById("pas").innerHTML="Please Enter Same Password";
+                return false;
+            }
+            else {
+                return true;
+            }
+      
+            } 
+// var snik=document.getElementById("pwds");
+// if(snik.value=== ''){
+// document.getElementById("pas").innerHTML="please enter u rpassword"
+// return false;
+// }
+// else{
+//     return true;
+// }
+//    var fp=document.getElementById("pwds");
+           
+//   function see(){
+//                var z=document.getElementById("mail").value;
+//                var show=document.getElementById("1").innerHTML=z;
+//            }       */
+    
+        
+    
+     
+    </script>
+  
+</head>
+<body>
+  
+    <div class="container">
+        <h2>Vertical (basic) form</h2>
+     <!--   <div id="error">     onsubmit="return validated()"  -->
+              <form  id="fm" onclick="validated(); return  false">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="mail" placeholder="Enter email" oninput="see()" name="email">
+            <label id="lb" style="color:red; visibility: hidden;" >U Entered Invalid ....!</label>
+            <!--  minlength=""  required     maxlength=""   required  in textfields (mark)  -->
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwds" placeholder="Enter password"  oninput="see()" name="pwd" >
+            <label id="pas" style="color:red; visibility: hidden;">PasswordConformation</label><br>
+            <label for="spwd">ConfirmPassword:</label>
+            <input type="password"  class="form-control"  oninput="see()" id="spwd">
+            <label for="spwd" id="sp"></label>
+            
+            
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" id="check" name="remember"> Remember me</label>
+          </div>
+          <button  class="btn btn-primary">Submit</button> 
+        </form>
+      </div></div>
+
+
+      <table id="t" style="border: 1px solid green; ">
+        <tr>
+            <th>Name</th>
+            <td id="1">Name</td> </tr>
+        <tr>
+            <th>password</th> 
+            <td id="2">Email:</td> </tr>
+<tr> <th>Confirm</th><td id="3">Password</td></tr>
+    </table>
+
+  <script>
+      var d=document.getElementById("t").setAttribute("class", "tab");
+console.log(d);
+//var s1=document.getElementById("mail").value;
+var ele=document.getElementById("t");
+var c="<tr>";
+var cv=ele.insertAdjacentHTML("afterbegin", c);
+var c1="<th>AllThe details</th> <td> details are secured</td>";
+//var c1="<th>AllThe details</th> <br><td> details are secured</td>";
+var f="<th>AllThe details</th> <td> details are secured</td>";
+var g=ele.insertAdjacentHTML("afterbegin", f);
+var ch=ele.insertAdjacentHTML("afterbegin", c1);
+
+
+ 
+
+
+// var n1=document.createElement("th");
+// var m1=document.createTextNode("Details are secured");
+// var mn=n1.append(m1);
+// var ap1=ele.append(mn);
+
+
+// var txt=document.createElement("td");
+// var te=document.createTextNode("All the datails");
+// txt.append(te)
+// var ck= ele.append(txt);
+// console.log(ck);
+
+
+  </script>
+   
+     <!--<form>
+         <div class="container">
+                     <div class="form-group">
+            
+            
+        <label for="name" class="control-label col-sm-8" style="background-color: blue;">Name</label>
+            <div class="row">
+            <div class="col-sm-8">
+             <input type="text" class="form-control">
+        </div></div></div>
+        <div class="form-group">
+            <label for="name" class="control-label">Email</label>
+            
+            <input type="email" class="form-control">
+        </div>
+        <div class="form-group">  
+            <label for="pwd" class="control-label">password</label>
+  
+            <input type="password" class="form-control" name="pwd" id="pwd">
+        </div>
+ 
+        </div>
+    </div>
+    </form>   
+    <script>
+         var name=document.getElementById("email");
+        var password=document.getElementById("pwd");
+        var c=document.getElementById("f");
+        var erroe=document.getElementById("error")
+        c.addEventListener("submit", funn1)
+        function funn1(e){
+            let message=[];
+            if(name.value=== '' || name.value===null){
+                message.push("Message is Required");
+
+                }
+                 if(password.value.trim().length <=6){
+                    message.push("nameMust be long")
+                }
+                 if(password.value.trim().length >=20){
+                    message.push("nameMust be  6 charachters below long")
+                }
+                if(message.length>0){
+                    e.preventDefault();
+                    erroe.innerText=message.join(',')
+ }
+ }
+                
+            
+
+    </script>   -->
+</body>
+</html>

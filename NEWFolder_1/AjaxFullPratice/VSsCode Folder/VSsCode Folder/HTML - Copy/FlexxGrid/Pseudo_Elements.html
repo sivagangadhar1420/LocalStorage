@@ -1,0 +1,438 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Document</title>
+    
+    <style>
+       
+        /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                        /* First-Letter */
+    /* p::first-letter{
+        background-color: blue;
+        color: crimson;
+        outline: 2px solid black;
+        font-size: 30px;
+        font-weight: bold;
+    }*/
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* ul li::first-letter{
+        background-color: blueviolet;
+        font-size: 40px;
+    } */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                /* First-Line */
+    /* p::first-line{ 
+background-color: crimson;
+font-size: 40px;
+font-weight: bold;
+    } */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+    
+                                                /* Marker */
+/* ul li::marker{
+    color:red;
+    font-size: 2rem;
+
+} */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                                /* Selection */
+/* p::selection{
+    color:red;
+    background-color:blue;
+
+} */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ::selection{
+    color: darkblue;
+    background-color: darkmagenta;
+} */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                            /* Cue */
+/* video::cue{
+    color: red;
+    background-color: darkblue;
+} */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                    /* PlaceHolder */
+    /* input::placeholder{
+        color: red;
+        background-color: darkolivegreen;
+    } */
+        /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                        /* Before */
+/* .c1::before{
+    content: "Hey flower";
+    color:crimson;
+    background-color: darkcyan;
+    display: block;
+} */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                    /* After */
+/* .c1::after{
+    content: "Hey flower";
+    color:crimson;
+    background-color: darkcyan;
+    display: block;
+} */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* .c1:hover::after{
+    content: "HeyWord";
+    background-color: darkcyan;
+    color: crimson;
+
+} */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                    /* AttributeFunction */
+
+                                                    /* li::after{ */
+                                                        /* content: attr(class); */
+                                                        /* p::after{
+                                                        content: attr(id) ;
+                                                        background-color: ivory;
+                                                        color: lawngreen;
+                                                        
+                                                    } */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+                                                    /* p:hover:after{
+                                                        content: attr(id) ;
+                                                        background-color: ivory;
+                                                        color: lawngreen;
+                                                        
+                                                    } */
+      /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                        /* Counter  Increements*/
+
+                                                        /* body{
+                                                            margin: 0px;
+                                                            counter-reset: my-counter 0;
+                                                        }
+                                                        h2::before{ */
+                                                            /* content: "Chapter " counter(my-counter) " : "; */
+                                                                                            /* content: " Chapter " counter(my-counter, lower-alpha) " : ";  lower-roman,upper-roman*/
+                                                                                                /* content: " Chapter " counter(my-counter, upper-alpha) " : "; */
+                                                            /* counter-increment: my-counter 1; */
+                                                            /* color: lawngreen;
+                                                                                                 content: counter(my-counter, upper-roman) lower-roman;
+                                                            background-color: crimson;
+                                                            padding: 5px;
+                                                            display: inline-block;
+                                                            margin: 10px;
+                                                        } */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+                                     /* body{
+                                        margin: 0px;
+                                        counter-reset: section ;
+                                       
+                                    }
+                                    h1{
+                                        counter-reset: sub-section;
+                                        color: darkgoldenrod;
+                                    }
+                                    h1::before{
+                                        content: " sections " counter(section) " : " ;
+                                        counter-increment: section 1;
+                                        color: red;
+                                    }
+                                    h2{
+                                        color: darkorchid;
+                                    }
+                                   
+                                    h2::before{
+                                        content: counter(section) "   .  "  counter(sub-section)  " : ";
+                                        counter-increment: sub-section 1;
+                                        color: darkblue;
+                                    }
+                                      */
+     /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                            /* Caret_color */
+                                                            /* input[type]{
+                                                                /* caret-color: darkred; */
+                                                                /* caret-color: transparent; */
+                                                            /* }  */
+     /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                        /* CssFontAwesomeIcons */
+                                                       
+                                                        /* i{ */
+                                                            /* border-radius: 50%; */
+                                                            /* background-color: turquoise;
+                                                            padding: 10px; */
+
+                                                        /* } */
+ 
+                                                        /* p:target{
+                                                            background-color: yellowgreen;
+                                                        } 
+                                                        button{
+                                                            padding: 0px ;
+                                                            font-size: 30px;
+                                                            border: 0px;
+                                                        } */
+
+
+                                                        /* nav{
+                                                            background-color: blue;
+                                                            align-items: right;
+                                                            height: 50px;
+                                                            
+                                                 }
+                                                      
+                                                    
+                                                nav ul li {
+                                                       display:inline;
+                                                       text-transform: uppercase; */
+                                                       /* float: right; */
+                                                    
+                                                   /* } */
+                                                /* .nav-links{ */
+                                                            /* color:teal; */
+                                                            /* display: inline; */
+                                                            /* float: right;
+                                                            padding:5px;
+                                                    
+                                                            margin: 10px;
+
+                                                            background-color: tomato;
+                                                            list-style-type: none;
+                                                            cursor: pointer;
+                                                                     }
+                                                            
+                                                    
+                                                        a{
+                                                            text-decoration: none;
+                                                        }
+                                                       li .logo{
+                                                            padding: 2px;
+                                                            
+                                                            background-color: yellow;
+                                                            font-size: 30px;
+                                                        }
+                                                        nav .checkbtn{
+                                                        
+                                                
+                                                            background-color: tomato;
+                                                        } */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                        /* ScrollBar */
+                                                        /* .sb{
+                                                            width:100px;
+                                                            height: 400px;
+                                                            overflow: auto;
+                                                        }
+                                                        .sb::-webkit-scrollbar{
+                                                            width: 10px;
+                                                            overflow-y: scroll; */
+                                                            /* background-color: blue; */
+                                                         /* } */
+                                                        /*.sb::-webkit-scrollbar-button{
+                                                            background-color: brown;
+                                                            width: 15px;
+                                                            height: 15px;
+                                                        } */
+                                                        /* .sb::-webkit-scrollbar-thumb{
+                                                            width: 10px;
+                                                            height: 10px;
+                                                            background-color: chartreuse;
+                                                            border-radius: 20%;
+                                                        }
+                                                        .sb::-webkit-scrollbar-track{
+                                                            background-color: chocolate;
+                                                            box-shadow: inset 0 0 5px crimson;
+                                                        }
+                                                        .sb::-webkit-scrollbar-corner{
+                                                            background-color: salmon;
+                                                        }
+                                                        */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                                /* FlowRoot */
+                                                                /* .parent{
+                                                                    
+                                                                    width: 500px;
+                                                                    border: 2px solid red;
+                                                                   display: flow-root;
+                                                                }
+                                                                .child{
+                                                                    background-color: darkblue;
+                                                                    height: 250px;
+                                                                    width: 150px;
+                                                                }
+                                                                        */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+                                                       
+
+                                  </style>
+
+
+                                                        
+            
+            
+        </head>
+        <body>
+    
+        
+                   
+
+                                                                                <!-- <button type="button" >
+                                                                                        <span class="navbar-toggler-icon"></span>   
+                                                                                </button> 
+                
+                                                             <i class="fa fa-bars"></i> -->
+               <div class="parent">
+<div class="child"></div>
+
+               </div>
+              <div class="sb">            
+            <hr>
+          <a href="#tar1"><i class='fa fa-arrow-up'></i></a>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <i class="fa fa-adjust"  aria-valuemax="100%" aria-valuemin="80%" aria-hidden="true"></i>
+         <button> <i class="fa fa-bars" aria-hidden="true"></i> </button>
+          
+            
+            <input type="text">
+            <span class="caret"></span>
+            <input type="number">
+            <h1>Language</h1>
+            <h2>HtmlCss</h2> <h2>HtmlCss</h2> <h2>HtmlCss</h2>
+            <hr>
+            <h1>Language</h1>
+            <h2>HtmlCss</h2> <h2>HtmlCss</h2> <h2>HtmlCss</h2>
+            <hr>
+            <h1>Language</h1>
+            <h2>HtmlCss</h2> <h2>HtmlCss</h2> <h2>HtmlCss</h2>
+            <hr> -->
+
+     <h1>CounterIncrements:::</h1>
+            <h2>Lorem ipsum dolor sit amet.1</h2>
+            <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+               illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+               <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+               illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+
+               <h2>Lorem ipsum dolor sit amet.2</h2>
+            <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+               illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+
+               <h2>Lorem ipsum dolor sit amet.3</h2>
+            <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+               illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+
+               <h2>Lorem ipsum dolor sit amet.4</h2>
+            <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+               illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p></div>  
+<!-- 
+
+    <input type="text" placeholder="HeyDear">
+                <ul class="list">
+                    <li>Apple</li>
+                <li class="l1">Pineapple</li>
+                <li>Lorem</li>
+                </ul>
+                   
+        <video width="500px" height="500px" controls>
+               <source src="c25355fb3ac2b09d3ae36b091768ca60.mp4" type="video">  </video> -->
+ -->
+                <!-- <video width="320" height="240" controls>
+                    <source src="c25355fb3ac2b09d3ae36b091768ca60.mp4" type="video/mp4">
+ 
+                  </video> 
+
+            
+                  
+            <p id="demo">TThe Initial character</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum 
+                veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                 impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+                illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impedit omnis cumque iure!</p>
+                <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                    impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+                   illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+                   <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                    impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+                   illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+                   <p>  veritatis ea ex? Est quo deleniti nam, expedita tempora vel voluptate, dicta voluptatum tenetur
+                    impedit sunt veniam illum animi. Consequatur, accusamus odit. Facere, saepe laborum placeat voluptas fugit 
+                   illo odio quia, eveniet perspiciatis maiores eligendi dicta porro impe</p>
+                   <h1 class="c1">The Lotus pond of the tree in sooooooo</h1>
+            
+             <p id="tar1">The component text</p>
+                  
+                  
+           
+
+       
+       
+       
+       
+       
+       
+       
+ </body>
+        </html>
+       
+       <!-- <script>
+            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+             
+               //     Math.min() 
+               // function myFunction() {
+               //   var a = Math.min(5, 10);
+               //   var b = Math.min(0, 150, 30, 20, 38);
+               //   var c = Math.min(-5, 10);
+               //   var d = Math.min(-5, -10);
+               //   var e = Math.min(1.5, 2.5);
+               
+               //   var x = a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e;
+               //   document.getElementById("demo").innerHTML = x;
+   
+               // }
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+               // Min and  Max
+   //             var a=[1,2,3,4,5,67];
+   //             var d=a.reduce(funn1)
+   // function funn1(a,b){
+   //     return (b > a) ? b : a ;
+   // }    
+   // console.log(d)
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+   //  var a=[1,2,3,4,5,67,68];
+   //  var b=a.reverse();
+   // for(var i=0;i<b.length; i++){
+   //     if(b[i] > 40){
+   //         console.log(b[i])
+   //     }
+   // }  
+   // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//    var a=[1,2,3,4,5,67,68];
+//    var sum=0;
+//    var l=a.forEach((b)=>{
+//     sum += b;
+//    })
+//    console.log(sum);
+  // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                            // MaxAnd Min
+//   var a=[1,2,3,4,5,67,68];
+//   var m=a.reduce((a,b)=>  b > a ? b : a);
+//   console.log(m)
+ // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  
+
+   
+           
+           </script>
+            -->
+        
+    
+  
+    

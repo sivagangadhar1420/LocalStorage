@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+
+        }
+     ul{
+         background-color: cyan;
+            list-style-type: none;
+            padding: 20px;
+            /* display: flex; */
+
+            
+
+        }
+       ul li{
+            color: crimson;
+            margin: 15px;
+            display: flex;
+
+         
+
+        }
+         li label{
+            flex: 0.5;
+            flex-shrink: 1;
+            
+        }
+         li input{
+            flex:4;
+            flex-shrink: 1;
+            /* justify-content: flex-end; */
+        }
+        
+    li{
+       display:flex;
+       /* flex-grow: 0; */
+        justify-content: flex-end;
+        font-size: 20px;
+
+        }
+li .btn{
+    background-color: darkgoldenrod;
+    padding: 10px;
+}
+      
+       
+        @media(max-width:700px) and (min-width: 200px){
+        li label{
+                display: flex;
+                /* flex-wrap: wrap; */
+                flex-basis: 100%;  
+                flex-direction: column; 
+            }
+            ul li{
+                flex-basis: 100%;
+                flex-direction: column
+                /* flex-wrap: wrap; */
+            }
+         li button{
+                flex-basis: 100%;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+            <div class="form">
+        <ul class="wrapperform">
+            <li class="list1">
+            <label for="name">Name:</label>
+        <input type="text" name="name" id="name">   
+        </li>
+            
+            <li class="list2">
+                
+            <label for="secondname">claasName:</label>
+            <input type="text" name="secondname" id="secondname">   
+            </li>
+            <li class="list3">
+                
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">   
+            </li>
+            <li> <button type="submit" class="btn" style="justify-content: flex-end;">HitMe</button> </li>
+           
+        </ul>
+         </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 6rem;
+            width: 100%;
+            background-color: crimson;  
+            /* display: flex;     */
+             } 
+        div.logo a{
+                /* display: flex; */
+                font-size: 2rem;
+                font-weight: bold;
+                color: darkblue;
+                text-decoration: none;
+                /* line-height: 1rem; */
+                margin-top: 35px;
+               
+                margin-left: 8rem;
+                position: absolute;
+            }
+          
+            nav ul {
+                /* display: flex; */
+                float: right;
+                /* align-items: flex-end; */
+                margin-top: 35px;
+                list-style-type: none;
+                position:relative;
+                margin-right: 20px;
+         }
+            nav ul li {
+    
+               
+                margin: 0px 5px;
+               padding: 5px;
+                background-color:blue;
+                display: inline;
+                    color: greenyellow;
+                    border-radius: 33px;
+                    }
+                li a{
+                    text-decoration: none;
+                    text-transform: uppercase; 
+                    border: 0px solid gray;
+                    font-size: 20px;
+        
+                }
+                a.active, a:hover{
+                    /* background-color: chartreuse; */
+                    transition: 1s ;
+                    cursor: pointer;
+                    color: greenyellow;
+                } 
+                .checkbutton{
+                    font-size: 30px;
+                    float: right;
+                    position: relative;
+                    margin-top: 32px;
+                    margin-right: 10px;
+                    display: none;
+
+                }   
+
+                
+             .check{
+                 margin-top: 13px;
+                 display: none;
+                 /* font-size: 30px; */
+                 /* height: 40px;
+                 width: 50px; */
+                 
+                 
+                 }
+                 /* @media(max-width: 890px){
+                     
+                     #check ,label.checkbutton{
+                         display: none;
+
+                     }
+                     }
+                 @media(max-width: 762px){
+                    .navbar ul{
+                         display: none;
+                         position: absolute;
+                     }
+                    label.checkbutton{
+                         display: block;
+                     }
+                     .navbar ul
+                     {
+                         font-size: 20px;
+                         position: fixed;
+                         width: 100%;
+                         height: 100vh;
+                         background-color: greenyellow;
+                         top:80px;
+                         margin-left:300px;
+                         text-align: center;   
+                         transition: all .5s;                  }
+                 }
+                 nav ul li {
+                     display: block;
+                     background-color: hotpink;
+                              
+                              }
+                              nav ul li a{
+                                  font-size: 20px;
+                              }
+                              a:hover, a:active{
+                                  background: none;
+                                  color:greenyellow;
+                              }
+                              .check:checked ~ ul{
+                                  left:0
+                              }
+             */
+
+            </style>
+</head>
+<body>
+    <nav class="navbar">
+        <input type="checkbox" class="check">
+        <label for="check" class="checkbutton"><i class="fas fa-bars" ></i></label>
+        <div class="logo"><a href="#">BrandLogo</a></div>
+        <ul>
+            <li><a href="#" class="active">Checking</a></li>
+            
+            <li><a href="#" >@Home</a></li>
+            <li><a href="#">!Settings</a></li>
+            
+            <li><a href="#" >#About</a></li>
+            
+
+        </ul>
+    </nav>
+    
+</body>
+</html>

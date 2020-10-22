@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="cnt">
+    <div class="d1" id="d11">
+    
+    </div>
+    </div>
+
+
+<script>
+let ce=document.createElement('div');
+ce.setAttribute('class', 'delm');
+ce.setAttribute('id', 'elm')
+ce.setAttribute('style', 'height:15rem; width:20rem; border:2px solid red; text-align:center; line-height:14rem');
+let ct=document.createTextNode("My editable Div");
+ce.append(ct);
+document.body.append(ce);
+let lsgi=localStorage.getItem("DivEdit");
+let tem;
+if(lsgi == null){
+    tem += document.createTextNode('This Is Editable Div');
+
+}
+else{
+    tem += document.createTextNode(lsgi);
+}
+let cnt=document.getElementsByClassName('container')[0];
+let dt=document.getElementsByClassName('d1')[0];
+cnt.insertBefore(ce, dt);   
+// console.log(ce,cnt, dt );
+ce.addEventListener('click', function(){
+    let ta=document.getElementsByClassName('textarea').length;
+    if(ta == 0){
+    let html=elm.innerHTML;
+    ce.innerHTML = `<textarea class="textarea form-control" id="textarea" cols="20"  rows="10" style="border:dotted 3px red">${html}</textarea>`;
+}
+let ta1=document.getElementById('textarea');
+ta1.addEventListener('blur', function(){
+    ce.innerHTML= ta1.value;
+    localStorage.setItem("DivEdit", ta1.value);
+});
+
+});
+
+
+
+
+
+// let dv=document.getElementsByClassName('d1')[0];
+// dv.setAttribute('style', 'border:2px solid red; height:20em; width:25em');
+// dv.addEventListener('click', funn1);
+// function funn1(){
+
+//     dv.innerHTML=`<textarea class="textarea" rows="10" cols="50" style="margin:5rem;color:black; border:2px dotted blue; margin-left:1rem" ></textarea>`;
+// }
+// dv.removeEventListener('click', funn1);
+
+
+
+
+            
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                            // Math methods
+//     var a=123.12;
+//     console.log(Math.random(a)+1);
+//     var a1=10;
+//     var a2=20;
+//   var a3= eval(a1)+eval(a2);
+//     console.log(a3);
+//     var b1=Math;
+//     console.log(b1);
+//     var b2= -2.6;
+
+//     console.log(Math.round(b2));
+//     console.log(Math.abs(64));
+//     console.log(Math.pow(8, 3));
+//     console.log(Math.min(1,2,3,32,43,-1,-2));
+//   var r1=1011;
+//   var r2=2022;
+//   var r3="1,2,3,4,5";
+//   console.log(Math.floor(Math.random() * (r1 + r2))+ r2);
+    // console.log(Math.floor(m1))
+    // console.log(Math.floor(-2.2));
+    // console.log(Math.ceil(-2.2));
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    // Generating OTP
+
+    // let a="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    // let len=a.length;
+    // let ab="";
+    // for(var i=0; i<=5; i++){
+    //     ab += a[Math.floor(Math.random() * len)];
+    // }
+    // console.log(ab);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // let a="0123456789";
+    // let aa=a.length;
+    // let abc="";
+    // for(var i=0; i<=5; i++){
+    //     abc += a[Math.floor(Math.random() * aa)]
+    // }
+    // console.log(abc);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // let b="abcdefghijklmnopqrstuvwxyz";
+    //   let bb=b.length;
+    //   let d="";
+
+    // for(var i=0; i<=5; i++){
+    //     d += b[Math.floor(Math.random() * bb)];
+    // }
+    // console.log(d);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                        // DateMethods
+        // let a=new Date();
+        // a= new Date('04-11-2020');
+        // a=new Date('nov 02 1996');
+        // a=new Date('jan/13/1997');
+    //    let b=a.getDay();
+    //    b=a.getDate();
+    //    b=a.getFullYear();
+        // console.log(a);
+        // console.log(b)
+        // let c=new Date("jan/11/1997").toLocaleTimeString();
+        // console.log(c);
+    //    var d=new Date('apr/22/2020');
+    //    var d1=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sataurday"];
+
+    //     console.log(d1[d.getDay()]);
+    // a.setDate(20);
+    // console.log(a);
+    // a.setDate(20);
+    // a.getDate()
+    // console.log(a);
+                                                            // GetMethods
+    // var a=new Date();
+    // console.log(a.getDate())   getDay, getYear, getFullYear, getSeconds, ..getMilliseconds
+                                                                        // Set Methods
+    // var a=new Date();
+    // a.setDate(22);
+    // console.log(a)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+       
+       
+
+</script>
+</body>
+</html>

@@ -1,0 +1,722 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myTable, th,td{
+            border: 2px solid red;
+            border-collapse: collapse;
+            cursor: pointer;
+        }
+        table tr :not(:first-child){
+            cursor: pointer;
+            transition: all .25s ease-in-out;
+          
+         }
+        table tr:not(:first-child):hover {
+            background-color:pink;
+        }
+       
+    </style>
+    <script>
+        //Table creation  Edit ADDing Deleteing selecting  ULLISt (Creating DEleting) (Deleting selected element and editing some doubts)
+        //Remaining that i should learn topics are Link between two tables data and Data moving up and down 
+    </script>
+</head>
+<body>
+    <table id="f1"></table>
+    <button onclick="funn1()"> ClickMe</button>
+
+ <!--   
+    <input type="text" id="inp"><br><br>
+    <input type="password" id="pwd">
+    <button onclick="Txt()">ClickMe</button><br><br>
+    <button type="button" onclick="myFunction()">ADD</button>
+<button onclick="editRow()">Edit</button>
+
+
+<button type="button" onclick="deleteFunction()">DElete</button>
+
+   
+    <table id="myTable">
+        <tr>
+        <th>Name</th>
+        <th>Password</th><th>DeletedElements</th></tr>
+        <tr><td>Lahore</td>
+            <td>Pakistan</td>
+            <td>Remove</td>
+            </tr>
+            <tr><td>Country</td>
+                <td>Country1</td>
+                <td>Remove</td>
+                </tr>
+                <tr><td>City</td>
+                    <td>city1</td>
+                    <td>Remove</td>
+                    </tr>
+            
+
+    
+ </table><br><br><br>   -->
+
+<script>
+
+//var rIndex=this.rowIndex; // (UNecessary)
+
+     /*   var tab=document.getElementById("myTable");
+        var p1=document.getElementById("inp").value;
+        var p2=document.getElementById("pwd").value;
+        var rIndex;
+        
+    function Txt(){
+        var p1=document.getElementById("inp").value;
+        var p2=document.getElementById("pwd").value;
+
+    //  var t=document.getElementById("myTable");
+        var tab = document.getElementById("myTable");
+ var row = tab.insertRow(tab.rows.length);             // tab.insertRow(0)-top; tab.row.length -Ending of table; tab.rows.length/2;(Counting From 0 to second position)
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3=row.insertCell(2);
+  cell1.innerHTML = p1;
+  cell2.innerHTML = p2;
+  cell3.innerHTML="REmove"
+}
+function myFunction(){
+    var p1=document.getElementById("inp").value;
+        var p2=document.getElementById("pwd").value;
+        var p1=document.getElementById("inp").value;
+        var p2=document.getElementById("pwd").value;
+
+        var t=document.getElementById("myTable");
+        var tab = document.getElementById("myTable");
+        var row = tab.insertRow(tab.rows.length)//(length-1)  //(length)  //(1)   //(tab.length-2)//(tab.rows.length/2);// tab.insertRow(0)-top; tab.row.length -Ending of table; tab.rows.length/2;(Counting From 0 to second position)
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3=row.insertCell(2)
+  cell1.innerHTML = p1; //"Text like Shilku";
+  cell2.innerHTML = p2;
+  cell3.innerHTML="REmove"    //" Vidhwan";
+    }   
+  
+
+
+//SelectFunction
+function selectedFunction(){
+var table=document.getElementById("myTable");
+for(var i=1; i<table.rows.length; i++){
+table.rows[i].onclick=function(){ 
+//rIndex=this.rowIndex;
+ //console.log(rIndex)// alert(rIndex);
+ //cIndex=this.cellIndex;
+// console.log(cIndex)// alert(rIndex);
+
+    document.getElementById("inp").value=this.cells[0].innerHTML;
+     document.getElementById("pwd").value=this.cells[1].innerHTML;
+//    // document.getElementById("pwd").value=this.cells[2].innerHTML;
+};
+}
+}
+selectedFunction();
+
+
+
+//EditFunction
+
+ function editRow(){
+                              // var index=this.rowIndex;
+                           //    var cindex=this.cellIndex;
+        //Current Index 
+        // var rIndex=this.rowIndex;
+        //var cIndex=this.cellIndex;
+    //    var rIndex=this.parentElement.rowIndex;
+//   console.log(rIndex);
+
+    var tab=document.getElementById("myTable"); 
+/*   UsingForLoop
+for(var i=1;i<tab.rows.length; i++){
+    tab.rows[i].onclick=function(){
+    tab.rows[2].cells[0].innerHTML=document.getElementById("inp").value;
+    }
+}    
+
+tab.rows[2].cells[0].innerHTML=document.getElementById("inp").value;
+tab.rows[2].cells[1].innerHTML=document.getElementById("pwd").value;
+
+//tab.rows[rIndex].cells[0].innerHTML=document.getElementById("inp").value;
+
+}
+
+
+                                        //var si=this.ParentNode.rowIndex;
+
+                                        /*var cells= document.getElementsByTagName("td");
+                                            for (var x = 0; x<cells.length; x++)
+                                            {
+                                                cells[x].onclick=function () { 
+                                                var col = this.cellIndex;
+                                                var row = this.ParentNode.rowIndex;
+                                            // alert (row);
+                                                var info1=document.getElementById("coordinates");
+                                                var row = this.ParentNode.rowIndex;
+                                                info1.innerHTML="\"" + row +"\""; 
+                                                };
+                                            }
+                                        //    //console.log(r)      //(UNecessary)
+                                        //   var edt=document.getElementById("inp").value;
+                                        //     var edn=document.getElementById("pwd").value;
+                                        // var table=document.getElementById("myTable");
+                                        // table.rows[si].cells[0].innerHTML=edt;
+
+
+                                        }
+                                        
+
+//Deleting Selected Elemnt
+var table=document.getElementById("myTable");
+function cutting(){
+    for(var i=1;i<table.rows.length;i++){
+        table.rows[i].cells[2].onclick=function(){
+            var index=this.parentNode.rowIndex;   //parentElement.rowIndex ; 
+                table.deleteRow(index);
+        }
+    }
+}
+cutting()
+
+
+function deleteFunction(){
+    var t=document.getElementById("myTable");
+     document.getElementById("myTable").deleteRow(1);
+  //  document.getElementById("myTable").deleteRow(length-1);
+    // t.deleteRow(length-1);  deleteCell(0)  deleteRow(1)....
+}     */
+
+
+
+
+
+ //Creating table 
+ 
+ //CreatingHeader
+ 
+ /*   var tab = document.getElementById("f1");
+ var row=tab.insertRow(0);
+ var c1=row.insertCell(0);
+var c2=row.insertCell(1)
+var head=tab.createTHead();
+ c1.innerHTML = "<b>This is a table header</b>";
+ c2.innerHTML="<b>SecondHead</b>"
+
+  
+ function funn1(){
+var row = tab.insertRow(tab.rows.length);// tab.insertRow(0)-top; tab.row.length -Ending of table; tab.rows.length/2;(Counting From 0 to second position)
+ var cell1 = row.insertCell(0);
+ var cell2 = row.insertCell(1);
+ cell1.innerHTML = "NEW CELL1";  
+ cell2.innerHTML = "NEW CELL2";      
+}
+
+  
+// var cr="<th>HEADER</th>";
+//   table.insertAdjacentHTML("afterbegin", cr);   */
+
+
+
+
+</script> 
+  
+   <input type="text" id="inp">
+<button onclick="funn1()">Adding</button>
+<button onclick="editFunn1()">Editting</button>
+<button onclick="removeFunction()">Delete</button> 
+<button onclick="removeSelectFunction()">DeleteSelect</button> 
+
+<button  id="btn" disabled>Disabled</button> 
+<button id="btnn" >SECondButton</button> 
+<ul id="myList">
+    <li>Water</li> 
+     <li>Beer</li>  
+     <li>Rum</li>  <li>Appy</li> 
+      <li>Whisky</li>  <li>Wine</li>
+</ul>
+<script>
+  
+//     var btn = document.getElementById("btn");//.disabled=false;  //.disabled=true;
+//    setTimeout(function(){
+//    btn.disabled=false;
+//     },3000);
+
+
+// //Enabled and Disabled Buttons
+//      var bt = document.getElementById("btnn");  //disabled;
+// bt.onclick = function() {
+//     bt.disabled = true; // disable button
+//     bt.onclick=setTimeout(function(){
+//        bt.disabled = false; // enable button
+//     }, 2000 /* 2 sec */); 
+// }; // Warning: this will replace existing onclick event
+
+
+ 
+
+
+    //Creating ULLIST using INPUT
+   // var m=document.getElementById("inp").setAttribute("class", "list1");
+   // document.getElementsByClassName("list1")[0].style.backgroundColor="red";
+    //console.log(m)
+
+    //SelectFunction    
+
+    var ip=document.getElementById("inp"),  n=[],  x=document.querySelectorAll("#myList li");
+    for(i=0;i<x.length;i++){
+        var z=x[i].innerHTML;
+        n.push(z);
+
+      
+    }
+    for(var i=0; i<x.length; i++){
+        x[i].onclick=function(){
+            var index=n.indexOf(this.innerHTML);
+            console.log( this.innerHTML+ " IS " + index);
+            ip.value=this.innerHTML;
+        }
+    }
+
+
+//Adding 
+    function funn1(){
+    var tab=document.getElementById("myList");
+     var ip=document.getElementById("inp").value;
+    var c2=document.createElement("LI");
+        var t=document.createTextNode(ip);
+        c2.append(t);
+        tab.append(c2);
+    }
+
+      //  Adding list 2
+//         var i=document.getElementById("inp").value;
+//         var u=document.createElement("ul");
+//         u.setAttribute("id", "myList2")
+
+//         var u1=document.createElement("li");
+//         var u2=document.createTextNode(i);
+//         u1.append(u2);
+//         u.append(u1);
+//         document.body.append(u);  
+          
+// } 
+
+
+
+//  //Deleting Elements from top to bottom
+function removeFunction(){
+ var x=document.getElementById("myList");
+ //  var reem=x.removeChild(x.lastElementChild);  //Removing FirstElement
+ var rem=x.removeChild(x.firstElementChild)  //RemovingLastElement
+//var del=x.removeChild(x.children[3]);    //Removing from selectingElment
+   // x.parentElement.removeChild(x);  //REmoving Total Table
+
+}
+
+//Removing Selected List
+
+function removeSelectFunction(){
+// var z=document.querySelectorAll("#myList li");
+// var index=n.indexOf(this.innerHTML);
+ 
+var ip=document.getElementById("inp"),  n=[],  x=document.querySelectorAll("#myList li");
+    for(i=0;i<x.length;i++){
+        var z=x[i].innerHTML;
+        n.push(z);
+            }
+        for(var i=0; i<x.length; i++){
+        x[i].onclick=function(){
+           var index=n.indexOf(this.innerHTML);
+            x[index].parentNode.removeChild(x[index]);
+            console.log( this.innerHTML+ " IS " + index);
+            ip.value=this.innerHTML;
+          // ip.value="";  //"Deleted";
+}
+    }
+    // z.removeChild(z.children[0])  /Removing Element that which consists of o position
+}
+
+//EditFunction
+function editFunn1(){
+var li=document.querySelectorAll("#myList li");
+var v=document.getElementById("inp").value;
+li.innerHTML=v;
+
+
+}
+//     var arr=[];
+//      var z=document.querySelectorAll("#myList li");
+//     var p=arr.push(z)
+
+//    // console.log(arr)
+//      //console.log(z)
+//     arr.splice(this.innerHTML);
+//      console.log(arr)
+   
+    
+
+
+
+     
+
+
+    //var n=[];
+    //var index=n.indexOf(this.innerHTML);
+    
+    //var x=document.querySelectorAll("#myList li")[0];
+   // var x=document.getElementById("myList");
+    //x.remove(x.selectedIndex);
+    
+   // }
+    
+    
+
+</script>
+
+
+ 
+<script>    
+//Creating UL LIST using forloop  and ForEach
+  /*  var test=document.createElement('section');
+test.setAttribute('id','test');
+var ul=document.createElement('ul');
+document.body.appendChild(test);
+test.appendChild(ul);
+var array=["Kamal", "rocky", "nithya"];  */
+
+// for (var i=0; i<array.length; i++){
+// var li=document.createElement('li');
+// li.innerHTML=array[i];
+// ul.appendChild(li);
+ //   } 
+ 
+// ArraowFunctions
+// array.forEach((element) =>{
+//  console.log(element)
+//  });
+//  array.forEach((element) =>
+//  console.log(element)
+//  );
+
+//  array.forEach(element =>{
+//  console.log(element)
+//  });
+//FoeEach
+// array.forEach(funn1);
+//   function funn1(element){
+//      var li=document.createElement('li');
+//     li.innerHTML=element;
+//     ul.appendChild(li);
+//  }
+ 
+
+
+/*   using Prompt
+var ul=document.createElement("ul");
+  document.body.append(ul) ;
+var text=[]
+  for(var i=0; i<=5; i++){
+var li=document.createElement("li");
+var pr=prompt("Enter UR List");
+li.innerHTML=pr;
+li.append(pr);
+ul.append(li);
+text.push[ul]
+} 
+
+<div id="twitter_status"></div>
+    <script type='text/javascript'>
+    <!--  w ww  .ja  v  a 2  s.  c  om-->
+    var ul=document.createElement('ul');
+    for(i=0;i<5;i++)
+    {
+        var li=document.createElement('li');
+        li.innerHTML="<a href=''>Somelink</a>"+" "+"Sometext";
+        ul.appendChild(li);
+    }
+    document.getElementById('twitter_status').appendChild(ul);
+    
+*/
+
+//Deleting
+
+// function deleteFunction(){
+//     var ar=[];
+    
+// var list=document.getElementById("myList");
+// ar.push(list)
+// list.slice(2,4);
+
+
+// var s=list.children[0];
+// list.removeChild(s);
+
+// var a=document.getElementById("list");
+//  var del=a.children[1];
+//  a.removeChild(del);
+
+//}
+
+
+  
+
+ 
+</script>
+<!-- 
+
+<table id="myTable">
+<input type="text" id="inp">
+<button onclick="listfunction()">ClickMe</button>
+
+    <ul id="myList">
+
+    </ul>
+    <button onclick="deleteFunction()"> Delete</button>
+
+</table> 
+
+
+<script>
+ 
+//Selected values Rows and columns in table show   
+//Ul LIst watch video whatsupApp(Create Delete Edit);
+var c2=document.getElementById("inp").value;
+var x=document.getElementById("myList");
+function listfunction(){
+    var c2=document.getElementById("inp").value;
+    var x=document.getElementById("myList");
+var c1=document.createElement("li");
+var c3=document.createTextNode(c2);
+c1.append(c3);
+var d=x.append(c1) 
+}
+
+// var ar=["CAr","Model"];
+// // ar.push("Bike");
+// // console.log(ar)
+// //var arr=new Array();
+// var a=["Vinni"];
+// a.push("String");
+// //a.pop()
+// console.log(a)
+// //p.pop();
+
+
+//DElete List Items
+
+function deleteFunction(){
+    var ar=[];
+    
+var list=document.getElementById("myList");
+ar.push(list)
+list.slice(2,4);
+
+
+// var s=list.children[0];
+// list.removeChild(s);
+
+// var a=document.getElementById("list");
+//  var del=a.children[1];
+//  a.removeChild(del);
+
+}
+
+// var funn1=(a,b)=>
+//     a+b;
+// console.log(funn1(10,20));
+
+
+
+
+
+//Selected ROWS  (rowIndex cellIndex)
+
+//RowIndex
+
+// <table>
+//     <tr onclick="myFunction(this)">
+//       <td>Click to show rowIndex</td>
+//     </tr>
+//     <tr onclick="myFunction(this)">
+//       <td>Click to show rowIndex</td>
+//     </tr>
+//     <tr onclick="myFunction(this)">
+//       <td>Click to show rowIndex</td>
+//     </tr>
+//   </table>  
+  
+  
+//   function myFunction(x) {
+//     alert("Row index is: " + x.rowIndex);
+//   }  
+
+//  
+
+  
+//
+// <table>
+//   <tr>
+//     <td>Row 1</td>
+//   </tr>
+//   <tr>
+//     <td>Row 2</td>
+//   </tr>
+//   <tr>
+//     <td>Row 3</td>
+//   </tr>
+// </table>
+
+// <p>Click the button to return the position of each row in the table.</p>
+
+// <p id="demo"></p>
+
+// <button onclick="myFunction()">Try it</button>
+
+// <script>
+
+    //CellIndex
+
+// function myFunction() {
+//   var x = document.getElementsByTagName("tr");
+//   var txt = "";
+//   var i;
+//   for (i = 0; i < x.length;i++) {
+//     txt = txt + "The index of Row "+(i+1)+" is: "+x[i].rowIndex+"<br>";
+//   }
+//   document.getElementById("demo").innerHTML =txt;
+// }
+// 
+
+//   <style>
+      
+// table, td {
+//   border: 1px solid black;
+// }
+// </style>
+
+
+// <table>
+//     <tr>
+//       <td onclick="myFunction(this)">Click to show cellIndex</td>
+//       <td onclick="myFunction(this)">Click to show cellIndex</td>
+//       <td onclick="myFunction(this)">Click to show cellIndex</td>
+//       <td onclick="myFunction(this)">Click to show cellIndex</td>
+//     </tr>
+//   </table>
+  
+//   
+//   function myFunction(x) {
+//     alert("Cell index is: " + x.cellIndex);
+//   } 
+
+<table>
+//     <tr>
+//       <td>Cell 1</td>
+//       <td>Cell 2</td>
+//       <td>Cell 3</td>
+//       <td>Cell 4</td>
+//     </tr>
+//   </table>
+  
+//   <p>Click the button to return the position of each cell in the table row.</p>
+  
+//   <p id="demo"></p>
+  
+//   <button onclick="myFunction()">Try it</button>
+  
+//   <script>
+//   function myFunction() {
+//     var x = document.getElementsByTagName("td");
+//     var txt = "";
+//     var i;
+//     for (i = 0; i < x.length; i++) {
+//       txt = txt + "The index of Cell " + (i + 1) + " is: " + x[i].cellIndex + "<br>";
+//     }
+//     document.getElementById("demo").innerHTML = txt;
+//   }
+//   
+
+
+
+
+
+ //CreatingTableHead
+ function myFunction() {
+  var table = document.getElementById("myTable");
+  var header = table.createTHead();
+   var row = table.insertRow(0);
+   var cell = row.insertCell(0);
+   var cell1 = row.insertCell(1);
+   cell.innerHTML = "<b>This is a table header</b>";
+   cell1.innerHTML = "<b>This is a table header</b>";
+}
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+//changing All Text elements
+var elm=docume.querrySelectorAll('p');
+elm.forEach((p)=>{
+    p.textContent="I am changed"
+})
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//RemoveAllelements
+var elm=docume.querrySelectorAll('p');
+elm.forEach((p)=>{
+    p.remove();
+})
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  
+//Toogle
+<button onclick="myFunction()">ClickMe</button>
+<p id="myDIV" style="background-color: blue; height: 300px; width: 400px;">The Content</p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+  
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>  
+//Hide
+<button onclick="myFunction()">ClickMe</button>
+<p id="myDIV" style="background-color: blue; height: 300px; width: 400px;">The Content</p>
+<script>
+    function myFunction(){
+        document.getElementById("myDIV").style.display="none"
+    }
+</script>  
+
+//Hidding content Showing
+
+<button onclick="myFunction()">ClickMe</button>
+<p id="myDIV" style="background-color: blue; height: 300px; width: 400px;  visibility: hidden;">The Content</p>
+<script>
+    function myFunction(){
+        var s=document.getElementById("myDIV");
+        if(s.style.display === ""){
+            document.getElementById("myDIV").style.visibility="visible";
+            
+    }
+    } 
+</script>     -->
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

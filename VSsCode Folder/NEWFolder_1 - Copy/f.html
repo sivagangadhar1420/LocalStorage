@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      /*   function funn1(){
+        var x=document.getElementById("i").value;
+        document.getElementById("sp").innerHTML=x;
+        }
+  */
+    </script>
+    <style>
+        table, th,td{
+            border: 1px solid red;
+            border-collapse: collapse;
+            position: relative;
+            
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+       <b> Name:</b><input type="text" id="inp">
+        <label id="lb1">  </label><br><br><br>
+      <b>UserName:</b><input type="number" id="num1">
+        <label id="n"></label><br><br><br>
+ <button type="button" id="btn">ClickMe</button><br><br><br>
+ <table id="tab1" cellpadding="35" cellspacing="8" style="height: 100px; width:100px">
+     <tr><th>Name:</th>
+        <th>Number:</th>
+    </tr>
+     
+     <tr><td id="2">MobileNumber</td>
+        <td id="1">UserName</td></tr>
+ </table>
+ 
+    </form>
+    <script>
+       var b= document.getElementById("btn").addEventListener("click", ()=>{
+           var ip=document.getElementById("inp").value;
+           var zp=document.getElementById("num1").value;
+           if(ip ===''){
+               document.getElementById("lb1").innerHTML="U enteredd wrong details";
+return false;
+           }else{
+               var tab=document.getElementById("tab1");
+document.getElementById("lb1").innerHTML="ValidOne";
+document.getElementById("1").innerHTML=ip;
+  }
+
+  if(zp ===''){
+               document.getElementById("n").innerHTML="U enteredd wrong details";
+return false;
+           }else{
+               var tab=document.getElementById("tab1");
+document.getElementById("n").innerHTML="ValidOne";
+document.getElementById("2").innerHTML=zp;
+  }
+
+
+       })
+
+
+/*   var funn1=(a,b)=>
+a===100 || b===100 || a+b===100;
+      
+  console.log(funn1(10,100));
+
+//   getExtenstion
+var funn2=(str)=>str.slice(str.lastIndexOf('.'));
+console.log(funn2('index.html'));
+
+var r=["char" ,"car"];
+var d=r.toString().replace("plane");
+console.log(d)   */
+
+
+    </script>
+
+
+
+  <!--  <p>Welcom to u r pag</p>
+    <table id="t">
+        <tr></tr>
+     </table>
+     
+     
+     
+     <input type="text" id="i">
+     <span id="sp"></span><br>
+     <button onclick="funn1()" >HitMe</button>
+  -->
+</body>
+</html>

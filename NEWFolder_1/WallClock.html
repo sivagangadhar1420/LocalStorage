@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button id="btn" onclick="funn2()">ClickMe</button>
+    <script>
+        // var st = setInterval(() => {
+            // var d = new Date();
+        //     var d1 = d.toLocaleTimeString();
+            // var d1=d.toLocaleString();
+            // var d1=d.toLocaleDateString()
+            // var d1=d.toTimeString();
+            // var d1=d.toTimeString()
+            // var d1=d.toUTCString()
+
+            // console.log(d1)
+            // var g = document.getElementById('demo');
+            // g.setAttribute('style', "font-size:30px; color:red; font-style:italic");
+            // var mg = g.innerHTML = d1;
+
+        // }, 1000);
+                                                    // clearIntrVal
+     //        function funn2() {
+    //        clearInterval(st);
+    //         }
+    //        funn2()
+    
+    var si=setInterval(()=>{
+    var nd=new Date();
+    // nd.setDate(16);
+
+    var gh=nd.getHours();
+    var gm=nd.getMinutes();
+    var gs=nd.getSeconds();
+    var ap= (gh < 12) ? "AM" : "PM";
+    var ap1=(gs < 10) ? "0" + gs : gs;
+    var ap2=(gm < 10 ) ? "0" + gm : gm;
+
+    // var ap3=(gh < 10) ? "0"+ gh : gh;
+    var ap3=(gh > 12) ? "0" +(gh - 12): +gh;
+
+       
+    var day=[ "Sunday","Monday", "Tuesday","Wednesday", "Thursday","Friday", "Sataurday" ];
+    var ap5=day[nd.getDay()];
+
+    var dt1=new Date();
+    var mt=dt1.getMonth()+1;
+    var yr=dt1.getFullYear();
+    var gd=dt1.getDate();
+
+    
+    var res=document.getElementById('demo');
+// res.innerHTML = gh + " : "  + gm + " : " + ap1 + " " + ap},1000);
+res.innerHTML =mt + " / " + gd + " / " + yr + " [::::] " + ap3 + " : "  + ap2 + " : " + ap1 + " " + ap + " " + ap5},1000);
+
+                                                        // SetMethod
+// var st=new Date();
+// var ft=st.setDate(16);
+// console.log(st)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    var si=setInterval(()=>{
+        var dt=new Date();
+   var tm=dt.toLocaleTimeString();
+   var st=document.getElementById('demo1');
+   var gd=dt.getDate();
+   st.innerHTML ="Date"+ gd + " Time" + tm ;
+//    console.log(tm);
+   }, 1000)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var dt=new Date();
+// var m=dt.getUTCMonth();
+// var d=dt.getUTCDay();
+// var yr=dt.getUTCFullYear();
+// document.write(m + "/" + d  + "/"+ yr);
+// // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var dt=new Date()
+// var m=dt.getMonth();
+// var d=dt.getDay();
+// var yr=dt.getFullYear();
+// document.write(m + "/" + d  + "/"+ yr);
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var ft=new Date().getDate();
+// console.log(ft);
+
+   
+
+    
+
+
+//  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                            // Destructors
+
+//  var [a,b,c,...d]=[1,2,3,4,5,6];
+//  console
+//  console.log(a,b,c);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//  ({a,b,c,...d}= {a:1,b:2,c:3,d:4,e:5});
+//  console.log(a,b,c,d);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var fr=["ap", "ban", "Mang"];
+// [a,b,c]=fr;
+// console.log(fr);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var obj={name:"Raju", age:30, obfun:()=>{console.log(`${this.name} and ${this.age}`);
+// }};
+// var {name, age, obfun}= obj;
+// console.log(name, age, obfun);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var obj={name:"Raju", age:30, obfun:()=>{console.log(`${this.name} and ${this.age}`);
+// }}
+// console.log(obj)
+// obj.obfun()
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ 
+ 
+
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    // let ff=function(name, age){
+    //     this.name=name;
+    //     this.age=age;
+    // }
+    // var df=new ff("Raju", 30);
+    // console.log(df);
+
+    // function fp(am){
+    //     console.log(`${am.name} and ${am.age}`)
+    // }
+    // fp(df)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // function fl(name,age){
+    //     this.name=name; this.age=age;
+    // }
+    // var md=new fl("Raju", 30)
+    // function fp1(ap){
+    //     console.log(`${ap.name}  and ${ap.age}`)
+    // }
+    // fp1(md)
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // function funn10(name,age){
+    //     this.name=name;
+    //     this.age=age
+    // }
+    // var res=new funn10("Raju", 30);
+    // console.log(res);
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+    //  var obj={name:"Raju", age:30};
+    // function funn6(a){
+    //     console.log(`${a.name} and ${a.age}`);
+    //     }
+    // funn6(obj)
+    </script>
+</body>
+
+</html>

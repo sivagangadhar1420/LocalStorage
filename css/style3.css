@@ -1,0 +1,117 @@
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: blue;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: red;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #000;
+    background-color: transparent;
+}
+.navbar-brand>img {
+    display: block;
+    margin-top: -10px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 600px;
+}
+#top_nav>li>a{
+	padding-left: 10px;
+}
+.padding{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.ss{
+	background-color: lightblue;
+}
+.text1 h1{
+ text-align: center;
+ font-size:45px;
+ font-weight:600;
+}
+.text1 h5{
+ text-align: center;
+ font-size:20px;
+ font-weight:500;
+}
+.text1 p{
+ text-align:justify-all;
+ font-weight:400;
+ font-size:14px;
+}
+.align{
+	border:3px solid black;
+	
+}
+
+.align1{
+	margin-top:-44px;
+	background-color: #fff;
+}
+.text2 img{
+	width:250px;
+	height:200px;
+}
+.text2 h1{
+	text-align: center;
+ font-size:25px;
+ font-weight:600;
+}
+.text2 h3{
+	text-align: center;
+ font-size:12px;
+ font-weight:400;
+}
+
+.text2 p{
+	text-align: center;
+ font-size:18px;
+ font-weight:300;
+}
+.glyphicon.span1{
+    position: relative;
+    top: 1px;
+    font-size: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.sss{
+	width:1560px;
+	height:400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

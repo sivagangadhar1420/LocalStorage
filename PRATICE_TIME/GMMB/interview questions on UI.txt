@@ -1,0 +1,63 @@
+can i see ip adress in 
+routuing
+link btw tables 
+data base connection
+interview Questions on Meanstack
+we transfer
+ DT20195840250
+3d flip cards
+::Proficient understanding of web markup, including HTML5, CSS3
+::Proficient understanding of client-side scripting and JavaScript frameworks, including jQuery
+::Good understanding of advanced JavaScript libraries and frameworks, such as AngularJS,
+::Good understanding of Bootstrap, Semantic UI.
+::Good to have hands on experience in core java
+::Develop modern software applications, working with the UI Team
+::Should have experience in publishing and consuming Services using REST API
+::Strong coding, profiling
+::- Experience with a front end MV- framework (such as Angular) and other JavaScript libraries (jQuery)
+::Experience of core web technologies (such as HTML5, JavaScript, Ajax, DOM, CSS3)
+::- Guide team development efforts towards successful project delivery.
+::- Detailed knowledge of the software life cycle
+::- Problem solving skills
+::
+Technical Skills: Angular JS, Javascript, JQuery,CSS,HTML 5
+::Delivering a complete front end application
+::Deep understanding of client-side development, hand-coding in HTML5, CSS3, JavaScript ES6, and jQuery.
+::Strong experience using a client-side MV* framework such as NodeJs, ReactJS,AngularJs
+::Experience with handling Services, RESTful, APIs.
+::Excellent interpersonal, written communication skills and verbal agility.
+Experience with Git.
+::Good understanding of how browsers and DOM work.
+::Demonstrate ability to handle multiple projects simultaneously, effectively manage priorities and communicate progress.
+::Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.
+::Good leadership skills, proactive, motivated and able to work in teams.
+::Develop new user-facing features
+::Good understanding of SEO principles and ensuring that the application will adhere to them.
+::Proficient understanding of code versioning tools, such as Git /
+::Collaborate with other team members and stakeholders
+::Ensuring work is delivered on time
+::Assure that all user input is validated before submitting to back-end
+DP World is an Emirati marine terminal operator. 
+The company is based in Dubai and is one of the largest marine terminal operators in the world. 
+Mina Pro is a program conceptualized to build a new IT application by DP World to enable Automation of Business Processes along with paperless Operations in Container Terminal-1 & Terminal 2. 
+It also enables Interfacing with multiple silo Enterprise IT sub-systems of DPW that operate in different technologies and interfacing modes.
+Highlights:
+•	Managed the Container Terminal-1 & Terminal 2 Paperless Operations
+•	Supervised the Automation of Container Terminal-1 & Terminal 2 in Business Processes
+•	Spearheaded the de-coupling of on-field devices from operational systems including TOS, MRO, Roster, PLC, Control Systems to create a fluid dynamic seamless operations
+•	Gained standard user experience on all on-field devices irrespective of back end systems including all CHE, Quay Cranes, ITV and Hatch Clerk, Onboard Foreman, Supervisor, Shore Foreman, troubleshooting Clerk function support using on-field device
+•	Monitored the integration of alerts with Central Control and Monitoring System (FLMS) to increase operational oversight possible replacement of all VMT, RDT and procurement of supervisory function tablets
+
+
+::Optimize application for maximum speed and scalability
+::Proficient understanding of cross-browser compatibility issues and ways to work around them.
+::Develop new user-facing features.
+::Build reusable code and libraries for future use.
+
+Seeking for a challenging and developing role with Anular and Javascript Expert in developing Responsive & Interactive websites|Expert in CSS3, HTML5, Bootstrap, and Angular JS|Very good knowledge of JavaScript, and JQuery
+Delivering a complete front end application
+Develop new user-facing features.
+Creating the FrontEnd Web page wrote the code for BackEnd server code
+
+WP:
+9579828.

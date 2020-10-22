@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+              margin: 34vh 35vw 34vh 35vw;  
+        }
+        table, th ,td{
+            border: 2px solid red;
+            text-align: center;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="text" id="d1"></div>
+    <script>
+        var t1=document.getElementById("d1");
+        var users=["Rohith", "Kohli", "Rahul"];
+        var id=["45","18", "07"];
+        var emails=["R@gmail.com", "vk@gmail.com", "R@gmail.com"];
+
+        var tab1=`  <table align="center", style="background-color:blue"><thead><tr>  <td>SL.NO</td><td>Id</td><td>User_Name</td><td>Emails</td></tr></thead><tbody>`
+            for(var i=0;i<emails.length;i++){
+                tab1 +=   `    <tr><td> ` +  (i+1)   +  `</td><td>`+id[i] + ` </td><td>`  + users[i]  +   `</td><td>`  +   emails[i]  +  `</td></tr>`;
+            
+                        }
+            tab1 += `</tbody></table>`;
+            t1.innerHTML=tab1;
+            
+        
+        
+    </script>
+</body>
+</html>

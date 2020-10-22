@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    
+                                         // ES6 Classes Constructors
+        // class books{
+        //     constructor(book1,book2, year){
+        //         this.book1=book1;
+        //         this.book2=book2;
+        //         this.year=year;
+
+        //     }
+        //         funn1(){
+        //         return `${this.book1} and ${this.book2} books are very intersting`;
+
+        //     }
+        //     bookdate(){
+        //         var tm=new Date().getFullYear() - this.year;
+        //         return `${this.book1} and ${this.book2} are ${tm} years back `;
+        //     }
+        //     setupbook(yr){
+        //         this.year=yr;
+        //         this.revised=true;
+        //          }
+        //           }
+        // class lastbook extends books{
+        //     constructor(book1, book2,year, book3){
+        //     super(book1, book2, year);
+        //     this.book3=book3;
+            
+        //     }
+        // }
+        // var totalbooks=new lastbook("RichDad", "PoorDad", '2000',"Succed Like Virat");
+        // console.log(totalbooks, totalbooks.funn1(), totalbooks.bookdate(),totalbooks.setupbook(1960))
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+                                                    // MagaZine Constructor
+
+// function emp(name,experience, salary){
+//             this.name=name;
+//             this.experience=experience;
+//             this.salary=salary;
+//                this.emp=function(){     
+//                 return `Hey this is ${this.name} and i am carrying ${this.experience} years of Experience`
+//                 }
+           
+//         emp.prototype.details=`Name: ${this.name}   Experience: ${this.experience}  Salary: ${this.salary} `;
+           
+//         emp.prototype.permissions=function(){
+//                 return `${this.name} get permission for vk `;
+
+//             }
+//             emp.prototype.profession=function(n1){
+//                 return `${n1} are Sports Persons`
+//             }
+//     }
+//     // var m=new emp("Raj", "3", "32000");
+//     // console.log(m, m.details, m.permissions())
+
+
+   
+//     function programmer(name,experience, salary,id,age){
+//         emp.call(this,name,experience, salary);
+//         this.id=id;
+//         this.age=age;
+       
+//            }
+//     programmer.prototype= Object.create(emp.prototype);
+    
+//     var m=new programmer("R1", "3", "400000", "Sg_123","22");
+//     // programmer.prototype.constructor= programmer;
+//     console.log(m);
+//     console.log(m.permissions(),m.details);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                      
+                                                // Object Proto Types
+
+// var empl={getname: function(){
+//     return `${thi.name} is best ${this.sports} player in the etire ${this.universe}`
+// },
+// getAge:function(){
+//     let age=new Date().getFullYear() - this.year;
+//         return ` The age of ${this.name} is ${age}`
+//     }
+       
+//     }
+//         var m = Object.create(empl);
+//         m.name="Raju";
+//         m.player="sports";
+//         m.univrse="world";
+//         m.year=1990;
+//         m.age=function(){
+//     let age=new Date().getFullYear() - this.year;
+//         return ` The age of ${this.name} is ${age}`
+//     }
+//         console.log(m, m.getAge());
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                // Another Type
+// var empl={
+//     getname: function(){
+//     return `${this.name} is best ${this.sports} player in the etire ${this.universe}`
+// },
+// getAge:function(){
+//     let age=new Date().getFullYear() - this.year;
+//         return ` The age of ${this.name} is ${age}`
+//     }
+       
+//     }
+//     var m=Object.create(empl, 
+//     {
+//         name: {value:"Raju"},
+//         sports: {value:"Sports"},
+//         universe: {value:"world"}, 
+//         year: {value:"1990"}
+
+// })
+//     console.log(m, m.getAge(), m.getname())
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//  var funn1=function(name, age, id, year){
+//      this.name=name;
+//      this.age=age;
+//      this.id=id;
+//      this.year=year;
+// }
+
+//  funn1.prototype.birth=function(){
+//      var dob=new Date().getFullYear();
+//      console.log(`${dob - this.year}`);
+//     };
+
+//     var funn2=function(){}
+//     funn2.prototype.country="India";
+//     funn2.prototype.self=()=>{
+//         console.log("Ahey guys");
+//     }
+
+//     var n=new funn1("Raju", 20, 1234, 1997);
+//     console.log(n)
+//     n.birth();
+     
+   
+//      var m=new funn2();
+//      console.log(m.country)
+//      m.self();
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+               
+
+                   
+                    
+        
+
+    // var md=new Book(1,"Title", "Personal");
+    // console.log(md);
+    
+        
+     
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    // var a={name:"Raju", age:30};
+    // console.log(Object.keys(a));
+
+    // console.log(Object.values(a));
+    
+    // console.log(Object.entries(a));
+    
+    // console.log(Object.keys(a)+ ": " + Object.values(a) );
+//     let obval="";
+//     for(var key in a){
+// obval += `${key} : ${a[key]};`
+//     }
+//     console.log(obval)
+
+
+
+                                                
+
+
+    </script>
+    
+</body>
+</html>

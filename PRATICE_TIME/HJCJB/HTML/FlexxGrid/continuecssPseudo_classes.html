@@ -1,0 +1,465 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+                                            /* FirstChild And LastChild
+        ul li:first-child{
+            background-color: blue;
+        } */
+     
+        /* ul li:last-child{
+            background-color: blue;
+        } */
+        
+         /* .d1 :first-child{
+      color: red;
+        } */
+        /* //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                            /* nth Child  */
+      /* p:nth-child(2){
+            color:red;
+            
+        } */
+        
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        /* p:nth-child(2n){
+            background-color: crimson;
+        } */
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+        /* p:nth-child(3n){
+            background-color: crimson;
+        } */
+        
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+        /* p:nth-child(2n+1){(2n-1)
+            background-color: crimson;
+        } */
+        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+       /* p:nth-child(3n+1){  (3n-1)
+            background-color: crimson;
+        } */
+        /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= */
+                                                        /* nth-last-child */
+                /* p:nth-last-child(2n){
+                    background-color: crimson;
+                } */
+
+                /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                        /* nth-of-type() */
+        /* p:nth-of-type(2){
+            background-color: crimson;
+            } */
+  /* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+                                          /* nth-last-of-type */
+            /* h1:nth-last-of-type(2n){(2n+1)(2n-1)(3n)
+                background-color: crimson;
+            } */
+        /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                    /* Onlychild */
+                                                 /* p:only-child{
+                                                        background-color: blue;
+                                                    } */
+                 
+                  /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                                /* OnlyOfType */
+                                                                 /* p:only-of-type{
+                                                                    background-color: brown;
+                                                                } */
+                        /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+                                                                /* First-of-type */
+                                    /* p:first-of-type{
+                                        background-color: crimson;
+                                    } */
+
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                            /* Last-of-type */
+                                                            /* p:last-of-type{
+                                                                background-color: crimson;
+                                                            }
+        */
+         /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                            /* Empty */
+                                            /* div:empty{
+                                                background-color: crimson;
+                                                border: 10px solid green;
+                                            }
+                                                         */
+       /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                            /*not()*/
+                                            /* p:not(#dt){
+                                                background-color: green;
+                                            }
+                                          
+        */
+        /* p{
+            background-color: grey;
+        } */
+         /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                    /* Lang */
+                                                    /* p:lang(en){
+                                                        background-color:blue;
+                                                    }
+                                                    p:lang(frn){
+                                                        background-color:pink;
+                                                    }
+                                                    p:lang(de){
+                                                        background-color: green;
+                                                    } */
+         /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                    /* Link (Hover, active , visited) */
+                                                    /* a:hover{
+                                                        /* background-color: crimson; */
+                                                        /* color: darkgray;
+                                                    }
+                                                    a:active{
+                                                        background-color: darkgreen;
+                                                        color:greenyellow; */
+                                                    /* } */
+                                                    /* a:visited{
+                                                        background-color: dimgray;
+                                                        color: forestgreen;
+                                                    } */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                            /* Target */ 
+                ul li {
+                list-style: none;
+                }
+                ul li a{
+                    text-decoration: none;
+                }
+                p:target{
+                    background-color: greenyellow;
+                }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */ 
+                                                /*Focus  */
+                                                /* input[type]:focus{
+                                                background-color: greenyellow;
+                                                } */
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */ 
+  
+                                                /* input[type=text]:focus{
+                                                background-color: greenyellow; */
+                                                /* } */ 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+                                                    /* input:focus{
+                                                        background-color: grey;
+                                                    } */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   */
+                                                    /* Checked */
+                                                    /* input[type='checkbox']:checked + label{
+                                                        /* box-shadow: 0px 0px 0px 3px red; */
+                                                        /* color:red */
+                                                    /* } */
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+                                                     /* input[type='radio']:checked{
+                                                        box-shadow: 0px 0px 0px 3px red;
+                                                    } */
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+                                                    /* input[type='radio']:checked + label {
+                                                        color: red;
+                                                    }  */
+/*  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   */
+
+                                                    /* ul + p{
+                                                        background-color: hotpink;
+                                                    } */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */  
+                                                    /* Disabled And Enabled */
+                                                    /* input[type]:enabled{
+                                                        background-color: red;
+                                                    } */
+     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+                                                    /* input[type]:disabled{
+                                                        background-color: red;
+                                                    } */
+                                                
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */ 
+                                                    /* Required And Optional */
+                                                    /* input[type]:required{
+                                                        border: 1px solid red;
+                                                        background-color: yellowgreen;
+                                                        } */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+                                                    /* input[type]:optional{
+                                                        border: 1px solid red;
+                                                        background-color: yellowgreen;
+                                                        }  */
+    /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */ 
+                                                        /* in-range */
+                                                        /* input:in-range{
+                                                            background-color: yellowgreen;
+                                                        } */
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+                                                        /* out-of-range */
+                                                        /* input:out-of-range{
+                                                            background-color: red;
+                                                        }
+                                                                    */
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */ 
+                                                        /* readOnly and read-write   */
+                                                        /* input:read-only{
+                                                            background-color: red;
+                                                        }
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+                                                        /* input:read-write{
+                                                            background-color:green;
+                                                        } 
+  */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */ 
+                                                        /* Valid And Email */
+                                                        /* input:invalid{
+                                                            background-color: red;
+                                                        }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ 
+                                                 /* input:valid{
+                                                     background-color: green;
+                                                 } */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+                                                 /* input[type='email']:valid{
+                                                     background-color: green;
+                                                 } */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+                                               /*  input[type='email']:invalid{
+                                                     background-color: red;
+                                                 } */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */ 
+                                                /* default */
+                                                /* input:default + p {
+                                                    /* background-color: green; */
+                                                    /* border: 3px solid red;
+                                                    box-shadow: 0px 0px 3px red;
+                                                } */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+                                                /* option:default{
+                                                    color: red;
+                                                    background-color: green;
+                                                } */
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+                                                /* Root */
+                                                /* :root{
+                                                    --mainColor : hotpink;
+                                                }
+                                                p{
+                                        color : var(--mainColor);
+                                                padding: 10px; 
+                                                }  */
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+                                                /* :root{
+                                                    --main-bgcolor : red;
+                                                }
+                                                p{
+                                                    background-color: var(--main-bgcolor);
+                                                } */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+ 
+
+
+                                                   
+ 
+
+
+     
+                                                    
+
+            
+    </style>
+</head>
+<body>
+    <!-- <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" autofocus><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit">
+      </form>
+    <form>
+        <label for="fname">Fname</label>
+    <input type="text" aname="fname" id="lname"  autofocus >  </form> -->
+    <form action="#">
+    <input type="text" required >
+    <input type="number" required>
+    <input type="email" required >
+   
+    <input type="text" placeholder="YouCantEditMe"  value="DontEdit" readonly>
+    Age:<input type="number" min='10'max='20' required>
+    <input type="checkbox">&nbsp;
+    <label>ConfirmBox or checkbox</label>
+    <input type="checkbox" checked>&nbsp;
+    <label>ConfirmBox or checkbox</label>
+    <input type="checkbox">&nbsp;
+    <label>ConfirmBox or checkbox</label>
+    <input type="checkbox">&nbsp;
+    <label>ConfirmBox or checkbox</label>
+    <input type="radio" name="gender" value="male" >
+    <label>Male:</label>
+    <input type="radio" name="gender" value="Female">
+    <label>FeMale:</label> 
+    <input type="radio" name="gender" value="GenderBiasis">
+    <label>Other</label>
+    <select>
+        <option value="" class="op11">v1</option>
+        <option value="" class="op12">v2</option>
+        <option value="" class="op13" selected>v3</option>
+        <option value="" class="op14">v4</option>
+        <option value="" class="op15">v5</option>
+    </select>
+    <input type="submit">  </form>
+    
+    <ul class="tar">
+        <li class="li11"><a href="#html">Html</a></li>
+        <li class="li12"> <a href="#css">Css</a></li>
+        <li class="li13"> <a href="#bootstrap">Bs</a></li>
+        <li class="li14"> <a href="#javascript">Js</a></li>
+    </ul>
+    <p id="html">TheHtmlText</p>
+    <p id="css">TheCssText</p>
+  
+    <p id="bootstrap">TheBootstrapText</p>
+  
+    <p id="javascript">TheJavaScriptText</p>
+  
+    <a href="#">The Link</a>
+    <p lang="en">The En</p> 
+    <p lang='frn'>The frenchn</p> 
+    <p lang='de'>The durch</p>
+    <p>PLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>   
+    <p>PLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    
+    <p id="dt">3nPLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    
+    <p>PLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, eaque?</h1>
+<div></div>
+    <div class="d1">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, eaque?</h1>
+        <h2>The </h2>
+    <p>PlllLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    
+    <p>sPLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    
+        <p>#NPLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, eaque?</h1>
+    
+        <p>PppLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.ssss</p>
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, eaque?</h1>
+    
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae.</h1>
+    
+  <p>3PLorem ipsum dolor sit amet consectetur adipisicing elit. Amet, odio?</p> 
+    </div>
+
+    <p>dPLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    <p>PplLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, eaque?</h1>
+
+    <ul>
+        <li class="lic1"></li>
+        <p>TheText</p>
+        <li class="lic2"></li>
+        <li class="lic3"></li>
+        <li class="lic4"></li>
+        <li class="lic5"></li>
+        <p>PLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+        <p>PLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+        <p>The Text of </p>
+ 
+    </ul>
+    <ul>
+        <li class="lic1"></li>
+        <li class="lic2"></li>
+        <li class="lic3"></li>
+        <li class="lic4"></li>
+        <li class="lic5"></li>
+    </ul>
+   <p>PLorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam 
+       delectus explicabo id non cumque amet impedit ut eius sed optio?</p>
+       
+    <p>PLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    
+    <p>dPLorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tenetur.</p>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, minima.</h1>
+    
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, minima.</h1>
+    
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, minima.</h1>
+    <div class="ct1">
+        <p>Tag</p>
+        <h1>The Checking</h1>
+    
+    </div>
+    <ul>
+        <p>The only Child</p>
+    
+    </ul>
+    <ul>
+        <p>The main tag</p>
+        <!-- <p>The tag</p> -->
+        <h2>The header Tag</h2>
+    </ul>
+    <script>
+ //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                                                //ForInLoop 
+
+// var person={name:"Angelina" , gender:'Female' , hobbies:"PlayingHockey"};
+// var txt='';
+// for(var per in person){
+    
+//     txt +=  per + ' : '  + person[ per ]  + "  ";
+// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//   console.log(per+ " : " + person[per])
+
+  
+// }
+// console.log(txt)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxx
+
+                                        // Using Ternary and reduce 
+// var a=[0,5,4,9,2,19,250,1];
+// var max=a.reduce((a,b)=> b < a ? b : a)   
+// console.log(max)
+// }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+
+                                                    // Max_Number and Min_Number
+// var b=[1,2,3,4,5,62,32,43];
+// for(var i=0;i<b.length; i++){
+// // var d=b.reduce((a,b) => b < a ? b : a);
+// var d=b.reduce((a,b) => b > a ? b : a);
+
+// console.log(d)
+// }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+// var b=[1,2,3,4,5,62,32,43];
+// for(var i=0;i< b.length; i++){
+//     if(Math.min(b[i] < 5)){
+//         console.log(b[i])
+//     }
+// // /console.log(b[i])
+// }
+// // console.log(b)
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <script>
+      
+      
+      /*  function validated(){
+    var name=document.getElementById("in");
+    if(name.value ==''){
+        document.getElementById("in").style.border="2px solid red";
+        document.getElementById("b").style.color="red";
+        document.getElementById("b").style.visibility="visible";
+        document.getElementById("b").innerHTML="InValidInformation";
+        }
+    else{
+        document.getElementById("in").style.border="2px solid green";
+        document.getElementById("b").style.color="green";
+        document.getElementById("b").style.visibility="visible";
+        document.getElementById("b").innerHTML="ValidInformation";
+        
+    }
+}    */
+  
+
+
+   
+
+
+//function funn1(){
+  //  var text=document.getElementById("t").value;
+//var re=/^[6-9]\d{9}/;
+//var reg=/abc/;
+
+//if(re.test(text)){
+
+//}
+
+//MobileNumber Validation
+
+// function validated (){
+// var name=document.getElementById("in").value;
+//var regexp=/^[A-Za-z]+$/ ;
+// //var regexp=/^[abc]/;
+// //var regexp=/^[6-9][0-9]{9}$/;
+// //var regexp=/^[6-9]\d{9}/;
+// //var regexp=/^[6-9]\d{9}$/;
+// //$: End Symbol how many numbers u want
+// //\d (between)
+
+// if(regexp.test(name)){
+//     document.getElementById("b").innerHTML="valid";
+//     document.getElementById("b").style.color="green";
+//     document.getElementById("b").style.visibility="visible";
+//     document.getElementById("in").style.border="2px solid green";
+// }
+//     else{
+//         document.getElementById("b").innerHTML="Invalid";
+//     document.getElementById("b").style.color="red";
+//     document.getElementById("b").style.visibility="visible";
+//     document.getElementById("in").style.border="2px solid red";
+  
+//     }
+// }
+    /*document.getElementById("in").style.border="1px solid red";
+            
+                document.getElementById("b").style.visibility="visible";
+                document.getElementById("b").style.color="red"
+                alert("Please Enter U r Email");
+                . in regular expressions dot will indicate @ symbol
+                
+                */
+                
+         //EmailValidation 
+//          function funn1(){
+//          var trick=document.getElementById("inp").value;
+//         // var regexp=/[^abc][0-9]/;
+//         // var regexp=/^[abc][0-9]/
+//         var regexp=/[123]/
+// if(regexp.test(trick))
+// {
+//     document.getElementById("l").innerHTML="Invalid...!";
+//     document.getElementById("l").style.color="red";
+//     document.getElementById("inp").style.border="2px solid red";
+//     document.getElementById("l").style.visibility="visible";
+// }
+// else{
+//     document.getElementById("l").innerHTML="valid...!";
+//     document.getElementById("l").style.color="yellow";
+//     document.getElementById("inp").style.border="2px solid yellow";
+//     document.getElementById("l").style.visibility="visible";
+
+
+// }
+
+// }         
+
+  
+
+
+    
+// //PreventDefault
+//<input type="checkbox"  id="p">
+
+//     var d=document.getElementById("p");
+//     d.addEventListener("click", (m)=>{
+// m.preventDefault();
+    
+//     })
+
+//RegularExpressions
+//Regular expressions are treated as objects in javascript
+
+//var regexp=/^[A-Za-z]+$/ ;
+
+/*   if(a.match(regexp)){
+  return true;
+  document.getElementById("span").innerHtml="";
+}else{
+  return false;
+  document.getElementById("span").innerHtml="should match deffinetely loke that....!!!!!!";
+} */
+ 
+        </script>
+  <style>
+            /*  #m{
+                  margin-left: 195px; 
+               }  
+               
+               //Horizontal ,vertical ,Inline  forms
+        
+        
+                */ 
+           </style> 
+        
+          
+
+</head>
+<body>
+
+    
+        <form>
+       
+        <input type="email" id="inp" class="form-control">
+        <label id="l" style="visibility: hidden;"></label><br>
+        <button type="button" onclick="funn1()">HitMe</button>
+
+</form>
+     <!--  <div class="container">
+        <h2>Vertical (basic) form</h2>
+       
+            
+          <div class="form-group">
+              <label class="control-label">Email</label>
+    <input type="email" class="form-control" id="in">
+        <label class="control-label"   id="b" style="visibility:hidden"></label><br>
+        <button onclick="validated()" type="submit">Click</button>
+       <!-- <button type="submit " class="btn-primary" onclick="valid()">ClickMe</button>  
+    </div>
+    </div>   
+-->
+
+
+
+<!--
+<div class="container">
+  <h2>Horizontal form</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+    <h2>Vertical (basic) form</h2>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button> 
+    </form>
+  </div>
+
+
+
+      <div class="container">
+        <h2>Inline form</h2>
+        <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside.</p>
+        <form class="form-inline" action="/action_page.php">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div> 
+   
+      if u wrote div for label u should write margin left in label tag
+
+      
+      My Won
+      
+      <form class="form-horizontal">
+        <div class="form-group">
+            <div class="row">
+      <label for="email" class="control-label col-sm-2">Email:</label>
+      <div class="col-sm-8">
+    <input type="email" class="form-control" >
+        </div>
+</div>  </form>
+<br>
+<form class="form-horizontal">
+<div class="row">
+    <div class="col-sm-2">
+        <label class="control-label"  for="email" style="margin-left: 166px;">Email:</label>
+    </div>
+    <div class="col-sm-8">
+        <input type="email" class="form-control">
+
+    </div>
+</div>
+     </div>
+
+    </form>   
+     
+-->
+
+
+
+<!--
+<div class="container">
+    <h2>Form Validation</h2>
+    <p>In this example, we use <code>.was-validated</code> to indicate what's missing before submitting the form:</p>
+    <form action="/action_page.php" class="was-validated">
+      <div class="form-group">
+        <label for="uname">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  -->
+
+
+  
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <!--  -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- <span class="f039"></span> -->
+            <span>&times;</span>
+          </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+
+        <!-- <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul> -->
+
+          <ul class="navbar-nav m-auto " >
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Middle</a>
+              </li>
+
+          </ul>
+       
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+        </div>
+        </nav> 
+        <div class="container my-4">
+            <h1>PostMan clone Form</h1></div>
+            <div class="container my-3">
+            <div class="form-group row my-4">
+                <label for="name" class="label-control col-sm-2 ">Name:</label>
+                    <div class="col-sm-10">
+                     <input type="text" name="name" id="url" class="form-control" placeholder="Enter URL...."></div>
+                            </div>  
+
+
+                            <div class="form-group row">
+                              <label for="gridRadios1" class="label-control  col-sm-2">RequestType:</label>
+                                  <div class="col-sm-10">
+                        <div class="form-check">
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                            <input class="form-check-input" type="radio" name="requesttype" id="gridRadios1" value="GET" checked>
+                            <label class="form-check-label" for="gridRadios1"> GET </label>
+                        </div>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="requesttype" id="gridRadios2" value="POST">
+                        <label class="form-check-label" for="gridRadios2">POST </label>
+                       </div>
+                                    <!-- <div class="form-check disabled">
+                                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                                      <label class="form-check-label" for="gridRadios3">
+                                        Third disabled radio
+                                      </label>
+                                    </div>
+                                 -->
+                                </div>
+                            </div>
+
+                              <!-- <div class="form-group row">
+                                <div class="col-sm-2">Checkbox</div>
+                                <div class="col-sm-10">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                      Example checkbox
+                                    </label>
+                                  </div>
+                                </div> 
+                              </div> -->
+                              <!-- <div class="form-group row">
+                                <label for="gridRadios1" class="label-control  col-sm-2">Radios:</label>
+                                    <div class="col-sm-10">
+                             <div class="form-check form-check-inline"> -->
+                              <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                              <!-- <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1"> First radio </label>
+                          </div>
+                          <div class="form-check form-check-inline"> -->
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                            <!-- <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1"> First radio </label>
+                        </div>
+                          </div> -->
+                         
+                          <div class="form-group row">
+                            <label for="labelgrid" class="label-control  col-sm-2">DataType:</label>
+                                <div class="col-sm-10">
+                      <div class="form-check">
+                          <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                          <input class="form-check-input" type="radio" name="datatype" id="grid1" value="jsondata" checked >
+                          <label class="form-check-label" for="grid1"> JSON </label>
+                      </div>
+                      <div class="form-check">
+                      <input class="form-check-input" type="radio" name="datatype" id="grid2" value="paramsdata">
+                      <label class="form-check-label" for="grid2" >CustomParameters </label>
+                     </div> </div>
+                     <!-- <div class="container">
+                        <div class="form-group row">
+                            <label for="labelgrid" class="label-control  col-sm-2">Radios:</label>
+                                <div class="col-sm-10">
+                      <div class="form-check"> -->
+                          <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                          <!-- <input class="form-check-input" type="checkbox" name="c1" id="c1" value="cb1" checked>
+                          <label class="form-check-label" for="c1"> First radio </label> -->
+                      <!-- </div>
+                      <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="c11" id="c2" value="cb2">
+                      <label class="form-check-label" for="c2">Second radio </label>
+                     </div>
+                     </div> -->
+                     <br><br><br>
+                     <div class="container">
+                         <div id="custom">
+                         <div class="form-group row">
+                             <label for="btntxt" class="label-control col-sm-2">Parameters</label>
+                            <div class="col-sm-4">
+                                <input type="text" name="nn" id="nn" class="form-control" placeholder= "Keys">
+                            </div>
+                            <div class="col-sm-4">
+                               <input type="text" name="nn" id="nn" class="form-control" placeholder="Values">
+                              </div>
+                               <button class="btn btn-primary" id="tarbtn">+</button>
+                            </div>
+                        </div>
+                        <div id="otpt"></div>
+                        <br> 
+                        <div id="js">
+                        <div class="form-group row">
+                            <label for="jdata" class="label-control col-sm-2">Enter Json Data:</label>
+                            <div class="col-sm-10">
+                                <textarea name="" class="form-control" id="requestJson" cols="0" rows="0"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <br>
+                                                               
+
+                      <div class="btn-group">
+                        <button class="btn btn-success" id="sub">SubMit</button>
+                        </div>
+
+                        <br>  <br>   
+
+                            <div class="form-row" id="tt">
+                                <label for="res" class="label-control col-sm-2">Response:</label>
+                                <div class="col-sm-10">
+                                    <textarea name="" class="form-control" id="wt" cols="30" rows=""></textarea>
+                                </div>
+                            </div>
+                        </div>   
+
+                      
+                        <!-- <div class="container">
+                         
+                         <div class="form-row">
+                            <div class="col">
+                                <label for="nm1" class="label-control col-sm-0">Name1:</label>
+                             
+                              <input type="text" class="form-control" id="nm1" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <label for="nm2" class="label-control col-sm-0">Name1:</label>
+                           
+                              <input type="text" id="nm2" class="form-control" placeholder="Last name">
+                            </div>
+                          </div>
+                     </div> -->
+
+                     <!-- <div class="form-row">
+                         <div class="col-md-6">
+                          <label for="nm1" class="label-control col-sm-0">Name1:</label>
+                          <input type="text" class="form-control" id="nm1" placeholder="First name">
+                        </div>
+                           
+                        <div class="col-md-6">
+                            <label for="nm1" class="label-control col-sm-0">Name1:</label>
+                            <input type="text" class="form-control" id="nm1" placeholder="First name">
+                        </div>
+                     -->
+                     <!-- <code class="language-javascript" id="jc" style="height:200px"></code> -->
+
+<script src="postman.js"></script>
+
+                   
+
+
+
+          
+
+     
+</body>
+</html>

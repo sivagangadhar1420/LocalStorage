@@ -1,0 +1,22 @@
+<a href="#">ADD NEW Server Or BLueprint</a><br><br>
+      <form>
+             <!--  LOCAL REFERENCE MODEL-->
+      
+           <label for="name">ServerName</label>
+  
+   <!--<input type="test" class="form-control" name="first" id="name" #serverNameInput >
+    <label for="name">ServerContent</label>
+   <input type="text" id="name" class="form-control" name="last" #serverContentInput >  <br>
+   <button class="btn btn-danger mr-2" (click)="OnServerAdded(serverNameInput)" > ADDSERVER </button>
+   <button class="btn btn-danger mr-2" (click)="OnBlueprintAdded(serverNameInput)" > ADDBLUEPRINT </button>
+      </form> -->
+      
+   <!--  TwoWayBinding -->
+       
+           <label for="name">ServerName</label>
+  
+      <input type="text" id="name" class="form-control" name="first" [(ngModel)]="newserverName">
+      <label for="name">ServerContent</label>
+   <input type="text" id="name" class="form-control" name="last"  [(ngModel)]="newserverContent"><br>
+    <button class="btn btn-primary mr-2" (click)="OnServerAdded()" >ADDSERVER</button>
+    <button class="btn btn-danger mr-2" (click)="OnBlueprintAdded()">ADDBLUEPRINT</button>

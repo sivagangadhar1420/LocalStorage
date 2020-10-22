@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            flex-basis: 100%;
+            margin: 0px;
+        }
+        .flex-container {
+            flex-basis: 10%;
+            /* display: flexbox; */
+            /* display: inline; */
+            /* display: inline-flex; */
+            /* display: inline-block; */
+            display: flex;
+            /* display: flexbox; */
+            /* display: inline; */
+            /* display: inline-flex; */
+            /* display: inline-table; */
+            /* flex-direction: column; */
+            /* /* border: 3px dotted crimson; */
+            background-color: darkslategrey;
+            /* display: flex; */
+            /* margin: 10px; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: stretch; */
+            /* align-items: stretch; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+
+
+           
+        }
+        .flex-container div  {
+            background-color: darkmagenta;
+            padding: 20px;
+            font-size: 30px;
+            margin: 10px;
+            border: 3px dotted crimson;
+            display: flex;
+            /* justify-content: space-between;  */
+            
+            display: flex;
+            align-items: center;
+           
+            
+
+            /* display: inline-block; */
+            /* display: inline-flex; */
+
+        }
+        .flex-container1{
+            width: auto;
+            overflow: auto;
+            /* justify-content: center; */
+            justify-content: flex-start;
+                                                            /* justify-content: flex-end;  */
+                                                            /* justify-content: space-between; */
+            justify-content: space-around;
+             justify-content: space-between;
+
+         display: flex;
+            background-color: lightslategrey;
+        }
+        .flex-container1 div{
+            background-color: darkmagenta; 
+            /* overflow: auto; */
+            padding: 10px;
+             margin: 10px;
+            border: khaki dotted 3px;
+            text-align: center;
+            /* align-items: center; */
+            /* justify-content: space-around */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            display: flex;
+        }
+        
+        .div1{
+            flex: 3;
+            order: 4;
+        line-height: 20px;
+        text-align: center;
+            
+        } .div2{
+            flex: 4;
+            order: 2;
+            
+        } .div3{
+            flex: 3;
+            order: 2;
+        } .div4{
+            flex: 1;
+            order: 1;
+        } .div5{
+            flex: 4;
+            order: 5;
+            
+        }  
+         
+        .flex-container3{
+            display: flex;
+            background-color: red;
+            flex-wrap: wrap;
+            /* align-items: flex-start; */
+            justify-content: space-between;
+            align-items: center;;
+        }
+        .flex-container3 div{
+            background-color: lawngreen;
+            border: dashed 3px black;
+             padding: 10px; 
+            margin: 20px;
+            
+            /* justify-content: space-between; */
+        }
+        /* .div19{
+            flex: 1;
+            
+        } */
+        @media(max-width: 760px){
+            .flex-container , .flex-container1, .flex-container3{
+                flex-basis: 100%;
+            }   } 
+/*         
+        ul li{
+            float: left; */
+            /* display: inline; */
+            /* display: inline-block; */
+        /* display: block; */
+        /* display: none; */
+        
+        /* } */
+        /* .flex-container3 .div19{
+            flex: 4;
+            order: 5;
+        } */
+
+
+    </style>
+    <script>
+
+   
+
+    </script>
+</head>
+<body>
+     <div class="flex-container">
+        <div class="div1">1
+            <div class="12">12</div>
+        </div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+    </div>
+    <div class="flex-container1">
+        <div class="div1">6
+            <div class="12">121</div>
+        </div>
+        <div class="div2">7</div>
+        <div class="div3">8</div>
+        <div class="div4">9</div>
+        <div class="div5">10</div>
+    </div>
+    <div class="flex-container3">
+        <div class="div111">6
+             <div class="121">121</div>
+        </div>
+        <div class="div12">7</div>
+        <div class="div13">8</div>
+        <div class="div14">9</div>
+        <div class="div15" >10</div> 
+        <div class="div2">7</div>
+        <div class="div16">8</div>
+        <div class="div17">9</div>
+        <div class="div18">10</div>
+        
+    </div>
+    <ul>
+
+        <li class="li1">12</li>
+        <li class="li2">12</li>
+        <li class="li3">12</li>
+        <li class="li4">12</li>
+        <li class="li5">12</li>
+    </ul> 
+    
+</body>
+</html>

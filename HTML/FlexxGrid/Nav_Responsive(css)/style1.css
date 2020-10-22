@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+p{
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu
+    {
+    background-color: yellowgreen;
+        display: flex;
+        list-style-type: none;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+ li {
+    margin: 10px;
+    padding: 10px 10px;
+    background-color: thistle;
+    color: lightcoral;
+    text-decoration: none;
+    margin-right: 20px;
+}
+ .brand .logo{
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+li a{
+    text-decoration: none;
+    width: 100%;
+    color: deepskyblue;
+
+    
+    
+}
+.menu li .active , li:hover{
+    background-color:crimson;
+    color: tomato;
+}
+
+
+p{
+    word-break: break-all;
+}
+ 
+.menu li:hover{
+    width: 10%;
+    background-color: #333;
+    color: deeppink;
+    text-align: center;
+    transition: 1s;
+
+}
+
+.sp{
+    background-color: lightgreen;
+    height: 80px;
+    width: 100%;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+
+.togglebtn{
+    display: none;
+    font-size: 30px;
+    margin: 20px;
+    transition: 1s;
+    border: 5px solid crimson;
+    border-radius: 5px;
+}
+
+
+
+@media(max-width:790px){
+    body{
+        height: auto;
+        width: 100%;
+    }
+        .menu{
+            flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+            /* text-align: right; */
+            display: none;
+           
+        }
+        .menu li{
+            background-color: dimgray;
+        }
+.brand .logo{
+    margin-top: -60px;
+    margin-left: 80px;
+
+}
+
+ /* #toggle:checked ~ .menu{
+     display: flex;
+    left:0;
+
+}
+
+#toggle:checked ~ label #ob{
+    display: none;
+
+}
+#toggle:checked ~ label #cb{
+    display: block;
+} */
+
+
+
+
+#toggle:checked ~ .menu{
+        display: flex;
+        width: 100%;
+        background-color: crimson;
+
+    }
+     .togglebtn{
+        display: inline-block;
+        background-color: teal;
+        transition: 1s;
+    }
+    .sp{
+        display: block;
+        background-color: yellowgreen;
+    }
+    .menu li:hover{
+        width: 100%;
+        background-color: dodgerblue;
+        color: deeppink;
+        justify-content: right;
+        align-items: flex-end;
+        transition: all 0.5s;
+        /* text-align: right; */
+        
+    }
+    
+     p{
+    
+         background-color: lightslategray;
+         color:black;
+     }   
+    
+}
+
+

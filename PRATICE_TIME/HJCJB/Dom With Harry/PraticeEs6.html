@@ -1,0 +1,547 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Resulting Form</h1>
+    <p id="sp1">AlertMessage here....::)))</p>
+    <form action="" id="fm1">
+        book-Title: <input type="text" name="nm1" id="nm1"><br><br><br>
+        Name: <input type="text" name="nm1" id="nm2"><br><br><br>
+        Book-Name: <input type="text" name="nm2" id="nm3"><br><br><br>
+
+        <button type="submit" id="btn">Submit</button>
+
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Name</td>
+                <td>Bookname</td>
+            </tr>
+        </thead>
+        <tbody id="tblb">
+
+
+        </tbody>
+    </table>
+
+    <script>
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    // Adding Deleting Mesg Dislaying Stored Books  Code to UI
+
+// class Book{
+//     constructor(id, name, salary){
+//         this.id=id;this.name=name;this.salary=salary;
+//     }
+// }
+// class subBook{
+//                                            // Displaying Books
+//      static displayBooks(){
+//             let storedBooks= [
+//                              { id: 1, name: "Ram", salary: 200000 },
+//                              { id: 2, name: "Vijay1",salary: 4000000 }
+//                              ];
+//         let otp=storedBooks;
+//         otp.forEach((book)=>{
+//         subBook.addBooksToStore(book)
+//             })
+//       }
+
+//                                                    //    Adding Book 
+//         static addBooksToStore(ele){
+//         let tblb=document.getElementById('tblb');
+//         let data="";
+//         data += `<tr>
+//                     <td>${ele.id}</td>
+//                     <td>${ele.name}</td>
+//                     <td>${ele.salary}</td>
+
+//                     <td>
+//                         <button class ="btn btn-danger btn-sm-2 del" type="button">Delete</button>
+//                     </td>
+
+//                     </tr>`;
+//             tblb.innerHTML += data;
+//             }                    
+
+//                                                       // Clearing Fields
+//         clearFlds(){
+//         //     document.getElementById('nm1').value= "";
+//         //     document.getElementById('nm2').value ="";
+//         //    document.getElementById('nm3').value= "";
+//                                     // OR
+//         let lf=document.getElementById('fm1');
+//         lf.reset();
+//         }
+
+//                                                         // Deleting Book
+//          static deleteItms(el){
+//             if(el.classList.contains('del')){
+//             el.parentElement.parentElement.remove();
+
+//             }
+//         }
+//             validating(book){
+//             if(book.id.length == "" || book.name.length == " " || book.salary.length == "" ){
+//                     return false;
+//             }
+//             else{
+//                 return true;
+//             }
+
+//         }
+
+//                                                 //AlertMessage 
+//             alertMesaage(msg, cn){
+//             let txt=document.getElementById('sp1');
+//             txt.innerHTML = `<div class= "alert alert-${cn} alert-dismisible">
+//                               <button type="button" class="close"  data-dismiss="alert">&times;</button>
+//                               <strong>${msg}</strong> we are back ::))).
+//                               </div>`;
+//                     setTimeout(() => {
+//                     let txt=document.getElementById('sp1').innerHTML= " ";
+//                    }, 2000)
+
+//                 }
+//             }
+
+
+//         let fm=document.getElementById('fm1').addEventListener('submit', (e)=>{
+//         let inp1=document.getElementById('nm1').value;
+//         let inp2=document.getElementById('nm2').value;
+//         let inp3=document.getElementById('nm3').value;
+//         let res1=new Book(inp1,inp2, inp3);
+//     // storyBooks.getBooks();
+//     storyBooks.addStoryBook(res1);
+//     console.log(storyBooks.addStoryBook(res1));
+
+//                     var ck=new subBook();                              
+//                     if(ck.validating(res1))
+//                     {
+//                         subBook.addBooksToStore(res1);
+//                         ck.clearFlds();
+//                         ck.alertMesaage("You have Submitted You're Details and Added to Table", 'success');
+//                     }
+//                     else{
+//                         ck.alertMesaage("Sorry We couldn't  process You...", 'danger')
+//                         // alert("Plz Fill The Forms...   ::(( " );
+//                     }
+//                     e.preventDefault();
+//                 })
+// subBook.displayBooks();
+// document.getElementById('tblb').addEventListener('click', (el)=>{
+// subBook.deleteItms(el.target);
+// let mb=new subBook();
+// mb.alertMesaage('You have Deleted the Book', 'danger');
+
+
+
+
+
+//     console.log(el.target);
+// })
+
+// let res1=new Book(1,"Raju", 300000);
+// let sBook=new subBook();
+// sBook.add(res1);
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                            // Adding code To UI
+// class Book{
+//     constructor(id, name, salary){
+//         this.id=id;this.name=name;this.salary=salary;
+//     }
+// }
+
+//             class subBook{
+//                                             //    Adding Book 
+//         addBooksToStore(ele){ 
+//         let tblb=document.getElementById('tblb');
+//         let data="";
+//             data += `<tr>
+//                     <td>${ele.id}</td>
+//                     <td>${ele.name}</td>
+//                     <td>${ele.salary}</td>
+//                     <td>
+//                     <button class ="btn btn-danger btn-sm-2 del" type="button">Delete</button>
+//                     </td>
+//                 </tr>`;
+
+//             tblb.innerHTML += data;
+//       }                    
+
+
+
+//                                                       // Clearing Fields
+//         clearFlds(){
+//         //     document.getElementById('nm1').value= "";
+//         //     document.getElementById('nm2').value ="";
+//         //    document.getElementById('nm3').value= "";
+//                                     // OR
+//         let lf=document.getElementById('fm1');
+//         lf.reset();
+//         }
+
+//                                                         // Deleting Book
+//          static deleteItms(el){
+//             if(el.classList.contains('del')){
+//             el.parentElement.parentElement.remove();
+
+//             }
+//         }
+//             validating(book){
+//             if(book.id.length == "" || book.name.length == " " || book.salary.length == "" ){
+//                     return false;
+//             }
+//             else{
+//                 return true;
+//             }
+
+//         }
+
+//                                                 //AlertMessage 
+//             alertMesaage(msg, cn){
+//             let txt=document.getElementById('sp1');
+//             txt.innerHTML = `<div class= "alert alert-${cn} alert-dismisible">
+//                               <button type="button" class="close"  data-dismiss="alert">&times;</button>
+//                               <strong>${msg}</strong> we are back ::))).
+//                               </div>`;
+//                     setTimeout(() => {
+//                     let txt=document.getElementById('sp1').innerHTML= " ";
+//                    }, 2000)
+
+//                 }
+//             }
+
+//         let fm=document.getElementById('fm1').addEventListener('submit', (e)=>{
+//         let inp1=document.getElementById('nm1').value;
+//         let inp2=document.getElementById('nm2').value;
+//         let inp3=document.getElementById('nm3').value;
+//         let res1=new Book(inp1,inp2, inp3);
+//         // console.log(storyBooks.addBooks(res1));
+
+
+//             let ck=new subBook(); 
+//                 if(ck.validating(res1))
+//                  {
+//                   let ck=new subBook();                               
+//                         ck.addBooksToStore(res1);
+//                         ck.clearFlds();
+//                         ck.alertMesaage("You have Submitted You're Details and Added to Table", 'success');
+
+//                     }
+//                     else{
+//                         ck.alertMesaage("Sorry We couldn't  process You...", 'danger')
+//                         // alert("Plz Fill The Forms...   ::(( " );
+//                     }
+//                     e.preventDefault();
+//                 })
+
+
+// document.getElementById('tblb').addEventListener('click', (el)=>{
+// subBook.deleteItms(el.target);
+// let mb=new subBook();
+// mb.alertMesaage('You have Deleted the Book', 'danger');
+
+  // console.log(el.target);
+// })   
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+                                                            // Adding   Code To Local Storage
+
+class Book{
+    constructor(id, name, salary){
+        this.id=id;this.name=name;this.salary=salary;
+    }
+}
+
+            class subBook {
+                static displayBooks(){
+                let ls=localStorage.getItem('NovelBooks');
+                let ls1=JSON.parse(ls);
+                ls1.forEach((element) => {
+                    subBook.addBooks(element)
+
+                });
+            }
+
+            static addBooks(ele){
+                let tblb=document.getElementById('tblb');
+                let ls=localStorage.getItem('NovelBooks');
+                let data="";
+                       data += `<tr>
+                     <td>${ele.id}</td>
+                    <td>${ele.name}</td>
+                    <td>${ele.salary}</td>
+                    <td>
+                    <button class ="btn btn-danger btn-sm-2 del" type="button">Delete</button>
+                    </td>
+                </tr>`;
+
+                tblb.innerHTML += data;
+            }                         
+
+                                                      // Clearing Fields
+        clearFlds(){
+        //     document.getElementById('nm1').value= "";
+        //     document.getElementById('nm2').value ="";
+        //    document.getElementById('nm3').value= "";
+                                    // OR
+        let lf=document.getElementById('fm1');
+        lf.reset();
+        }
+
+                                                        // Deleting Book
+         static deleteItms(el){
+            if(el.classList.contains('del')){
+            el.parentElement.parentElement.remove();
+
+            }
+        }
+            validating(book){
+            if(book.id.length == "" || book.name.length == " " || book.salary.length == "" ){
+                    return false;
+            }
+            else{
+                return true;
+            }
+
+        }
+
+                                                //AlertMessage 
+            alertMesaage(msg, cn){
+            let txt=document.getElementById('sp1');
+            txt.innerHTML = `<div class= "alert alert-${cn} alert-dismisible">
+                              <button type="button" class="close"  data-dismiss="alert">&times;</button>
+                              <strong>${msg}</strong> we are back ::))).
+                              </div>`;
+                    setTimeout(() => {
+                    let txt=document.getElementById('sp1').innerHTML= " ";
+                   }, 2000)
+
+                }
+            }
+
+          class storyBook{
+           static getBooks(){
+                let ls=localStorage.getItem('NovelBooks');
+                let arrBooks;
+                if(ls == null){
+                    arrBooks=[];
+                }
+                else
+                {
+                    arrBooks=JSON.parse(ls);
+                }
+                return arrBooks;
+
+            }
+           static lsaddBooks(book){
+                let ls1=storyBook.getBooks();
+                ls1.push(book);
+                localStorage.setItem('NovelBooks', JSON.stringify(ls1));
+        }
+        static lsdeleteBooks(sal){
+            // let ls=localStorage.getItem('NovelBooks');
+            // let ls1=JSON.parse(ls);
+
+            let ls=storyBook.getBooks();
+            ls.forEach((book, ind)=>{
+                if(book.salary == sal){
+                    ls.splice(ind,1)
+                }
+            });
+
+    localStorage.setItem('NovelBooks', JSON.stringify(ls));
+        }
+    }
+
+        let fm=document.getElementById('fm1').addEventListener('submit', (e)=>{
+        let inp1=document.getElementById('nm1').value;
+        let inp2=document.getElementById('nm2').value;
+        let inp3=document.getElementById('nm3').value;
+        let res1=new Book(inp1,inp2, inp3);
+        // console.log(storyBooks.addBooks(res1));
+
+
+            let ck=new subBook(); 
+                if(ck.validating(res1))
+                 {      
+                        subBook.addBooks(res1);
+                        storyBook.lsaddBooks(res1);
+                        ck.clearFlds();
+                        storyBook.lsdeleteBooks(res1);
+                        ck.alertMesaage("You have Submitted You're Details and Added to Table", 'success');
+                    }
+                    else
+                    {
+                        ck.alertMesaage("Sorry We couldn't  process You...", 'danger')
+                        // alert("Plz Fill The Forms...   ::(( " );
+                    }
+                    e.preventDefault();
+                })
+
+        subBook.displayBooks(); 
+
+                                // remove Book from UI
+document.getElementById('tblb').addEventListener('click', (el)=>{
+subBook.deleteItms(el.target);
+storyBook.lsdeleteBooks(el.target.parentElement.previousElementSibling.textContent);
+let mb=new subBook();
+mb.alertMesaage('You have Deleted the Book', 'danger');
+
+
+})
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+                                                                // Adding  Code  To UI   //  
+   // class Book {
+        //     constructor(title, author, bookname) {
+        //         this.title = title;
+        //         this.author = author;
+        //         this.bookname = bookname;
+        //     }
+        // }
+
+
+        // class UI {
+
+        //         static displayBooks() {
+        //         const storedBooks = [{ title: "Auth1", author: "Ram", bookname: "BN1" },
+        //                             { title: "Auth2", author: "Vijay1", bookname: "BN2" }];
+        //         const otp1 = storedBooks;
+        //         otp1.forEach((book) => 
+        //         UI.AddBookTo(book));
+        //         }
+
+        //         static AddBookTo(book){
+        //         const tb = document.querySelector('#tblb');
+        //         const data =
+        //             `<tr>
+        //         <td>${book.title}</td>
+        //         <td> ${book.author}</td>
+        //         <td>${book.bookname}</td>
+        //         <td><button type="submit">Delete</button> </td>
+        //         </tr>`;
+        //         tb.innerHTML += data;
+        //             }
+
+        //         static clearFilds(){
+        //         document.getElementById('nm1').value= "";
+        //         document.getElementById('nm2').value = "";
+        //         document.getElementById('nm3').value = "";
+        //             }
+        //             static deleteBook(){
+        //             }
+        //         }
+
+        //     document.getElementById('fm1').addEventListener('submit', (e)=>{
+        //     e.preventDefault();
+        //     var inp1=document.getElementById('nm1').value;
+
+        //     var inp2=document.getElementById('nm2').value;
+
+        //     var inp3=document.getElementById('nm3').value;
+        //     const fbook=new Book(inp1, inp2, inp3);
+        //     // console.log(fbook);
+        //     UI.AddBookTo(fbook);
+        //     UI.clearFilds();
+        // })
+        // UI.displayBooks()
+        // document.addEventListener('DOMContentLoaded', UI.displayBooks);
+
+
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                //Adding  Strores Books To UI
+
+        //   class UI {
+        //     static displayBooks() {
+        //         const storedBooks = [{ title: "Auth1", author: "Ram", bookname: "BN1" },
+        //                             { title: "Auth2", author: "Vijay1", bookname: "BN2" }];
+        //         const otp1 = storedBooks;
+        //         otp1.forEach((book) => 
+        //        UI.AddBookTo(book) 
+        //        );
+        //         }
+
+
+        //     static AddBookTo(book) {
+        //         let tb = document.getElementById('tblb');
+        //         let data =
+        //             `<tr>
+        // <td>${book.title}</td>
+        // <td> ${book.author}</td>
+        // <td>${book.bookname}</td>
+        // </tr>`;
+        //         tb.innerHTML += data;
+
+        //     }
+
+        // }
+        // UI.displayBooks();
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // var t1=document.getElementById("tblb");
+    //     var users=["Rohith", "Kohli", "Rahul"];
+    //     var id=["45","18", "07"];
+    //     var emails=["R@gmail.com", "vk@gmail.com", "R@gmail.com"];
+
+    //     var tab1="";
+    //         for(var i=0;i<emails.length;i++){
+    //             tab1 +=  `<tr><td> ` +  (i+1)   +  `</td><td>`+id[i] + ` </td><td>`  + users[i]  +   `</td><td>`  +   emails[i]  +  `</td></tr>`;
+    //         }
+    //             t1.innerHTML += tab1;
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // var data= [{title:"Raj", author:"Kumar", bookname:'vk'},
+    // {title:"Kishore", author:"Key", bookname:'ABD'},
+    //  {title:"Kishore", author:"Key", bookname:'ABD'}];
+    //   data.forEach((ele)=>{
+
+    // var t1=document.getElementById('tblb');
+    // var tdata= `<tr><td>${ele.title}</td><td>${ele.author}</td><td>${ele.bookname}</td></tr>`;
+    // t1.innerHTML += tdata;
+    //     })
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//     var data= [{title:"Raj", author:"Kumar", bookname:'vk'},
+//     {title:"Kishore", author:"Key", bookname:'ABD'},
+//      {title:"Kishore", author:"Key", bookname:'ABD'}];
+//       data.forEach((ele)=>{
+//           funn1(ele);
+//       })
+
+//     function funn1(book){
+//    var t1=document.getElementById('tblb');
+//     var tdata= `<tr><td>${book.title}</td><td>${book.author}</td><td>${book.bookname}</td></tr>`;
+//     t1.innerHTML += tdata;
+// }
+
+    </script>
+</body>
+
+</html>

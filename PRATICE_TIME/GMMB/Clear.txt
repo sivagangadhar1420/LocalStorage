@@ -1,0 +1,11 @@
+MONGODB P
+W7OLRily2UgDOxia 
+Application connect
+mongodb+srv://sivagangadhar:<password>@cluster0-ha2di.mongodb.net/test?retryWrites=true&w=majority
+Mongoshell connect
+mongo "mongodb+srv://cluster0-ha2di.mongodb.net/test(Databse name)"  --username sivagangadhar
+
+INBACKEND
+nodemon.js ------->(Password)
+app.js ------>(Username)
+in cmd---->(bin folder(aws download) copy path and enter then password)

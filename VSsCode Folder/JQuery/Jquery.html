@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+                        // Toggle
+         // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+        //      $(document).ready(function(){
+        //     $('button').click(function(){
+        //             $('p').toggle(2000);
+        //     });
+        // });
+
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //             $('p').toggle();
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $('#btn').click(function(){
+        //             $('form').toggle();
+        //             $('p')("red")
+        //     });
+        // });
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+                // $(document).ready(()=>{
+                   
+                //         $("#show").click(()=>{
+                //         $("#s").show();
+                //         });
+                   
+
+                //     $("#hide").click(()=>{
+                //         $("#s").hide();
+                //     });
+                // });
+        
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // $(document).ready(()=>{
+            // $("p, button").css("color" , 'crimson');
+            // $("div:first").css('color', 'crimson')
+            // $("p").html("Th Text of p")
+        //    var ab= $('body').html();
+        //    console.log(ab)
+        // })
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                            // FadeIn
+                            // $(document).ready(()=>{
+                            //     $("#btn").click(()=>{
+                            //     $("#s").fadeIn(5000);
+                            //     $("#s1").fadeIn("slow");
+                            //     $("#s2").fadeIn(5000);
+                            // });
+                            // });
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+                            // FadeOut
+                            // $(document).ready(()=>{
+                            //     $("#btn").click(()=>{
+                            //     $("#s").fadeOut(5000);
+                            //     $("#s1").fadeOut("slow");
+                            //     $("#s2").fadeOut(5000);
+                            // });
+                            // });
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+                                    // Fadetoggle
+                            //         $(document).ready(()=>{
+                            //     $("#btn").click(()=>{
+                            //     $("#s").fadeToggle(5000);
+                            //     $("#s1").fadeToggle("slow");
+                            //     $("#s2").fadeToggle(5000);
+                            // });
+                            // });
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                    // FadeTo
+                            //         $(document).ready(()=>{
+                            //     $("#btn").click(()=>{
+                            //     $("#s").fadeTo("slow",0.15);
+                            //     $("#s1").fadeTo("slow", 0.15);
+                            //     $("#s2").fadeTo("slow", 0.15);
+                            // });
+                            // });
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                    // SlideToggle
+                                    $(document).ready(()=>{
+                                $("#sl").click(()=>{
+                                $("#st").slideToggle("slow");
+                                });
+                                 });
+                                    
+    </script>
+    <style>
+        #s{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            /* display: none;fadeIn */
+        }
+        #s2{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            /* display: none;fadeIn */  
+        }
+        #s1{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            /* display: none;fadeIn */
+        }
+        #st{
+            background-color: chartreuse;
+            /* display: none; */
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p id="s" >The text</p>
+    <p id="s1">The texting p</p>
+    <p id="s2">The Content of width</p>
+    <div>TheLinks</div>
+    <div>TheLinks</div>
+    <div>TheLinks</div>
+    <div>TheLinks</div>
+    <div>TheLinks</div>
+    <button id="btn">ClickMe</button>
+    <button id="show">Show</button>
+   <button id="hide">Hide</button>
+
+   <button id="sl">SlideToggle</button>
+   <p id="st">The main Content</p>
+   
+   
+    <form action="">
+        <input type="text">
+        <input type="radio">
+        <button>
+            ClcikMe
+        </button><input type="text">
+        <input type="radio">
+        <button>
+            ClcikMe
+        </button><input type="text">
+        <input type="radio">
+        <button>
+            ClcikMe
+        </button><input type="text">
+        <input type="radio">
+        <button>
+            ClcikMe
+        </button><input type="text">
+        <input type="radio">
+        <button>
+            ClcikMe
+        </button>
+    </form>
+   
+</body>
+</html>
+<!--// Toogle Javascript
+
+// function funn1(){
+//     var m=document.getElementById("s").style.visibility="hidden"
+
+// }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1() {
+// 	  var srcElement = document.getElementById("s");
+// 	                                                    	// if (srcElement != null) {
+// 			if (srcElement.style.display == "block") {
+// 				srcElement.style.display = 'none';
+                                                              //  srcElement.style.visibility="hidden"
+// 			}
+// 			else {
+// 				srcElement.style.display = 'block';
+                                                                   // srcElement.style.visibility="visible"
+// 			}
+// 			// return false;
+// 		}
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // }
+                                  //Hiding Content
+// function funn1(){
+//     var m=document.getElementById("s").style.visibility= "visible" 
+
+// }
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+//         function toggleClock() {
+//     // get the clock
+//     var myClock = document.getElementById('clock');
+
+//     // get the current value of the clock's display property
+//     var displaySetting = myClock.style.display;
+
+//     // also get the clock button, so we can change what it says
+//     var clockButton = document.getElementById('clockButton');
+
+//     // now toggle the clock and the button text, depending on current state
+//     if (displaySetting == 'block') {
+//       // clock is visible. hide it
+//       myClock.style.display = 'none';
+//       // change button text
+//       clockButton.innerHTML = 'Show clock';
+//     }
+//     else {
+//       // clock is hidden. show it
+//       myClock.style.display = 'block';
+//       // change button text
+//       clockButton.innerHTML = 'Hide clock';
+//     }
+//   }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+-->

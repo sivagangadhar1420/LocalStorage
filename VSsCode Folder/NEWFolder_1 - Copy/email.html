@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   /* function addtext()
+      {
+         var fname = document.myform.first_name.value;
+         var lname = document.myform.last_name.value;
+         var email = document.myform.email.value;
+         document.writeln("Thank you! You have just entered the following:");
+         document.writeln("<pre>");
+     document.writeln("<td>First Name :</td> " + fname);
+         document.writeln("<td>Last Name :</td> " + lname);
+         document.writeln("<td>Email Address :</td>  " + email);
+    }   */
+       /* function showfunn1(){
+        var lc=document.getElementById("i").value;
+        var regexp=/^[6-9][0-9]{9}/;
+        if(regexp.test(lc)){
+            document.getElementById("v").innerHTML="Please provide valid mail";
+
+        }
+        
+    }   */
+// function addFunction(){
+//   var x=document.getElementById("inp").value;
+//   document.getElementById("para").innerHTML=x;
+// }
+
+    </script>
+</head>
+<body>
+  
+
+    <input type="text" id="t1">
+    <label id="l" style="color:red; visibility: hidden;">Please</label>
+    <button onclick="numFunction()">HITME</button>
+
+
+<script>
+
+  // //MobileNumberValidation
+  // function numFunction(){
+  //   var y=document.getElementById("t1").value;
+  //   var re=/^[6-9][0-9]{9}$/ ;        //var regexp=/^[abc]/  var regexp=/[^abc]/
+  //      var regexp=/^[0-9][0-9]{9}$/
+  //   if(re.test(y)){
+  //     var x=document.getElementById("l").style.visibility="visible";
+  //    var x=document.getElementById("l").style.color="green";
+  //     document.getElementById("l").innerHTML=" ValidNumber";
+  //   }
+  //   else{
+  //     document.getElementById("l").style.visibility="visible";
+  //   document.getElementById("l").style.color="red";
+  //     document.getElementById("l").innerHTML=" Please provideValidNumber";
+    
+  //   }
+
+  // }
+
+
+//EmailValidation
+ /* function numFunction(){
+    var y=document.getElementById("t1").value;
+    var regexp=/^([a-zA-Z0-9 ().+%$#!_-]+)([@])([a-zA-Z0-9-]+)([.])([a-z]){2,20}$/;
+    
+    if(regexp.test(y)){
+    document.getElementById("l").style.visibility="visible";
+   document.getElementById("l").style.color="green";
+      document.getElementById("l").innerHTML=" ValidNumber";
+    }
+    else{
+      document.getElementById("l").style.visibility="visible";
+    document.getElementById("l").style.color="red";
+      document.getElementById("l").innerHTML=" Please provideValidNumber";
+    
+    }
+
+} 
+*/
+  </script>
+
+  
+  <!--<input type="text" id="inp">
+<p id="para"></p>
+<button type="submit" onclick="addFunction()">HitMe</button>
+
+
+     <table border="1" cellpadding="2" cellspacing="2">
+        <tr>
+        <form name="myform" action="confirm.php" method="get">
+        <td>
+          <label for="first_name">First Name </label>
+          </td>
+          <td>
+          <input  type="text" name="first_name" maxlength="50" size="30">
+            </td>
+            </tr>
+            <tr>
+            <td>
+          <label for="last_name">Last Name </label>
+          </td><td><input  type="text" name="last_name" maxlength="50" size="30">
+            </td></tr>
+            <tr>
+            <td>  <label for="email">Email Address</label>
+          </td><td><input  type="text" name="email" maxlength="80" size="30">
+            </td></tr><br>
+          <input type="submit" value="Submit" onClick="addtext()">
+        </form>
+        </tr>
+   <label for="email">Email</label>
+    <input type="text" id="i">
+    <label id="v"></label><br>
+    <button onclick="showfunn1()">HitMe</button>   -->
+</body>
+</html>

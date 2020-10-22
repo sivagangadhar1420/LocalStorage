@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+      .mv{
+          height: 200px;
+          width: 300px;
+          animation-name: example;
+  animation-duration: 4s;
+      }
+      @keyframes example{
+        10% {background-color: red;margin-left: 20rem;}
+  50% {background-color: yellow;margin-left: -5rem;}
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-columns my-4">
+
+            <div class="card " id="crd">
+                <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+                <p class="card-text">Some more text to increase the height</p>
+                <p class="card-text">Some more text to increase the height</p>
+                <p class="card-text">Some more text to increase the height</p>
+            </div>
+        </div>
+            
+        
+        <div class="card" id="crd1">
+            <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+                <p class="card-text">Some more text to increase the height</p>
+                <p class="card-text">Some more text to increase the height</p>
+                <p class="card-text">Some more text to increase the height</p>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+                <script>
+                    var anmt=document.getElementById('crd');
+                                anmt.classList.toggle('mv')
+                                var amt1=document.getElementById('crd1');
+                                amt1.classList.toggle('mv')
+                </script>
+
+        <!-- <div class="container my-4">
+            <div class="row">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                      </div>
+                    </div>
+
+                    <div class="card mx-3">
+                        <div class="card-body text-center">
+                            <p class="card-text">Some text inside the first card</p>
+                            <p class="card-text">Some more text to increase the height</p>
+                            <p class="card-text">Some more text to increase the height</p>
+                            <p class="card-text">Some more text to increase the height</p>
+                          </div>
+                        </div>  
+                         <div class="card mx-0">
+                            <div class="card-body text-center">
+                                <p class="card-text">Some text inside the first card</p>
+                                <p class="card-text">Some more text to increase the height</p>
+                                <p class="card-text">Some more text to increase the height</p>
+                                <p class="card-text">Some more text to increase the height</p>
+                              </div>
+                            </div>
+                    
+
+
+            </div>
+        </div>
+            <div class="container">
+
+                <div class="card-deck">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+                
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            <div class="container">
+                
+                <div class="card-columns my-3">
+                    
+                    <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">Some text inside the first card</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                        <p class="card-text">Some more text to increase the height</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+             -->
+
+    <script>
+    //     function myfunn(){
+    //     var a=confirm("dou U Wnat To Visit....???");
+    //     if(a == true){
+    //         // return true;
+    //         window.open("https://www.facebook.com/");
+    //     }
+    //     else{
+    //         // return false;
+    //         document.write("Sorry U cant visit...((:")
+    //     }
+    // }
+    // function printfun(){
+    //     window.print()
+    // }
+
+        
+    </script>
+    <!-- <input type="button" name="" id="" value="ClickMe" onclick="myfunn()">
+    <button onclick="printfun()">Print</button> -->
+    <!-- <input type="text" name="" id="nm" oninput="nm1.value = nm.value"> -->
+    
+    <input type="text" name="" id="nm" oninput="funn1()">
+    <input type="text" name="" id="nm1">
+    <script>
+        function funn1(){
+            var inp=document.getElementById('nm').value;
+            var newstr="";
+            for(var i=inp.length-1;i>=0; i--){
+
+                newstr += inp[i];
+            }
+           
+            document.getElementById('nm1').value = newstr;
+        }
+    </script>
+</body>
+</html>

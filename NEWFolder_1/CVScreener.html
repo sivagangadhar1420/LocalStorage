@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container my-4 mx-auto  border border-danger">
+        <div class="head text-center">
+            <h2>Candiates Cv List</h2>
+        </div>
+        <hr>
+        <div class="img text-center mx-4" id="img">
+            <h4>Student Photo</h4>
+        </div>
+        <div class="profile text-center " id="profile">
+            <h2>Profile list</h2>
+        </div>
+        <button class="btn btn-primary btn-block mb-5" id="btn1">Next</button>
+    </div>
+     
+    <script>
+        console.log("Hello..!!!CVS.....~~~~");
+        var arobj = [
+            {
+                name: "Raju",
+                Age: 30,
+                city: "Kolakata",
+                languages: "MERN",
+                image: 'https://randomuser.me/api/portraits/men/96.jpg'
+            },
+
+            {
+                name: "Basava",
+                Age: 30,
+                city: "Kolakata",
+                languages: "MERN",
+                image: 'https://randomuser.me/api/portraits/men/13.jpg'
+            },
+
+            {
+                name: "Lahari",
+                Age: 30, city: "Kolakata",
+                languages: "MongoDB",
+                image: 'https://randomuser.me/api/portraits/women/14.jpg'
+            }
+        ];
+
+        //  document.write(JSON.stringify(arobj));
+        function stdIterator(prfiles) {
+            let nextIndex = 0;
+
+                                                    // Ternary
+            return {
+                    nextOne: function () {
+                    return (nextIndex < prfiles.length)   ?  
+                 
+                    { value: prfiles[nextIndex++],  done: false  }  : 
+                     {  value:prfiles['undefined'], done: true}
+                    }
+                }
+
+                                                // IfElse
+            // return{
+            //     nextOne:function(){
+            //         if(nextIndex < prfiles.length){
+            //             return{
+            //                 value:prfiles[nextIndex++],
+            //                 done:false
+            //             }
+            //         }
+            //         else{
+            //             return{
+            //             value:prfiles['undefined'],
+            //             done:true
+            //         }
+            //     }
+            //     }
+            // }
+        }
+        let stdnt = stdIterator(arobj);
+        console.log(stdnt);
+        let btn = document.getElementById('btn1');
+        btn.addEventListener('click', funn5)
+        function funn5() {
+            let currentCandidate = stdnt.nextOne().value;
+            let pho = document.getElementById('img');
+            let pro = document.getElementById('profile');
+            if (currentCandidate != undefined) {
+                pho.innerHTML = `<img src='${currentCandidate.image}'>`;
+                pro.innerHTML = `<ul class="list-group">
+                        <li class="list-group-item">Name: ${currentCandidate.name}</li>
+                        <li class="list-group-item">Age: ${currentCandidate.Age}</li>
+                        <li class="list-group-item">City: ${currentCandidate.city}</li>
+                        <li class="list-group-item">Languages: ${currentCandidate.languages}</li>`
+            }
+            else {
+                alert("End Of Candidates Applications")
+                window.location.reload();
+            }
+        }
+        funn5();
+     
+        
+
+
+ </script>
+</body>
+
+</html>

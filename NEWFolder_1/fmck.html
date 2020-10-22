@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="" id="fm1">
+    <input type="text" name="" id="inp1">
+    <input type="text" name="" id="inp2">
+    <button id="btn">ClickMe</button>
+</form>
+    <p id="demo">CardBoxes</p>
+   
+    <script>
+             document.getElementById('fm1').addEventListener('submit', (e)=>{
+            var fld1=document.getElementById('inp1').value;
+            var fld2=document.getElementById('inp2').value;
+                var b1=document.getElementById('demo');
+                    b1.innerHTML += `<div style="background-color:red"> ${fld1} </div> 
+                    <div>${fld2}</div>`        
+                   e.preventDefault();
+                    
+            
+
+        
+        })
+
+    </script>
+    
+</body>
+</html>

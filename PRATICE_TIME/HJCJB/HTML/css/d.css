@@ -1,0 +1,21 @@
+body{
+/* background-image: linear-gradient(to right, red, blue); */
+/* margin: 0px; */
+/* box-sizing: border-box; */
+align-items: center;
+background-color: wheat;
+
+} 
+.sp{
+    background-image: url('11.jpg');
+    height: 130px;
+
+    
+}
+.whitebox{
+    height: 155px;
+    width: 155px;
+    background-color: turquoise;
+    display: inline-block;
+}
+

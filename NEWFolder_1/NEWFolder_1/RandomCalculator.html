@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <div class="card col-sm-8 my-4 ">
+              <div class="card-body">
+
+                  <form action="" class="form-inline">
+                      <div class="form-group">
+                      <div class="col-sm-4 mx-4">
+                          <input type="text" name="" id="nm" class="form-control">
+                        </div></div>
+                        <label for="" class="col-sm-2" style="background-color: blue; padding: 8px;">>></label>
+                        <div class="form-group">    
+                          <div class="col-sm-4 mx-4">
+                        <input type="text" name="" id="nm1" class="form-control">
+                    </div></div>
+                    <br><br><br><br>
+                </form>
+                <div class="btn-group ">
+                <div class="m-auto col-sm-6">
+                    <button class="btn btn-primary" id="btn1" style="width: 25rem;">Calculate</button>
+                </div>
+            </div><br><br>
+            <form action="">
+                <div class="form-group ">
+                    <div class="col-sm-4 m-auto">
+                    <input type="text" name="" id="nm6" class="form-control">
+                </div></div>
+            </form>
+            <div class="card-footer text-center bg-primary ">
+                <p class="text-danger">This is the Footer of Footer</p>
+            </div>
+             </div>
+          </div>
+      </div>
+
+      <script>
+            var bt1=document.getElementById('btn1').addEventListener('click', ()=>{
+                   var inp=document.getElementById('nm');
+                   var inp1=document.getElementById('nm1');
+                   if(inp.value.length == "" || inp1.value.length == "" || !isNaN(inp.value) || !isNaN(inp1.value)){
+                       alert("Plz enter U r name")
+                   }
+                   else if(inp.value.length < 3 && inp1.value.length < 3){
+                       alert("Name must be greatr than 2 chars")
+
+                   }
+                   else{
+                   
+                    var mr=Math.floor(Math.random() *100) + 1;
+                    document.getElementById('nm6').value = mr;
+                }
+            })
+      </script>
+      
+  </body>
+  </html>

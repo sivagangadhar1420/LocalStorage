@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+    <title>Document</title>
+    <style>
+        @media(max-width:800px){
+            #i1{
+                flex-direction: row;
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+            #i1 li{
+                margin: 10px;
+                
+                margin-left: 0px;
+            }
+            #tb1{
+              width: 100%;
+              background-color: chartreuse;
+            
+            }
+            #tb1 th, td{
+              font-weight: bold;
+             }
+           
+
+         
+        }
+        body{
+          margin: 0px;
+          padding: 0px;
+        }
+              
+
+    </style>
+
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark"> -->
+        
+    <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center"> -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark "> 
+        
+        <!-- <ul class="navbar-nav m-auto"> -->
+            <!-- <ul class="navbar-nav mr-auto"> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="fa fa-bars"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+                 
+            
+            <ul class="navbar-nav">
+          
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>    
+          </ul>
+          <!-- <ul class="navbar-nav mr-auto"> -->
+          <!-- <ul class="navbar-nav m-auto "> -->
+                <ul class="navbar-nav m-auto" id="i1">
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>  
+
+          </ul>
+          </div>
+         
+        
+        <!-- <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>  
+
+          </ul>
+          <a class="navbar-brand ml-auto" href="#">Navbar</a>
+          <form action="" class="form-inline">
+              <input type="text" name="name" id="name" class="form-control">
+            <div class="input-group mb-0">
+                <div class="input-group-append">
+                    <span class="input-group-text">&times;</span>
+                </div>
+            </div>
+          </form>
+
+  
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>    
+            <li><input type="text" name="" id=""  class="form-control"></li>
+          </ul>
+           -->
+</nav>
+<div id="am"></div>
+   <div class="container my-5">
+<form action="" id="fm1">
+    <div class="form-group row">
+ <label class="control-label col-sm-2" for="name">Name:</label>
+  <div class="col-sm-10">
+      <input type="text" class="form-control" id="name" placeholder="Enter email" name="name">
+  </div></div>
+
+  <div class="form-group row">
+    <label class="control-label col-sm-2" for="name">Email:</label>
+     <div class="col-sm-10">
+         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+     </div></div>
+    
+     <div class="form-group row">
+      <!-- <div class="row">    -->
+      <label for="name" class="label-control col-sm-2">Radios:</label>
+       <div class="col-sm-10">
+&nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="r" id="r1" value="sledging" >
+<label for="r1"  class="label-control">Bad Blood</label><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="r" id="r2" value="Gaming"  >
+<label for="r2"  class="label-control">Win like virat & succeed like Kohli</label> <br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input  class="form-check-input" type="radio" name="r" id="r3" value="Virtual" >
+<label for="r3" class="label-control">Rich And Poor Dad</label><br>
+<select name="s1" id="s1" size="0" class="col-sm-">
+  <optgroup class="c" label="Header">
+    <option value="">Check</option>
+ <option value="1">Val1</option>
+ <option value="2">Val2</option>
+ <option value="3" >Val3</option>
+ <option value="4">Val4</option></optgroup>
+</select>
+
+       </div>   </div>
+      
+              
+      
+  <!-- </div> -->
+  <div class="form-group row">
+    <!-- <div class="row">    -->
+       <label for="check1" class="label-control col-sm-2">CheckHere:</label>
+    <div class="col-sm-8">
+      &nbsp;&nbsp;&nbsp; <input type="checkbox" name="check" id="check" class="form-check-input">
+      <label for="check" class="control-label">ClickHere To Check</label>
+    </div>
+  </div>
+  <div class="btn-group">
+    <div class="col-sm-0">
+    <button class="btn btn-primary">AddStorage</button>
+    <input type="reset" name="rese" id="rese" value="reset">
+    </div>
+  </div>
+  
+<!-- </div> -->
+ </form>
+ <br>
+ <h1>Your Books:</h1>
+ <table class="table table-striped table-dark table-bordered col-sm-12" id="tb1" style="text-align: center;">
+   <thead>
+     <tr>
+ 
+       <th>Name</th>
+       <th>Email</th>
+       <th>Books</th>
+       <th>Selected</th>
+     </tr>
+   </thead>
+   <tbody id="tblb">
+    <!-- <tr>
+      <td>1</td>
+      <td>Raj</td>
+      <td>R@gmail.com</td>
+      <td>BadBlood</td>
+    </tr><tr>
+      <td>2</td>
+      <td>Yashwanth</td>
+      <td>y@gmail.com</td>
+      <td>BadBlood</td>
+    </tr><tr>
+      <td>3</td>
+      <td>Abraham</td>
+      <td>Ab@gmail.com</td>
+      <td>BadBlood</td>
+    </tr> -->
+   </tbody>
+ </table>
+</div>
+<script src="index1.js"></script>
+
+<!-- <fieldset class="form-control">
+  <legend class="col-form-label col-sm-2 pt-0" style="border: none;">Radios:</legend>
+  <div class="col-sm-10">
+    <div class="form-check"></div>
+  </div> -->
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .c1{
+            background-color: chartreuse;
+            padding: 1.5em;
+            
+            /* padding-left: 1em; */
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="c1" id="c12">Div1</div>
+    <script>
+                                                            // Local storage
+        // var a={Name:"Roshan", age:222, gender:"Male"};
+        // localStorage.setItem("Details:" ,JSON.stringify(a));
+
+        // var b=['Fruits', 'Vegtabls', 'DryFruiiiits'];
+        // localStorage.setItem("groceries", JSON.stringify(b));
+        //  var lc=localStorage.getItem("groceries");
+        // var lc=JSON.parse(localStorage.getItem("groceries"));
+        // console.log(lc);
+    // Json.parse will used to convert the string to an array
+      
+        // var d=localStorage.setItem("Name1", "Rohith");
+                 // localStorage.removeItem('Name1');
+                // console.log(localStorage.getItem("Name1"));
+                // localStorage.clear();
+
+                                                                    // Session storage
+    // var a =sessionStorage.setItem('session1', 'Welcome');
+    // var b =sessionStorage.setItem('session2', 'WelcomeToMyworld');
+    // sessionStorage.clear();
+
+    var dv1=document.createElement('div');
+    dv1.setAttribute( 'style','background-color:red; height:200px; width:300px; background-color:blue; margin:auto');
+    dv1.setAttribute('class', 'cl1');
+    var txt=document.createTextNode('The Inner div');
+    var st=document.getElementById('c12');
+    dv1.append(txt)
+            st.append(dv1);
+            // st.insertAdjacentElement("afterbegin",dv1);
+    // document.body.append(dv1);
+    dv1.addEventListener('click', ()=>{
+       var ht1=`<textarea class="form-control" id="ta"  rows='4' style="cursor:pointer"></textarea>`;
+        dv1.innerHTML= ht1;
+    })
+
+
+           
+
+    </script>
+</body>
+</html>

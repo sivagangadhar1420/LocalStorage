@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+   .s1{ color: red;}
+   .s2{ background-color:yellow;}
+   .s3{ background-color:aqua;}
+   .s4{ font-family: Chiller;}
+</style>
+<script src='jquery.js'></script>
+</head>
+<body>
+    <u>Courses:</u>
+    <ol>
+        <li>Html(0)</li>
+        <li>CSS(1)</li>
+        <li>JS(2)</li>
+        <li>Jquery(3)</li>
+        <li>Ajax(4)</li>
+        <li>Bootstrap(5)</li>
+    </ol>
+    <u>Branches:</u>
+    <ul>
+        <li>Ameerpet</li>
+        <li>SR Nagar</li>
+        <li>Dilshuknagar</li>
+        <li>Kukatpally</li>
+    </ul>
+<script>
+    $(document).ready(function()
+    {
+        $('ol li').first().addClass('s1')
+        $('ol li').last().addClass('s1')
+        $('ol li').eq('3').addClass('s1')
+        $('ol li').filter(':even').addClass('s2')
+        $('ol li').filter(':odd').addClass('s3')
+        $('ul').has('li').addClass('s3')
+        $('ol li').not(':odd').addClass('s4')
+        $("ul li").slice(0, 2).addClass("s4");
+    });
+</script>
+</body>
+</html>

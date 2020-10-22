@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegularExpressions</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name:</label>
+    <input type="text" name="n1" id="name"><br>
+    <input type="button" value="ClickMe" onclick="funn1()"><br><br>
+    <textarea name="txt" id="txt1" cols="30" rows="10"></textarea>
+    </form>
+    <script>
+                                            // Code With Venkat
+        //     function funn1(){
+        //     var tx=document.getElementById('name').value;
+            
+        //     let re=tx.match(/\d+/g);
+        //     if(re != null){
+        //         for(var i=0; i< re.length; i++){
+                 
+        //             document.getElementById('txt1').innerHTML += re[i] + "\r\n";
+        //         }
+        //     }
+        //             else{
+        //                 alert("plz  enter Some digits")
+        //             }
+        //     alert(re);
+        // }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                        // Code With Harry
+                            //// 1.Exec  : Functions to Match Expressions.
+                                        
+                                        // let ar1=/harRy/ig;
+                                        // // let ar1=/haRry/;
+                                        // console.log(ar1);
+                                        // console.log(ar1.source);
+                                        
+                                        // let a='This is harry text harry included Harry';
+                                        // console.log(ar1.exec(a));
+                                        // console.log(ar1.exec(a));
+                                        // console.log(ar1.exec(a));
+
+                                        // let ind=ar1.exec(a);
+                                        // console.log(ind.index)
+                                        // console.log(ind.input);
+                                       
+                                        // let reg=/hello/;
+                                        // let txt='Hey boy hello to ';
+                                        // console.log(reg.exec(txt));
+
+
+                        //// 2. Test : Return true or False.
+                               
+                                // let reg=/Harry/ig;
+                                // let a='This is harRy text harry included HaRry';
+                                // console.log(reg.test(a));
+
+
+                        //// 3.Match():  It will return an array of results or null
+                                // let reg=/everyone/
+                                // let a="hello everyone"
+                                // let m=a.match(reg)
+                                // console.log(m)
+                                
+
+                                // let reg=/walker/;
+                                // let txt='Hello everyone by alan walker';
+                                // console.log(txt.match(reg));
+
+
+                    // // 4.search 
+                                    // let reg=/darkside/;
+                                    // let txt="song by alanwalker on darkside";
+                                    // console.log(txt.search(reg));
+
+
+                    // // 5 . Replace
+                                    // let reg=/diamond/gi;
+                                    // let txt="ong by alanwalker on diamond and diamond";
+                                    // console.log(txt.replace(reg, 'diamonds'));
+
+                        // let ar1=/^regularexpression/;
+                            // let ar1=/^to/
+                            // let ar1=/pt$/
+                            // let ar1=/ja.ascript/;
+                            // let ar1=/j*a/;
+                        // let ar1=/javaa?scripp?t/;
+                        // let txt2='topic is on regularexpression in javascript '
+                        // console.log(ar1.exec(txt2));
+
+                        // if(ar1.test(txt)){
+                        //     console.log(` ${txt} matches with  ${ar1.source}`);
+                            
+                        // }
+                        // else{
+                        //     console.log(` ${txt} doesnt matches  with ${ar1} `);
+                            
+                        // }
+
+                        // let rege=/j[a-zA-Z]vascri[a-zA-Z]t i?o?t?/;
+                        // let rege=/j[sayz]va/;
+                        // let rege=/j[^zxcvbnm]v[bda]/;
+                        // let rege=/^topic/
+                        // let rege=/j[a-zA-Z]v[mnbvaxz]/
+                        // let rege=/j[^bcvmnzx]va/;
+                        //     let rege=/j[a-zA-Z]v[A-Z][0-9][0-9]script/
+                            
+                        // let txt='topic is on regularexpression in javA49script ';
+                        // // let txt='topic is on regularexpression in javAscript ';
+                        // console.log(rege.exec(txt));
+                        // if(rege.test(txt)){
+                        //     console.log(` ${txt} matches with  ${rege.source}`);
+                            
+                        // }
+                        // else{
+                        //     console.log(` ${txt} doesnt matches  with ${rege} `);
+                            
+                        // }
+                                // Quantifiers
+
+                                // let rege1=/ja{0,3}va/;
+                                // let rege1=/ja{3}va/;
+                                // let txt1='jaaava is pl';
+                                // console.log(rege1.exec(txt1));
+
+                                // Groupings
+                                // let rege=/(java){2}/;
+                                // let txt='javajava pl';
+                                // console.log(rege.exec(txt));
+
+                                // var rege=/visit/;
+                                // var rege=/visit/ig;
+                                // var txt='visit heree and write';
+                                // var txt='VisIt heree and write';
+                                // var result=txt.match(rege);
+                                // document.body.innerHTML += result;
+                                
+                                
+                                //MultiLines 
+
+                                // var rege=/is/mgi;
+                                // var txt='nnIs and IS there is';
+                                // console.log(txt.match(rege));
+
+                                //Replace
+
+                                // let rege=/person/gi;
+                                // let txt='Everey person in the world be a person';
+                                // let result=txt.replace(rege, 'Human');
+                                // console.log(result);
+
+                                //Exec 
+
+                                // let rege=/nullvals/gi;
+                                // let txt='nullvals should be nullvals';
+                                // console.log(rege.exec(txt))
+                                // let result=rege.exec(txt);
+                                // document.body.innerHTML += result;
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxx
+                                // let txt='schools are ools of ools';
+                                // let rege=/oo/gi;
+                                // console.log(txt.match(rege));
+
+                                // var txt="Helloworld and welocome to muy world";
+                                // var rege=/\w+/g;
+                                // console.log(txt.match(rege));
+
+                                // var num=123456789;
+                                // var rege=/\d+/g;
+                                // console.log(rege.exec(num))
+
+
+                                
+                                // let txt="The total text of string is 12345!!!??:";
+                                // let rege=/\w/g;
+                                // console.log(txt.match(rege));
+
+                                // let txt='hard17the!! bhai'
+                                // let rege=/\w+d17/
+                                // console.log(txt.match(rege));
+
+                                // let rege=/\Wbhai/;
+                                // let txt='The Totaltext of bhai@#$%^';
+                                // let rege=/\w+ \w+ \w+ \w+/;
+                               let txt="The number hyrry of 9998The66 charas are 43678 these "
+                                    // let rege=/\W+To/  
+                                    // let rege=/ \d+/
+                                    // let rege=/are \d+78/        
+                                    // let rege=/\D+66/      
+                                    // let rege=/\s+of/
+                                    // let rege=/\S+re/;
+                                    // let rege=/h(?=yrr)/gi;
+                                    let rege=/c(?!a)/;
+                                let result = rege.exec(txt);
+                                console.log(result)
+
+                                
+                                  
+
+
+
+
+                        
+
+
+
+
+
+                                        
+                                       
+                                        
+                                    
+
+                                        
+
+                                        
+                                    
+        
+    </script>
+</body>
+</html>

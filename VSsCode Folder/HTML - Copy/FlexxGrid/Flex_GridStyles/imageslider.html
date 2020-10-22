@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .imageslides .slide img{
+            float: left;
+           
+        }
+      
+        img{
+            object-fit: cover;
+            height: 300px;
+            width: 23%;
+            animation-name: keysamp;
+            animation-timing-function: ease-in-out;
+            animation-duration: 20s;
+            animation-delay: 2s; 
+            animation-direction: normal;
+           }
+        @keyframes keysamp{
+            0%{
+                margin-left: -10px;
+                height: 100px;
+                width: 100px;
+                
+            }
+           30%{
+                margin-left: -30px;
+                clip-path: circle();
+            }
+            100%{
+                margin-left: -200px;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="imageslides">
+        <div class="slide">
+            <img src="3.jpeg" alt="img">
+       
+      
+            <img src="2.jpeg" alt="img">
+       
+            <img src="c.jfif" alt="img">
+        
+            <img src="p.png" alt="img">
+        </div>
+    </div>
+</body>
+</html>

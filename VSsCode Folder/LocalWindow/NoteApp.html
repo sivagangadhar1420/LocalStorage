@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* min-height: 100vh; */
+            line-height:100vh;
+
+        }
+    input{
+       font-size: 2rem;
+       width: auto;
+       /* border:none; */
+       /* outline: none; */
+       /* border-radius: 30%; */
+    /* border-bottom: 2px solid red; */
+
+        }
+    /* #eye{ */
+/* position: absolute; */
+/* top:46.8%; */
+    /* right: 31rem; */
+/* right: 36vw; */
+/* transform: translateY(100%); */
+/* cursor: pointer; */
+/* font-size: 30px; */
+/* display: none; */
+/* } */
+                                #eye{
+                                            position: absolute;
+                                            top:46.8%;
+                                            right: 31rem;
+                                        /* right: 36vw; */
+                                        /* transform: translateY(100%); */
+                                        cursor: pointer;
+                                        font-size: 30px;
+                                        /* display: none; */
+                                            }
+            #hd{
+                position: absolute;
+                top:47%;
+                right: 31rem;
+                font-size: 30px;
+                cursor: pointer;
+            }
+
+
+      
+        /* .hid{
+            font-family: fontawesome;
+        } */
+    </style>
+</head>
+<body>
+  
+    <form action="">
+        <!-- <input type="password" name="" id="pwd"  placeholder="&#xf070;"  class="hid"> -->
+        <input type="password" name="n" id="pwd">
+        <span id="ph" class="ph1" onclick="myFunction()">
+        <i class="fa fa-eye" id="eye"></i>
+        <!-- <i class="fa fa-eye-slash" id="hd"></i> -->
+        </span>
+
+
+       
+    </form>
+    <input type="number" name=""  value= 18  id="chk">
+    <script>
+        var pwd=document.getElementById('pwd');
+        var fi=document.getElementById('eye');
+        // var hp=document.getElementById('hd');
+        fi.addEventListener("click", ()=>{
+              // fi.classList.toggle('active');
+            if(pwd.type === 'password'){
+                pwd.type = 'text';
+            }
+            else{
+                pwd.type = 'password'
+            }
+                //  Ternary 
+            // (pwd.type === "password") ? pwd.type = "text" : pwd.type="password";
+               
+        })
+      
+       
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                    // Hiding and Enabling the Password
+    //     var pwd=document.getElementById('pwd');
+    //     var fi=document.getElementById('eye');
+    //     var hp=document.getElementById('hd');
+    //     function myFunction(){
+    //      if(pwd.type === 'password'){
+    //     pwd.type = "text";
+    //     fi.style.display = "block";
+    //     hp.style.display = "none";
+    //     }
+    //     else{
+    //         pwd.type = "password";
+    //     fi.style.display = 'none';
+    //     hp.style.display = 'block';
+    //     }
+    // }
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             
+      // const pwd=document.getElementById('pwd');
+        // const fi=document.getElementById('eye');
+        // const fi1=document.getElementById('hd');
+
+
+        // fi.addEventListener('click', ()=>{
+        //     if(pwd.type == 'password'){
+        //      pwd.setAttribute('type', 'text')
+        //        fi.classList.remove('fa-eye-slash');
+        //     }
+        //     else{
+        //         pwd.setAttribute('type','password');
+                
+        //        fi.classList.add('fa-eye-slash');
+             
+            //     }
+        // })
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                                // MAX and MIN 
+        var a=[11,1,2,9,3,45,6,21,30];
+       
+        // var b=a.reduce((d, e)=>{
+        //     if( e > d){
+        //         d=e;
+        //     }
+        //     return d;
+        // })
+        // console.log(b)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // function funn1(d, e){
+        //     if( e > d){
+        //         d=e;
+        //     }
+        //     return d;
+
+        // }
+        // var ft=a.reduce(funn1);
+        // console.log(ft);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var b=a.reduce((d, e)=> { return e > d ? e : d});
+// console.log(b);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var b=a.reduce((d,e)=>{ return e += d});
+// console.log(b);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var b= a.reduce((d, e)=>{
+//         return e += d;
+// })
+// console.log(b);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var max=a[0];
+// for(var i=0;i<a.length; i++){
+// if(a[i] > max ){
+//     max = a[i];
+// }
+// }
+// console.log(max);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //      var ages=[10,20, 30 ,21,1,10,11];
+    //      var a=ages.forEach(funn1)
+            
+    //      function funn1(ab){
+    //      return ab >= 18;
+    //     }
+    //   console.log(ages.findIndex(funn1));
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// var ages = [4, 12, 16, 20];
+
+// function checkAdult(age) {
+//   return age >= document.getElementById("ageToCheck").value;
+// }
+
+// function myFunction() {
+//   document.getElementById("demo").innerHTML = ages.findIndex(checkAdult);
+// }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    </script>
+    
+</body>
+</html>

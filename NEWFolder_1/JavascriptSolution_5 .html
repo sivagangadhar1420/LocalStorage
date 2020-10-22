@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="my-2">
+  <button id="btn">Populate</button>
+  <ul id="menu" class="list-group mx-4 my-4"></ul>
+</div>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">Action item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+  </div>
+<div class="alert alert-primary alert-disimissible fade show">Text
+  <button class="close" data-dismiss="alert">&times</button>
+</div>
+
+    <script>
+        let myobj=`{
+  "word": "example",
+  "results": [
+    {
+      "definition": "a representative form or pattern",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "model"
+      ],
+      "typeOf": [
+        "representation",
+        "internal representation",
+        "mental representation"
+      ],
+      "hasTypes": [
+        "prefiguration",
+        "archetype",
+        "epitome",
+        "guide",
+        "holotype",
+        "image",
+        "loadstar",
+        "lodestar",
+        "microcosm",
+        "original",
+        "paradigm",
+        "pilot",
+        "prototype",
+        "template",
+        "templet",
+        "type specimen"
+      ],
+      "derivation": [
+        "exemplify"
+      ],
+      "examples": [
+        "I profited from his example"
+      ]
+    },
+    {
+      "definition": "something to be imitated",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "exemplar",
+        "good example",
+        "model"
+      ],
+      "typeOf": [
+        "ideal"
+      ],
+      "hasTypes": [
+        "pacemaker",
+        "pattern",
+        "beauty",
+        "prodigy",
+        "beaut",
+        "pacesetter"
+      ],
+      "derivation": [
+        "exemplify",
+        "exemplary"
+      ]
+    },
+    {
+      "definition": "an occurrence of something",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "case",
+        "instance"
+      ],
+      "typeOf": [
+        "happening",
+        "natural event",
+        "occurrence",
+        "occurrent"
+      ],
+      "hasTypes": [
+        "clip",
+        "mortification",
+        "piece",
+        "time",
+        "humiliation",
+        "bit"
+      ],
+      "derivation": [
+        "exemplify"
+      ],
+      "examples": [
+        "but there is always the famous example of the Smiths"
+      ]
+    },
+    {
+      "definition": "an item of information that is typical of a class or group",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "illustration",
+        "instance",
+        "representative"
+      ],
+      "typeOf": [
+        "information"
+      ],
+      "hasTypes": [
+        "excuse",
+        "apology",
+        "specimen",
+        "case in point",
+        "sample",
+        "exception",
+        "quintessence",
+        "precedent"
+      ],
+      "derivation": [
+        "exemplify",
+        "exemplary"
+      ],
+      "examples": [
+        "this patient provides a typical example of the syndrome",
+        "there is an example on page 10"
+      ]
+    },
+    {
+      "definition": "punishment intended as a warning to others",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "deterrent example",
+        "lesson",
+        "object lesson"
+      ],
+      "typeOf": [
+        "monition",
+        "admonition",
+        "word of advice",
+        "warning"
+      ],
+      "derivation": [
+        "exemplary"
+      ],
+      "examples": [
+        "they decided to make an example of him"
+      ]
+    },
+    {
+      "definition": "a task performed or problem solved in order to develop skill or understanding",
+      "partOfSpeech": "noun",
+      "synonyms": [
+        "exercise"
+      ],
+      "typeOf": [
+        "lesson"
+      ],
+      "examples": [
+        "you must work the examples at the end of each chapter in the textbook"
+      ]
+    }
+  ],
+  "syllables": {
+    "count": 3,
+    "list": [
+      "ex",
+      "am",
+      "ple"
+    ]
+  },
+  "pronunciation": {
+    "all": "ɪɡ'zæmpəl"
+  },
+  "frequency": 4.67
+}`;
+
+// console.log(JSON.parse(myobj));
+// var d1=JSON.parse(myobj);
+// var d2=d1.results;
+// console.log(d2);
+                                        // ForLoop
+// let md="";
+// for(var key in d2){
+//     md += `<li>${d2[key].definition}</li>`;
+// }
+// document.body.innerHTML = md;  
+
+let res=JSON.parse(myobj);
+let res1=res.results;
+// console.log(res1);
+var btn=document.getElementById('btn').addEventListener('click', populate);
+let md="";
+let menu=document.getElementById('menu');
+function populate(){
+res1.forEach((element)=>{
+  // md += `<li>${element.definition}</li>`
+  md += `<li class="list-group-item list-group-item-primary">Lists of items are: ${element['definition']}</li>`
+});
+menu.innerHTML  += md;
+
+}
+
+                                    // ForEach
+                                    
+// let dd="";
+// d2.forEach((element, index) => {
+// dd +=`<li>${element['definition']} </li>`;
+// });
+// document.body.innerHTML += dd;
+       
+
+// console.log(JSON.stringify(myobj));
+// console.log(JSON.parse(myobj));
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var a=[{"name": "Raj", age:30},{"name": "Raj", age:30}];
+// console.log(JSON.stringify(a));
+// console.log(JSON.parse(JSON.stringify(a)))
+// console.log(a);
+// var md=a.forEach((ele)=>{console.log(ele)})
+
+
+
+    </script>
+</body>
+</html>

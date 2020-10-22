@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+//  var obj={name:"Raju", gender:"Male", age:30, birthyear:function(){var date=new Date().getFullYear(); return date - this.age}};
+//         console.log(obj.birthyear());
+//         console.log(obj);
+        // console.log(Object.values(obj))
+        // console.log(Object.keys(obj));
+        // console.log(Object.entries(obj));
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // var res="";
+        // for( res in obj){
+        // console.log( res+" : "+obj[res] + " " + Object.entries(obj) + Object.values(obj)  + Object.keys(obj));
+        // }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            // let str=new Set([1,1,2,2,3,4,5]);
+            // for(var vals of str){
+            //     console.log(vals)
+            // }
+            // console.log(str)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+            // let str1="Hey string Come to my side";
+            // var vals1="";
+            // for(vals1 of str1){
+            // for(vals1 in str1){
+                // console.log(vals1)
+            // }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+                                                 // Iterators    
+
+    // let ar=[1,2,3,2,3,4,5,6];
+    // function funn1(vals) {
+    //     let nextIndex= 0; 
+    //     return{
+    //     next:function(){
+    //         if(nextIndex < ar.length){
+    //             return {
+    //                 // value: vals[nextIndex++],
+    //                 value:vals[nextIndex++],
+    //                 done: false
+    //             }
+    //         }
+    //             else{
+    //                     return {
+    //                         value:vals['undefined'],
+    //                         done:false
+    //                     }
+    //               }
+    //          }
+    //      }
+    //  }
+    // let ft=funn1(ar);
+    // console.log(ft);
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+    // console.log(ft.next());
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+     // var ar1=['Apples', "Grapes", 'Bananna', "Mango"]
+    // let ir=ar1[Symbol.iterator]();
+    // console.log(ir.next());
+    // console.log(ir.next());
+    // console.log(ir.next());
+    // console.log(ir.next());
+    // console.log(ir.next());
+    // console.log(ir.next());
+    // console.log(ir.next());
+    // for(var nums of ar1){
+    //     console.log(nums);
+    // }
+   
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+           
+
+                                                        // Generators
+            // function* funn1(){
+            //     var i=0;
+            //     while(true){
+            //         yield i;
+            //         i++;
+            //     }
+            // }
+            // var funn2=funn1();
+            // console.log(funn2.next().value);
+
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            //  console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next());
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            //     function* funn1(){
+            //     var i=0;
+            //     while(i<=5){
+            //         yield i;
+            //         i++;
+            //     }
+            // }
+            // var funn2=funn1();
+            // console.log(funn2.next().value);
+            // console.log(funn2.next()); 
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // function* funn1(){
+        //     // let i=0;
+        //             yield 1;
+        //             yield 2;
+        //             yield 3;
+        //               }
+                     
+        //     var funn2=funn1();
+        //     console.log(funn2.next().value);
+        //     console.log(funn2.next().value);
+        //     console.log(funn2.next());
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+            //    function* funn1(){
+            //     var i=0;
+            //     while(i<=5){
+            //         yield i.toString();
+            //         i++;
+            //     }
+            // }
+            // var funn2=funn1();
+            // console.log(funn2.next().value);
+            // console.log(funn2.next()); 
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            //  console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            // console.log(funn2.next().value);
+            
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                            // Symbols
+// let symb=Symbol('My Identifier');
+// let symb1= Symbol('My Identifier');
+// console.log(symb, symb1);
+// console.log(typeof symb);
+// console.log(symb === symb1);
+
+
+// let k1=Symbol('My Identifier of k1'), k2=Symbol('My Identifier of k2');
+// let myObj={};
+// myObj[k1] = "Harry";
+// myObj[k2]= "roshan";
+// myObj["result"]= "FinalOutPut";
+// myObj["Output"]="InputOutPut";
+// console.log(myObj);
+// console.log(myObj[k1], myObj[k2]);
+// for(var key in myObj){
+//     console.log(key, myObj[key]);
+// }
+// console.log(JSON.stringify(myObj));
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                        
+                                                        //Destructuring
+        // let a,b;
+        // [a,b] = [10,20];
+        // console.log(a,b);
+
+        // [a,b,c, ...d] = [1,2,3,4,5,6,7,89]
+        // console.log(a, b,c,d);
+        // console.log(b);
+        // console.log(c);
+        // console.log(d);
+
+        // ({a,b,c,...d} = {a:1,b:2,c:3, d:35, e:44})
+        // console.log(a,b,c,d);
+    
+// var fr=["app", "mang", "Ban"];
+// var [a,b,c] = fr;
+// console.log("First1:" + a, "First2:"+b,"First3:"+c);
+
+
+// var obj={name:"Raju", age:30, gender:"Male", start:()=>{console.log("Print");}};
+
+// let {name, age, gender,start} = obj;
+// console.log(name, age, gender,start);
+// console.log(start())
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// var obj={name:"Raju", age:30, gender:"Male",acts:{play1:"Crick", play2:"Chess"} ,start:()=>{console.log("Print");}};
+// let {name:Myname, age:Myage, gender, start, acts}  = obj;
+// console.log(` ${Myname}  and   ${Myage}  and ${gender}  ${start} and ${acts.play1} `);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// var obj2={name:"Raju", acts:{ hobbies:"Cricket", gender:"Male"}, techs:["P1", "P2"] ,
+// ff:function(){return this.name + " is playing "+ this.acts.hobbies}}
+// console.log( obj2.ff() + " and gender " + obj2.acts.gender +  " " + obj2.techs[1] );
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                                // Default Parameters
+// function funn1(a,b){
+//     var b=(typeof b !== 'undefined' ) ? b:1 ;
+//      console.log(a+b);
+        
+// }
+// funn1(4)
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(a,b=2){
+      
+//         console.log(a+b);
+        
+// }
+// funn1(4)
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                                // Rest Parameters
+// function funn1(a,b,d,...c){
+//         console.log(`${a}  ${b}  ${d} ${c}`);
+        
+// }
+// funn1(1,2,3,4,5,6);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+
+// var sum=0;
+// function funn1(...inp){
+//                   for(var sm of inp){
+//                        sum += sm;
+//                }
+//         console.log(inp);
+        
+// }
+// funn1(1,2,3,4,5,6)
+// console.log(sum);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //         function funn1(a,b,...c){
+        //         console.log(` a is ${a} and b is ${b}`);
+        //         console.log(`${c}`);
+        //         console.log(`${c[0]} ${c[2]}`);
+        //         console.log(c.length);
+                
+        //         console.log(`${c}`.indexOf('MS'));
+        //         console.log(`${c}`.includes("RJ"));
+                
+        // }
+        // funn1("AB", "Vk", "RS", "MS", "RJ");
+ // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                        // Spread Operator
+                // var a=[1,2,3,4,5,1,2,3,4,6];
+                // console.log(...new Set(a));
+                // var b = [1,2,3,4,5,6,7,8,9,2];
+                // b.push(a)
+                // var c=[...a, ...b];
+                // console.log(...new Set(c));
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                // var a=[];
+                  // for(var i=0; i<=5; i++){
+                //         var b=prompt("enter Nos");
+                //         a.push(b);
+                // }
+                // console.log(...new Set(a));
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        //  var a=[1,2,3,4,5];
+                        //  var b=[1,2,3,4,6];
+                        // a=[...a,...b];
+                        // console.log(a);
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                // var a='123456789';
+                                // var b=a.length;
+                                // var rm="";
+                                // for(var i=0; i<=5; i++){
+                                //         rm +=a[Math.floor(Math.random() * b)]
+                                //         // console.log(rm);
+                                // }
+                                // console.log(rm);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                        // console.log(Math.pow(4,3));
+                                        // var a="Vinod";
+                                        // var b=5;
+                                        // // console.log(!isNaN(a));
+                                        // // console.log(Number.isNaN(a))
+                                        // console.log(!isNaN(b));
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                        // var aa=["a","b","c","d"];
+                                        // var bb=["e","f","g","h","a", "b"];
+                                        // for(var i=0; i< aa.length; i++){
+                                        //         // console.log(aa[i]);
+                                        //         for(var j=0; j< bb.length; j++){
+                                        //                 if(aa[i] == bb[j]){
+                                        //                         console.log(aa[i]);
+                                                                
+                                        //                 }
+                                        //         }
+                                                
+                                        // }
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                          
+                                                        //    ==     AND     ===
+// var a=2;
+// var b="2";
+// c={};
+// d={};
+// e=[];
+// f=[];
+// g="[1,2]";
+// h="[1,2]";
+// console.log( a === b) 
+// console.log(a == b);
+// console.log(c == d);
+// console.log(c === d);
+// console.log( e == f);
+// console.log( e === f);
+// console.log(g == h);
+// console.log( g === h);
+
+                                                            
+        //  === defines it is string or object or anything......else
+        //  == doesnt difines anything it just checks two values are equal or not
+                                                          
+                                                            
+            
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+                                                           // While Loop
+        //   var a=0;
+        //   while(a <=100){
+        //  document.write('<li>' +a +":"+ +"Hey world" + '</li>');
+        //       a =a +10;
+        //   }
+                                                        //    Do WhileLoop
+        // var a=1;
+        // do{
+        //     document.write("Hey world" + "<br>");
+        //   a= a+10;
+        // }while( a<= 100);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+             //    var count=0;
+  //  function funn1(){
+  //    console.log(count++);
+  //  }
+  //    var s=setInterval(funn1, 1000);
+  //    if(count >= 10){
+  //      clearInterval(s);
+  //    }
+
+    </script>
+    
+</body>
+
+</html>

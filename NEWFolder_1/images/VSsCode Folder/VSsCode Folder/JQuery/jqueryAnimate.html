@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+    <title>Document</title>
+    <script>
+                                // Creating An Element 
+        // $(document).ready(()=>{
+        //    var t1='<p>TTTTTTTTTTTTTTT</p>';
+        //    var t2=$("<p></p>").addClass('cl1').text("The Text");
+        //    var t3=document.createElement("p").innerHTML="The Empy Text"
+        //      $('pr').append(t1, t2, t3);
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                // $(document).ready(function(){
+                //     $('.ap').click(function(){
+                //         $('.im').after('The Text image');
+                //     })
+                // })
+//    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                // $(document).ready(function(){
+                //     var t1='<p>I</p>';
+                //     var t2=$('<p></p>').addClass("tt1").text('Love');
+                //     var t3=document.createElement('b');
+                //     t3.innerHTML="JQuery";
+                //     $('.im').after(t1, t2, t3)
+                // })
+    //   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  //    
+           
+        // })
+                                            // Animation
+        // $(document).ready(()=>{
+        //     $(".btn").click(()=>{
+        //         var d=$(".d1");
+        //         d.animate({height:'toggle', width:'toggle' , opacity: 'toggle',}, "slow");
+        //         d.animate({marginLeft: 'toggle'}, "slow");
+        //         // d.animate({marginLeft: '10px'}, "slow");
+        //         d.animate({fontSize:'toggle'}, "slow")
+        //         // d.animate({fontSize:'17px'}, "slow");
+        //         // d.animate({height:'100px', width:'100px' , opacity: '1'}, "slow");
+
+        //     })
+        // })
+        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // $(document).ready(()=>{
+        //     $(".btn").click(()=>{
+        //         $('.first, .second').animate({marginLeft:'250px', position:'absolute'},3000, ()=>{
+        //             console.log("Completed");
+
+        //         });
+        //     });
+        //     $(".btn1").click(()=>{
+        //         $('.second, .first').stop(true);
+        //         // $('.second, .first').stop(true, true);
+           
+        //     })
+        // })
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                             // StopAnimation
+
+        // $(document).ready(()=>{
+        //     $(".btn").click(()=>{
+        //         $(".d2").animate({height:'500px' , width:'500px'}, 3000)
+        //     });
+        //     $(".btn1").click(()=>{
+        //         $(".d2").stop();
+        //     })
+        // })
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    // CallBack
+    
+        // $(document).ready(()=>{
+        //     $(".btn1").click(()=>{
+        //         $(".d1").toggle(2000, ()=>{
+        //             alert("Paragraph is hidden")
+        //         })
+        //     })
+        // })
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                     // Without CallBack
+        // $(document).ready(()=>{
+        //     $(".btn1").click(()=>{
+        //         $(".d1").toggle("2000")
+        //             alert("Paragraph is hidden")
+            
+        //     });
+        // });
+// / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                // MethodChaining
+                                   
+        //             $(document).ready(()=>{
+        //     $(".btn1").click(()=>{
+        //         $(".d2").css("background-color", 'blue').slideUp(2000) .slideDown(2000, ()=>{
+        //             $(".d2").css("background-color", " red");
+        //         })
+        //     })
+        // })
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         // $(document).ready(()=>{
+        //     $(".btn1").click(()=>{
+        //         $(".d2").css("background-color", 'blue').slideToggle(2000) 
+        //         // .slideDown(2000, ()=>{
+        //             // $(".d2").css("background-color", " red");
+        //         // })
+        //     })
+        // })
+     // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //             $(document).ready(()=>{
+    //     $("button").click(()=>{
+    //     //     $("button:odd").css("background-color", "red")
+        
+    //     // $("button:nth-child(2)").css("background-color", "red")
+        
+    //     $("button:eq(1)").css("background-color", "red")
+    //     })
+    // })
+// / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                            // Get
+    // $(document).ready(()=>{
+    //     $(".btn").click(()=>{
+    //    alert($(".s1").html());
+    // }) ;
+//    })
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //    $(document).ready(()=>{
+    //     $(".btn1").click(()=>{
+    // //    alert($(".s1").text());
+    // //    alert($("p").attr("class"))
+    // // alert($("input").val())
+    // }) ;
+    //    })
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //    $(document).ready(()=>{
+    //        $("form").submit(()=>{
+    //         //   var d= $("input").attr("value");
+    //         var d= $("input").val();
+    //           var e=$("select").val();
+    //         // var e=$("select").attr("id")
+    //            alert("Value is :" + d + e);
+    //        })
+    //    }) 
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   
+                                                    // Set
+    //     $(document).ready(()=>{
+    //         $(".btn").click(()=>{
+    //         $("input").val("80");
+    //         $(".s1").text("The InnerText");
+    //         $("h2").html("<b>The HeaderTag</b>");
+    //         $("h2").attr("class" , "ck")
+    //         $(".ck").css('color', 'red')
+    //     })
+    // })
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                            // FormEvents                
+    // $(document).ready(()=>{
+            
+    //         $("select, option").css("background", "red");
+    //     })
+    //     $(document).ready(()=>{
+            
+    //         $("select option").css("background", "red");
+    //     })
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                            // FormEvents
+    // $(document).ready(()=>{
+
+    //     $("#name").focus(()=>{
+    //         $("#name").css("background-color", 'blue')
+    //     });
+    //     $("input").blur(()=>{
+    //         // $("input").css("background-color", "green")
+    //         $("input").css("background-color", "")
+    //     });
+    //     $("#scountry").css("background", "red");
+
+    //     $("#scountry").change(()=>{
+    //         $("#scountry").css("background", "green");
+    //         var a= $("#scountry").val();
+    //         $('.test1').html(a);
+    //         });
+    //         $("#name, #scountry").select(()=>{
+    //             $("input").css('background-color', 'yellow')
+    //         });
+    //         $("#name").blur(()=>{
+    //             $("#name").css('background-color', '')
+    //         });
+    //         $('form').submit(()=>{
+    //     alert("Youre submitted the u r form")
+    //         });
+
+                                           
+                                            
+                                                     
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+                                                      // WindowEvents
+            // $(document).ready(()=>{
+            //     $(".d4").scroll(()=>{
+            //     console.log("Youre Scrolling")
+            //     })
+            //     $(window).resize(()=>{
+            //         console.log("Resizing")
+            //     });
+            //     $(window).load(()=>{
+            //         console.log("Loading")
+            //     });
+            //     $(window).unload(()=>{
+            //         console.log("Loading")
+            //     });
+            // })
+        // });
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                // Add Remove Toggle Classes
+            // $(document).ready(()=>{
+            //     $('.btn').click(()=>{
+            //      $("h1").addClass("ac");
+            //     //  $(".ac").css("background-color":"blue", "color":"red")
+            //      });
+        
+            //      $('.btn1').click(()=>{
+            //      $("h1").removeClass("ac");
+            //  });
+            //  $('.btn2').click(()=>{
+            //      $("h1").toggleClass("ac");
+            //  });
+
+            //     })
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX        //    
+                                                 // Append, Prepend, 
+            // $(document).ready(()=>{
+            //     $(".ap1").append("<h2>The Header Main tag</h2>");
+                
+            //     $(".ap1").prepend("<h1>The Header Main tagSSSSSSSS</h1>");
+            // })
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                // $(document).ready(()=>{
+                //     $(".ap").click(()=>{
+                //     $(".ap1").append("<h2>The Header Main tag</h2>");
+                    
+                //      });
+                //      $(".pa").click(()=>{
+                //         $(".ap1").prepend("<h1>The Header Main tagSSSSSSSS</h1>");
+                
+                //      })
+                // })
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                // $(document).ready(()=>{
+                //  $(".ap").click(()=>{
+                //   $("ul").append("<li>ListNewItems</li>")
+                //                         });
+                                    
+                //    $(".pa").click(()=>{
+                //       $("ul").prepend("<li>ListNewItems</li>")
+                //        });
+                //     })  
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+                                            //  On & Of   // 
+                // $(document).ready(()=>{
+                    
+                //     $(".d4").on({"click":()=>{
+                //         $('.d4').css('background-color', 'red');
+                //     }, 
+                //     "mouseenter":()=>{
+                //         $('.d4').css('background-color', 'green');
+                //     },
+                //     // "mouseover":()=>{
+                //     //     $('.d4') .css('background-color', 'crimson');
+                //     // },
+                //     "mouseleave":()=>{
+                //         $('.d4').css({'background-color': 'black', 'color': 'white'});
+                //     }
+                //     });
+                //     //WithoutButton
+                //     // $(".d4").off("mouseenter mouseleave");
+
+                                //    // WithButton
+                //     $(".tt").click(()=>{
+                //     $(".d4").off("mouseenter mouseleave")
+                //        }) 
+                //     })
+                
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                // $(".d4").on("mouseover",()=>{
+                //     $(".d4").css("background-color", "red")
+                // })
+                // $(".d4").on("mouseout",()=>{
+                //     $(".d4").css("background-color", "")
+                // })
+     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                            //   Append & Before
+                //    $(document).ready(()=>{
+                //        $('.at').click(()=>{
+                //            $("ul").before("<h2>The Before Tag</h2>");
+                        
+                //        });
+                
+                //        $('.ap').click(()=>{
+                //            $("ul").after("<h2>The AfterTag</h2>");
+                        
+                //        });
+                //    })  
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                        // Empty & Remove
+                //         $(document).ready(()=>{
+                //        $('.at').click(()=>{
+                //            $("ul li").empty();
+                        
+                //        });
+                
+                //        $('.ap').click(()=>{
+                //            $("ul li").remove();
+                        
+                //        });
+                //    })         
+   // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    // AppendTo & prependTo
+                // $(document).ready(()=>{
+                //     $(".at").click(()=>{
+                //         $("<h2>The Header Main Tags</h2>").appendTo("ul");
+                //     });
+                //     $(".ap").click(()=>{
+                //         $("<h2>The Header Main Tags</h2>").prependTo("ul");
+                //     })
+                // })
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                        // Clone Method
+        // $(document).ready(()=>{
+        //     $('.at').click(()=>{
+        //         $(".first li:first").clone().appendTo(".second");
+        //         $(".first li:first").clone().prependTo(".second");
+        //     });
+        //     $('.ap').click(()=>{
+        //         $(".first li:first").clone().appendTo(".second");
+        //         $(".second li:first").clone().prependTo(".first");
+        //     });
+        // })
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                                // $(document).ready(()=>{
+                                //     $(".at").click(()=>{
+                                //     $('<p>Head</p>').clone().appendTo(".second li");
+                                // });
+                                // });
+ // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                            //                         // ReplaceWith ReplaceAll
+                            //     $(document).ready(()=>{
+                            //         $(".at").click(()=>{
+                            //         // $('.first li:nth-child(2), .second li:nth-child(1)').replaceWith('ListTags');
+                            //             $('<h2>ListTags</h2>').replaceAll('.second li , .first li');
+                                
+                                
+                            //     });
+                            // })
+ // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                        // Wrap & UnWrap
+                        //    $(document).ready(()=>{
+                        //        $('.at').click(()=>{
+                        //         //    $('.pr').wrap('<h1></h1>')
+                        //         $('.pr').wrap("<div id='w'> </div>");
+                        //        });
+                        //        $('.ap').click(()=>{
+                        //            $('.pr').unwrap();
+                        //        })
+                        //    })     
+ // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                         // wrapAll & wrapInner
+                                                            
+        //    $(document).ready(()=>{
+        //        $('.at').click(()=>{
+        //         //    $('.pr').wrap('<h2></h2>')
+        //         // $('ul').wrapAll("<div id='w'> </div>");
+        //        });
+        //        $('.ap').click(()=>{
+        //            $('.pr').wrapInner("<div id='w'></div>");
+        //         })
+        //    })     
+ // / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                                        //    Height & width
+    // $(document).ready(()=>{
+    //     $('.at').click(()=>{
+    //        console.log ($('.pr').width());
+    //        console.log ($('.pr').innerWidth());
+    //        console.log ($('.pr').outerWidth(true));
+    //     })
+    // })
+//    })   
+// / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                // Filter
+// $(document).ready(function(){
+//   $("p").filter(".intro").css("background-color", "yellow");
+
+//   $("p").filter(":odd").css("background-color", "yellow");
+// });
+// / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                // Dimensions
+
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     var txt = "";
+//     txt += "Width of div: " + $("#div1").width() + "</br>";
+//     txt += "Height of div: " + $("#div1").height() + "</br>";
+//     txt += "Outer width of div (margin included): " + $("#div1").outerWidth(true) + "</br>";
+//     txt += "Outer height of div (margin included): " + $("#div1").outerHeight(true);
+//     $("#div1").html(txt);
+//   });
+// });
+ // / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    //hasClass
+    // $(document).ready(()=>{
+    //     $(".at").click(()=>{
+    //     var x=$("#pt").hasClass("pr");
+    //     if(x == true){
+    //         console.log("yes")
+    //     }else{
+    //         console.log("No")
+    //     }
+    //     });
+    // })    
+     // / XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                        //   AncestorMethods  // TRvarsingMethods
+                                        
+                                        // Siblings & parents
+    // $(document).ready(()=>{
+    //     $('.pr').parent().css('background-color', 'red')
+// })
+//  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                               // 
+                                            // ForEach  //
+    // $(document).ready(()=>{
+    //     $('.first').each(()=>{
+    //       console.log($('.first').appendTo('.pr').text());  
+            
+    //     })
+    // })  
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // $(document).ready(()=>{
+    //     $('.first').each(()=>{
+    //     //   console.log($('.pr').appendTo('.pr').text("The Second Paragraph"));  
+    //     console.log($('.pr').appendTo('.pr').text());  
+            
+            
+    //     })
+    // }) 
+ //  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx                               // 
+    //                                             //    Type_Events
+   
+    //     $(document).ready(()=>{
+    //         $(document).mousemove((event)=>{
+    //             $(".d3").text("X : " + event.pageX + " : "  + "  Y  " + event.pageY)
+            
+    //         var x=event.pageX;
+    //         var y=event.pageY;
+    //         $(".md").offset({top:y, left:x})
+    //     });
+    //      });
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+        // $(document).ready(()=>{
+        //     $(".md").on("click dblclick mouseover mouseleave", (eve)=>{
+        //         $(".et").html("Event Is:" + eve.type + " : " +  eve.which )
+        //     })
+        // })
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // $(document).ready(()=>{
+        //     $(".md").on("click", (mt)=>{
+        //         // $(".et").html("You clicked Elements is :" +  mt.target.nodeType);
+        //     $(".et").html("You clicked Elements is :" +  mt.target.nodeName);
+        // $(".et").html("You clicked Elements is :" +  mt.target.innerHTML);
+        //     })
+        // })
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // $(document).ready(()=>{
+        //     $(".anc").click((eva)=>{
+        //         eva.preventDefault();
+        //         var a=eva.isDefaultPrevented();
+        //         $(".et").html(a)
+        //     })
+        // })
+     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                            // Stop_propagation
+            // $(document).ready(()=>{
+            //     $('.main').click((sp)=>{
+            //         alert("Y clicked on : DIV ");
+            //         sp.stopPropagation()
+            //     });
+            //     $('.f1').click((sp1)=>{
+            //         alert("Y clicked on : H1");
+            //         sp1.stopPropagation()
+            //     });
+            //     $('.f2').click((sp2)=>{
+            //         alert("Y clicked on :  H2");
+            //         sp2.stopPropagation()
+               
+            //     });
+            //     $('.f3').click((sp3)=>{
+            //         alert("Y clicked on : H3");
+            //         sp3.stopPropagation()
+               
+            //     });
+            //     $('.p1').click((sp4)=>{
+            //         alert("Y clicked on : P");
+            //         sp4.stopPropagation()
+               
+            //     });
+            // })
+            
+//  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//                                             //    EventData     //
+// $(document).ready(function(){
+//   $("p").each(function(i){
+//     $(this).on("click", {x:i}, function(event){
+//       alert("The " + $(this).index() + ". paragraph has data: " + event.data.x);
+//     });
+//   });
+// });
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// $(document).ready(function(){
+//     $('ul').each(function(i){
+//     $(this).on('click',{x:i} , function(eve){
+//         alert(eve.data.x)
+
+//     })
+// })
+// })
+ //  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                //  Jquery Plugin
+                                                                                   
+                                                
+                                                    
+    </script>
+    <style>
+
+        #w{
+            /* background-color: chartreuse;
+            font-size: 40px; */
+            color: gray  ;
+        }
+        ul li{
+            border: 2px solid red;
+            background-color: burlywood;
+
+        }
+        
+        .ac{
+            background-color: blue;
+        }
+
+  .d1{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+}
+.d2{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+}
+.test1{
+    border: 2px solid black;
+    height: 30px;
+    width: auto;
+}
+.d4{
+    height: 300px;
+    width: 300px;
+    overflow: scroll;
+    border: 2px solid red;
+}
+.main ,.main > h1,.main>h2, .main > h3, .main > p {
+    background-color: gray;
+    height: auto;
+    width: 300px;
+    border: 2px solid yellow;
+    margin: auto;
+    cursor: pointer;
+    margin-left:0px;
+}
+
+    </style>
+</head>
+<body>
+
+   <img src="3.jpeg" class='im' alt="">
+    <button class="at">ClickMe</button>
+    <p class="pr" id="pt">The Paragraph Tag</p>
+    <div class="ap1"></div>
+    <ul class="first">
+        <li>list1</li>
+        <li>list1</li>
+        <li>list1</li>
+    </ul>
+    <ul class="second">
+        <li>ListItems</li>
+        <li>ListItems</li>
+        <li>ListItems</li>
+        <li>ListItems</li>
+    </ul>
+    <button class="ap">Append</button>
+    <button class="pa">prepend</button>
+   
+    <h1>Th Main Header</h1>
+    <button class="btn">AddClass</button>
+    <button class="btn1">RemoveClass</button>
+    <button class="btn2">ToggleClass</button>
+    <form action="">
+ <input type="text" name="name" id="name" value="40" placeholder="Enter U r Name">
+    <select name="sname" id="scountry">
+        <option value="NorthKorea">NorthKorea</option>
+        <option value="southKorea"> southKorea</option>
+        <option value="wesKorea">wesKorea</option>
+        <option value="EastKorea">EastKorea</option>
+        <option value="NortSouthhKorea">NortSouthhKorea</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+<div class="test1"></div>
+
+    <p class="s1">The<b> First Text</b> And the tag is:</p><br>
+    <h2>The header Tag is:</h2>
+    <button class="btn">Animate</button>
+    <button class="btn1">Stop</button>
+    <div class="d1">TheDivItems</div>
+    <div class="d2">TheDivItems</div>
+    <div class="d3">TheDivItems</div>
+    <div class="d4">TheDivItems Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Voluptates aut, autem laborum cupiditate placeat mol
+         litia explicabo, maiores voluptas eaque fugit minima provident. Vel rem dolore
+         s excepturi ad ea rerum ipsum amet expedita minima labore laboriosam tempora ipsam, atque
+          repellendus voluptates consequuntur temporibus eveniet exercitationem facilis natus illum qu
+          o animi, placeat inventore. Enim animi totam eligendi vel perspiciatis, nobis omnis! Odio quasi ea
+           cumque neque omnis maiores illum molestias laudantium quam in totam, ipsum optio iusto vitae quis 
+           mollitia? Ea fugit, qui dolorum culpa accusantium voluptatibus veritatis ipsa distinctio facilis of
+           ficia perspiciatis harum id mollitia assumenda autem consequatur, voluptas temporibus tenetur! Maxime m
+           odi ea accusamus, libero illum illo id exercitationem, itaque voluptatem sequi atque fugiat nobis sapiente as
+           periores corrupti laboriosam, a nisi totam quod? Quibusdam dolorum ullam atque accusantium, enim earum 
+            beatae eos voluptas fuga incidunt, id debitis nemo illo, hic ab dolore! Dolores saepe cum digni
+            ssimos autem nobis aliquam numquam debitis consequuntur vitae quos libero officiis distinctio in, n
+            esciunt neque aperiam possimus eveniet, itaque vero aliquid mollitia asperiores. Suscipit la
+            boriosam ullam quia, eveniet ipsum sint pariatur quidem deserunt quos unde natus m
+            ollitia debitis amet distinctio dolore eaque ipsam illo itaque officia expedita sunt pos
+            simus quibusdam alias? Aut enim illum numquam voluptate, est alias temporibus, nam saepe laudanti
+            um deleniti exercitationem! Consequuntur iusto praesentium iure deleniti ipsam, rerum cum impedit 
+             amet fugiat dignissimos animi blanditiis assumenda fuga. Tenetur illum possimus perferendis cupidi
+             tate doloremque consectetur itaque praesentium esse culpa? Quod pariatur amet reiciendis, quibusda
+             m adipisci iste quisquam mollitia, nostrum quo aliquid modi delectus libero consequatur optio si
+             t beatae sunt. Odio temporibus voluptates, voluptate culpa quam cupiditate adipisci recusandae q
+             uia labore ad illo ratione eligendi consectetur reprehenderit dolore itaque, nesciunt magnam modi
+              fugit nam eveniet eos amet aut cumque. Quae voluptas, iste quasi quidem 
+        illum reprehenderit doloremque tempore nulla reiciendis omnis eos?</div>
+        <div class="md" style="padding: 30px; background-color: gray; height: 100px; width: 100px;" >Content</div>
+        
+    <button class="tt">ClickMe</button>
+    <h2 class="et"></h2>
+    <a href="https://www.w3schools.com/jsref/jsref_foreach.asp" class="anc">W3Schools</a>
+    <div class="main">
+        <h1 class='f1'>The Text</h1>
+        <h2 class="f2">The second</h2>
+        <h3 class="f3">The third</h3>
+        <p class="p1">The paraText</p>
+    </div>
+
+    <script>
+       
+                                                 
+    </script>
+
+    <!-- 
+        <script>
+
+        var m=document.getElementsByTagName('input')[0].focus();  
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+        
+        //ChildElementCount
+        function myFunction() {
+  var c = document.getElementById("myDIV").childElementCount;
+  document.getElementById("demo").innerHTML = c;
+}
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    
+                                        
+    </script> -->
+</body>
+</html>
+
+<!--   Autofocus                            
+     var m=document.getElementById('name');       
+     m.focus(); 
+     m.blur();
+                                                   
+ -->

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ih5900</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    
+</head>
+<body>     
+<div class="header" style="padding-left:80px; padding-top:50px;">
+        <span style="color:#00008b; font-size:16px;"><b>Industrial Hygiene Sample Recording Form: 5900</b></span>
+    </div>
+    <div class="container" style="margin-left:60px; margin-top: 8px;">
+<button type="button" class="btn btn-default btn-md" value="save"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;<span class="" style="color:green"><b>Save</b></span></button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default btn-md" value="delete"><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;<span class="" style="color:green"><b>Delete</b></span></button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default btn-md" value="print"><span class="glyphicon glyphicon-print"></span>&nbsp;<span class="" style="color:green"><b>Print</b></span></button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default btn-md" value="printform"><span class="glyphicon glyphicon-print"></span>&nbsp;<span class="" style="color:green"><b>Print Notification Letter</b></span></button>
+</div>
+<div class="container" style="margin-top:10px; font-size: 14px;" align="center" >
+<a href="#">Basic Information</a><span id="sla"> | </span><a href="#">Sample Location</a><span id="sla"> | </span><a href="#">Sampling Times and Duration</a><span id="sla"> | </span>
+<a href="#">Monitoring Equipment Information</a><span id="sla"> | </span><a href="#">Results and Comments</a><span id="sla"> | </span><a href="#">Additional Features<br></a><span id="sla"> | </span>
+<a href="#">History Section</a>
+    </div>
+    <div class="col-lg-12">
+  <div class="panel panel-Default" style="background-color:#8c9aad; padding:7px;color:white;font-size:15px;">
+    Basic Information
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+  
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+   </div></div>
+</div>
+<form>        
+      <div class="row" id="saleitem" >
+      <div class="col-lg-4 col-lg-offset-2">
+     
+        <div class="form-group">  
+           <label for="tname">Type of Sampling&nbsp;&nbsp;&nbsp;</label>  
+           <input type="text" class="form-control" name="eid" value="Area Sampling"  disabled>  
+         </div>
+            <div class="form-group">  
+            <label for="bs">Business Group&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="BusinessGroup" style="width: 100px;" required>
+             <option value=""></option>
+             <option value="City of Industry">City of Industry</option>
+             <option value="Downey">Downey</option>
+             <option value="Lincoln Heights">Lincoln Heights</option>
+             <option value="OCONUS">OCONUS</option></select>
+        </div>
+        <div class="form-group">  
+            <label for="reg">Region&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="Region" style="width: 120px;" required>
+             <option value=""></option>
+             <option value=""></option>
+             <option value=""></option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="div">Division&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="Division" style="width: 90px;" required>
+             <option value=""></option>
+             <option value=""></option>
+             <option value=""></option>
+             </select>
+        </div> 
+        <div class="form-group">  
+           <label for="fac">Facility&nbsp;&nbsp;&nbsp;<span style="color:red">*</span></label>  
+           <input type="text" class="form-control" name="Faclity" value="The Warehouse" style="background-color: #e1f2b3;" required>  
+         </div>
+         <div class="form-group">  
+            <label for="bs">Hygienist&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="BusinessGroup" style="width: 100px;" required>
+             <option value=""></option>
+             <option value="Epstein, Clare">Epstein, Clare</option>
+             <option value="Johnson, Fred">Johnson, Fred</option>
+             <option value="Puricelli, Joshua">Puricelli, Joshua</option>
+             <option value="Smth, John">Smith, John</option></select>
+        </div>
+        <div class="form-group">  
+            <label for="bs">Lab&nbsp;&nbsp;&nbsp;</label> <br> 
+             <select class="form-control" name="BusinessGroup" style="width: 90px;" required>
+             <option value=""></option>
+             <option value="BureauVeritas">BureauVeritas</option>
+             <option value="Lab, 01">Lab, 01</option>
+             <option value="Lab, 02">Lab, 02</option>
+             <option value="Lab, 03">Lab, 03</option></select>
+        </div>
+        <div class="form-group">  
+           <label for="tname">Sample Number&nbsp;&nbsp;&nbsp;<span style="color:red">*</label>  
+           <input type="text" class="form-control" name="eid" value="3" required>  
+         </div>
+         <div class="form-group">  
+                <label for="strt">Sample Date&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br>
+                <input type="date" name="ca" name="medExDate" class="frmDateField" value="12/17/2018">    
+             </div>
+             <div class="form-group">  
+            <label for="bs">Section&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="BusinessGroup" style="width: 120px;" required>
+             <option value=""></option>
+             <option value="149">149</option>
+             <option value="CQ310 Rail Car">CQ310 Rail Car</option>
+             <option value="CQ311 Rail Car">CQ311 Rail Car</option>
+             <option value="CQ312 Rail Car">CQ312 Rail Car</option>
+             <option value="CQ312 Rail Car">CQ312 Rail Car</option>
+             <option value="Craft">Craft</option>
+             <option value="DTC Shippng">DTC Shippng</option>
+             <option value="Line 1">Line 1</option>
+             <option value="Line 1">Line 1</option>
+             <option value="Line 2">Line 2</option>
+             <option value="None">None</option>
+             <option value="Other">Other</option>
+             <option value="Staff">Staff</option>
+             <option value="Storage">Storage</option>
+             <option value="Supply Chain">Supply Chain</option>
+             <option value="Visitor">Visitor</option>
+             <option value="Gaylord">Gaylord</option>
+             <option value="Gaylord">Gaylord</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="bs">Location&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="BusinessGroup" style="width: 140px;" required>
+             <option value=""></option>
+             <option value="All Sections Location">All Sections Location</option>
+             <option value="Blanking">Blanking</option>
+             <option value="Door 43">Door 43</option>
+             <option value="Junjo">Junjo</option>
+             <option value="LORRY">LORRY</option>
+             <option value="Location 1">Location 1</option>
+             <option value="Location 1">Location 1</option>
+             <option value="Location 2">Location 2</option>
+             <option value="Location 2">Location 2</option>
+             <option value="Location 3">Location 3</option>
+             <option value="Main Street">Main Street</option>
+             <option value="Parking Lot">Parking Lot</option>
+             <option value="RS-D">RS-D</option>
+             <option value="RS-D">RS-D</option>
+             <option value="SCO South">SCO South</option>
+             <option value="Slitter One">Slitter One</option>
+             <option value="Slitter Three">Slitter Three</option>
+             <option value="Slitter Two">Slitter Two</option>
+             <option value="Test ALL">Test ALL</option>
+             <option value="Test New All">Test New All</option>
+             <option value="Truesdale">Truesdale</option>
+             <option value="Warehouse">Warehouse</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="bs">Department&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="BusinessGroup" style="width: 90px;" required>
+             <option value=""></option>
+             <option value="Power">Power</option>
+             <option value="Paper">Paper</option>
+             <option value="Pulp">Pulp</option>
+             <option value="Woodyard">Woodyard</option></select>
+        </div>
+        </div>
+
+        <div class="col-lg-4 col-lg-offset-">
+                         <div class="form-group">  
+            <label for="rc">Test Type&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 160px;" required>
+             <option value=""></option>
+             <option value="Bulk Sample of Material">Bulk Sample of Material</option>
+             <option value="EMF Exposure">EMF Exposure</option>
+             <option value="General Area - Atmospheric">General Area - Atmospheric</option>
+             <option value="Grab Sample - Atmospheric">Grab Sample - Atmospheric</option>
+             <option value="Grab Sample - Water">Grab Sample - Water</option>
+             <option value="Heat Stress">Heat Stress</option>
+             <option value="urface Contamination - Wipe">Surface Contamination - Wipe</option>
+             <option value="Vibration Level">Vibration Level</option>
+             </select>
+        </div> 
+        <div class="form-group">  
+            <label for="rc">Sample Reason&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 200px;" required>
+             <option value=""></option>
+             <option value="Detailed sample">Detailed sample</option>
+             <option value="Follow Up Monitoring">Follow Up Monitoring</option>
+             <option value="Preliminary Sampling">Preliminary Sampling</option>
+             <option value="Request by Employee or Contractor">Request by Employee or Contractor</option>
+             <option value="Test of Control Measures">Test of Control Measures</option>
+             </select>
+        </div>
+        <div class="form-group">  
+           <label for="wsp">Wind Speed</label>  
+           <input type="text" class="form-control" name="Wind Speed">  
+         </div>
+         <div class="form-group">  
+           <label for="wdir">Wind Direction</label>  
+           <input type="text" class="form-control" name="Wind Direction">  
+         </div>
+         <div class="form-group">  
+           <label for="hum">Humidity</label>  
+           <input type="text" class="form-control" name="Humidity">  
+         </div>
+         <div class="form-group">  
+           <label for="bpr">Barometric Pressure</label>  
+           <input type="text" class="form-control" name="Barometric Pressure">  
+         </div>  
+         <div class="form-group">  
+           <label for="tmp1">Temperature 1</label>  
+           <input type="text" class="form-control" name="Temperature 1">  
+         </div>  
+         <div class="form-group">  
+           <label for="tmp2">Temperature 2</label>  
+           <input type="text" class="form-control" name="Temperature 2">  
+         </div>
+         </div></div>
+
+         <div class="container-fluid">
+    <div class="row" >
+       <div class="col-lg-12" style="margin-top:50px;">
+  <div class="panel panel-Default" style="background-color:#4b607b; padding:7px;color:white;font-size:15px;">Sample Location
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+   </div></div>
+</div> 
+
+<form>        
+      <div class="row" id="saleitem" >
+      <div class="col-lg-4 col-lg-offset-2">
+     
+        <div class="form-group">  
+           <label for="wpla">Workplace</label>  
+           <input type="text" class="form-control" name="Workplace">  
+         </div>
+         <div class="form-group">  
+           <label for="sid">Supervisor ID</label>  
+           <input type="text" class="form-control" name="Supervisor ID">  
+         </div>
+         <div class="form-group">  
+           <label for="nme">Name</label>  
+           <input type="text" class="form-control" name="Name" placeholder="Start typing name here">  
+         </div>
+         <div class="form-group">  
+           <label for="jtle">Job Title</label>  
+           <input type="text" class="form-control" name="Job Title" disabled>  
+         </div>
+         <div class="form-group">  
+           <label for="pno">Phone Number</label>  
+           <input type="text" class="form-control" name="Phone Number">  
+         </div>
+         <div class="form-group">  
+           <label for="grl1">Grid Locator 1</label>  
+           <input type="text" class="form-control" name="Grid Locator 1">  
+         </div>
+         <div class="form-group">  
+           <label for="grl2">Grid Locator 2</label>  
+           <input type="text" class="form-control" name="Grid Locator 2">  
+         </div>
+         </div>
+
+        <div class="col-lg-4 col-lg-offset-">
+         <div class="form-group">  
+           <label for="ele">Elevation</label>  
+           <input type="text" class="form-control" name="Elevation">  
+         </div>
+         <div class="form-group">  
+           <label for="flo">Floor</label>  
+           <input type="text" class="form-control" name="Floor">  
+         </div>
+         <div class="form-group">  
+           <label for="ara">Area</label>  
+           <input type="text" class="form-control" name="Area">  
+         </div>
+         <div class="form-group">  
+           <label for="loc">Location</label>  
+           <input type="text" class="form-control" name="Location">  
+         </div>
+         <div class="form-group">  
+           <label for="con">Controls</label>  
+           <input type="text" class="form-control" name="Controls">  
+         </div>
+          <div class="form-group">  
+            <label for="nopr">Normal Operations&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 50px;" required>
+             <option value=""></option>
+             <option value="No">No</option>
+             <option value="Yes">Yes</option>
+             </select>
+        </div>
+        <div class="form-group">  
+           <label for="wdis">Work Description</label>  
+           <input type="text" class="form-control" name="Work Description" style="size: 10px;">  
+         </div>
+         </div>
+
+         <div class="container-fluid">
+    <div class="row" >
+       <div class="col-lg-12" style="margin-top:50px;">
+  <div class="panel panel-Default" style="background-color:#4b607b; padding:7px;color:white;font-size:15px;">Sampling Times and Duraton
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+   </div></div>
+</div> 
+
+<form>        
+      <div class="row" id="saleitem" >
+      <div class="col-lg-4 col-lg-offset-2">
+     
+        <div class="form-group">  
+           <label for="stat">Start Time 1&nbsp;&nbsp;&nbsp;<span style="color:red">*</label>  
+           <input type="text" class="form-control" name="Start Time 1" style="width: 90px;">  
+         </div>
+         <div class="form-group">  
+           <label for="stot">Stop Time 1</label>  
+           <input type="text" class="form-control" name="Stop Time 1" style="width: 90px;">  
+         </div>
+         </div>
+
+         <div class="col-lg-4 col-lg-offset-">
+         <div class="form-group">  
+           <label for="stat">Start Time 2</label>  
+           <input type="text" class="form-control" name="Start Time 2" placeholder="hh:mm amp" style="width: 90px;">  
+         </div>
+         <div class="form-group">  
+           <label for="stot">Stop Time 2</label>  
+           <input type="text" class="form-control" name="Stop Time 2" placeholder="hh:mm amp" style="width: 90px;">  
+         </div>
+         <div class="form-group">  
+           <label for="elt">Elapsed Time (min)</label>  
+           <input type="text" class="form-control" name="Elapsed Time (min)" placeholder="120" disabled>  
+         </div>
+         </div>
+
+         <div class="container-fluid">
+    <div class="row" >
+       <div class="col-lg-12" style="margin-top:50px;">
+  <div class="panel panel-Default" style="background-color:#4b607b; padding:7px;color:white;font-size:15px;">Monitoring Equipment Information  
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+   </div></div>
+</div>
+
+<form>        
+      <div class="row" id="saleitem" >
+      <div class="col-lg-4 col-lg-offset-2">
+      <div class="form-group">  
+            <label for="equt">Equipment</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 130px;" >
+             <option value=""></option>
+             <option value="AED-LP 100">AED-LP 100</option>
+             <option value="Air Sampling Machine">Air Sampling Machine</option>
+             <option value="Model">Model</option>
+             <option value="Noise Dosimeter">Noise Dosimeter</option>
+             <option value="SKC pump sn 1234">SKC pump sn 1234</option>
+             <option value="Solid Sample processor">Solid Sample processor</option>
+             <option value="TSI Dust Meter">TSI Dust Meter</option>
+             <option value="esttt">esttt</option>
+             <option value="mo001">mo001</option>
+             <option value="model">model</option>
+              <option value="model">model</option>
+             <option value="model008">model008</option>
+             <option value="testt">testt</option>
+             </select>
+        </div>
+        <div class="form-group">  
+           <label for="eno">Equipment Number</label>  
+           <input type="text" class="form-control" name="Equipment Number" disabled>  
+         </div>
+         <div class="form-group">  
+           <label for="sno">Serial Number</label>  
+           <input type="text" class="form-control" name="Serial Number" disabled>  
+         </div>
+         <div class="form-group">  
+            <label for="cbs">Calibrated Before Sampling</label> <br> 
+             <select class="form-control" name="Calibrated Before Sampling" style="width: 50px;">
+             <option value=""></option>
+             <option value="No">No</option>
+             <option value="Yes">Yes</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="cas">Calibrated Before Sampling</label> <br> 
+             <select class="form-control" name="Calibrated Before Sampling" style="width: 50px;">
+             <option value=""></option>
+             <option value="No">No</option>
+             <option value="Yes">Yes</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="cals">Calibration Started</label> <br> 
+             <select class="form-control" name="Calibration Started" style="width: 80px;">
+             <option value=""></option>
+             <option value="Bubble meter">Bubble meter</option>
+             <option value="Rotometer">Rotometer</option>
+             </select>
+        </div>
+     </div>
+
+     <div class="col-lg-4 col-lg-offset-">
+         <div class="form-group">  
+           <label for="pfr">Pump Flow Rate</label>  
+           <input type="text" class="form-control" name="Pump Flow Rate">  
+         </div>
+         <div class="form-group">  
+            <label for="fru">Flow Rate Unit</label> <br> 
+             <select class="form-control" name="Flow Rate Unit" style="width: 80px;">
+             <option value=""></option>
+             <option value="l/min">l/min</option>
+             <option value="ml/min">ml/min</option>
+             </select>
+        </div>
+         <div class="form-group">  
+           <label for="avol">Air Volume</label>  
+           <input type="text" class="form-control" name="Air Volume" disabled>  
+         </div>
+         <div class="form-group">  
+            <label for="drdt">Direct Read Device Type </label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 230px;">
+             <option value=""></option>
+             <option value="Badge-3M with 3M Lab service">Badge-3M with 3M Lab service</option>
+             <option value="Badge-Other Direct Reading">Badge-Other Direct Reading</option>
+             <option value="Meter-Dust Counter/Weigher">Meter-Dust Counter/Weigher</option>
+             <option value="Meter-Infrared, Miran, or similar">Meter-Infrared, Miran, or similar</option>
+             <option value="Meter-LEL Meter">Meter-LEL Meter</option>
+             <option value="Meter-Oxygen">Meter-Oxygen</option>
+             <option value="Meter-Paper Type">Meter-Paper Type</option>
+             <option value="Meter-Photomultiplier, HNU, or Similar">Meter-Photomultiplier, HNU, or Similar</option>
+             <option value="Meter-Portable GC">Meter-Portable GC</option>
+             <option value="meter-Toxic Gas/multimeter">meter-Toxic Gas/multimeter</option>
+              <option value="Sample for Bulk analysis">Sample for Bulk analysis</option>
+             <option value="Tube-Dreager or Similar">Tube-Dreager or Similar</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="med">Medium</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 170px;">
+             <option value=""></option>
+             <option value="Badge-3M 3500">Badge-3M 3500</option>
+             <option value="Badge-3M 3520">Badge-3M 3520</option>
+             <option value="Badge-Other">Badge-Other</option>
+             <option value="Filter-Fiberglass">Filter-Fiberglass</option>
+             <option value="Filter-Mixed Cellilose Ester">Filter-Mixed Cellilose Ester</option>
+             <option value="Filter-PVC">Filter-PVC</option>
+             <option value="Filter-Silver">Filter-Silver</option>
+             <option value="Filter-Teflon">Filter-Teflon</option>
+             <option value="Tube-Alumina">Tube-Alumina</option>
+             <option value="Tube-Charcole">Tube-Charcole</option>
+              <option value="Tube-Silica Gel">Tube-Silica Gel</option>
+             <option value="Tube-XAD/Created XAD">Tube-XAD/Treated XAD</option>
+             </select>
+        </div>
+        <div class="form-group">  
+           <label for="mid">Medium ID</label>  
+           <input type="text" class="form-control" name="Medium ID">  
+         </div>
+         </div>
+
+         <div class="container-fluid">
+    <div class="row" >
+       <div class="col-lg-12" style="margin-top:50px;">
+  <div class="panel panel-Default" style="background-color:#4b607b; padding:7px;color:white;font-size:15px;">Results and Comments  
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+   </div></div>
+</div>
+
+<form>        
+      <div class="row" id="saleitem" >
+      <div class="col-lg-4 col-lg-offset-2">
+      <div class="form-group">  
+            <label for="ltype">Limit Type&nbsp;&nbsp;&nbsp;<span style="color:red">*</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 230px;">
+             <option value=""></option>
+             <option value="Ceiling Limit">Ceiling Limit</option>
+             <option value="Full Shift Exposure Limit">Full Shift Exposure Limit</option>
+             <option value="Short Term Exposure Limit(STEL)">Short Term Exposure Limit (STEL)</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="slen">Shift Length</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 140px;">
+             <option value=""></option>
+             <option value="N/A">N/A</option>
+             <option value="8-Hours Shift">8-Hours Shift</option>
+             <option value="10-Hours Shift">10-Hours Shift</option>
+             <option value="12-Hours Shift">12-Hours Shift</option>
+             <option value="Other">Other</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="rtw">Results Time Weighted?</label> <br> 
+             <select class="form-control" name="Calibrated Before Sampling" style="width: 80px;">
+             <option value=""></option>
+             <option value="No">No</option>
+             <option value="Yes">Yes</option>
+             </select>
+             </div>
+             </div>
+
+             <div class="col-lg-4 col-lg-offset-">
+         <b>Agent 1<b>&nbsp;&nbsp;<button type="button" class="btn btn-default btn-md" style="margin-top: 40px;"><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;<span class="" style="color:green"><b>Remove Agent 1</b></span></button>&nbsp;&nbsp;
+         <div class="form-group">  
+            <label for="agt">Agent</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 200px;">
+             <option value=""></option>
+             <option value="Acitic Acid">Acitic Acid</option>
+             <option value="Agent">Agent</option>
+             <option value="Agent 00">Agent 00</option>
+             <option value="Agent Test">Agent Test</option>
+             <option value="Benzene">Benzene</option>
+             <option value="Carbon Tetrachloride">Carbon Tetrachloride</option>
+             <option value="Ethanol">Ethanol</option>
+             <option value="Hexavalent Chromium">Hexavalent Chromium</option>
+             <option value="Isopropyl Alcohol">Isopropyl Alcohol</option>
+             <option value="Methylene Chloride">Methylene Chloride</option>
+             <option value="Noise">Noise</option>
+             <option value="Noise">Noise</option>
+             <option value="Noise">Noise</option>
+             <option value="Ooze">Ooze</option>
+             <option value="Ooze">Ooze</option>
+             <option value="Rhenium">Rhenium</option>
+             <option value="TWA">TWA</option>
+             <option value="Hydrogen">Hydrogen</option>
+             <option value="Lead">Lead</option>
+             </select>
+        </div>
+        <div class="form-group">  
+            <label for="acy">Agency</label> <br> 
+             <select class="form-control" name="ReviewCycle" style="width: 200px;">
+             <option value=""></option>
+             <option value="ACGIH">ACGIH</option>
+             <option value="ACGIH">ACGIH</option>
+             <option value="ACGIH">ACGIH</option>
+             <option value="Agency 1">Agency 1</option>
+             <option value="Agency IH">Agency IH</option>
+             <option value="Internal Standard">Internal Standard</option>
+             <option value="MSHA">MSHA</option>
+             <option value="MSHA HC">MSHA HC</option>
+             <option value="MSHA PEL">MSHA PEL</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="NIOSH">NIOSH</option>
+             <option value="Niosh">Niosh</option>
+             <option value="Niosha">Niosha</option>
+             <option value="OHAA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA">OSHA</option>
+             <option value="OSHA-Action Level">OSHA-Action Level</option>
+             <option value="OSHA-Criterion Level">OSHA-Criterion Level</option>
+             <option value="OSHA HC">OSHA HC</option>
+             <option value="OSHA PEL">OSHA PEL</option>
+             <option value="Sani Clean">Sani Clean</option>
+             <option value="Lead">Lead</option>
+             <option value=""></option>
+             <option value=""></option>
+             <option value=""></option>
+             <option value=""></option>
+             <option value=""></option>
+             <option value=""></option>
+             </select>
+        </div>
+        <div class="form-group">  
+           <label for="lmt">Limit</label>  
+           <input type="text" class="form-control" name="Limit" disabled>  
+         </div>
+        <div class="form-group">  
+            <label for="gtlt">(Greater Than or Less Than)</label> <br> 
+             <select class="form-control" name="(Greater Than or Less Than)" style="width: 140px;">
+             <option value=""></option>
+             <option value="Greater than">Greater than</option>
+             <option value="Less Than">Less Than</option>
+             <option value="Less than or Equal To">Less than or Equal To</option>
+             </select>
+        </div>
+        <div class="form-group">  
+           <label for="res">Result</label>  
+           <input type="text" class="form-control" name="Result" style="width: 260px;" value="0.000">
+         </div>
+         <div class="form-group">  
+           <label for="lod">Limit of Detection</label>  
+           <input type="text" class="form-control" name="Limit of Detection" style="width: 260px;">
+           </div>
+<button type="button" class="btn btn-default btn-md" style="margin-top: 7px; width: 360px;"><span class="glyphicon glyphicon-plus"></span>&nbsp;<span class="" style="color:green"><b>Add Agent</b></span></button><br>
+<div class="form-group" style="margin-top: 18px;">  
+            <label for="rcfb">Results Corrected for a Blank</label> <br> 
+             <select class="form-control" name="Results Corrected for a Blank" style="width: 80px;">
+             <option value=""></option>
+             <option value="No">No</option>
+             <option value="Yes">Yes</option>
+             </select>
+             </div>
+             <div class="form-group">  
+           <label for="cmts">Comments</label>  
+           <textarea class="form-control" rows="4" cols="8"></textarea>    
+         </div>
+         </div>
+
+         <div class="container-fluid">
+    <div class="row" >
+       <div class="col-lg-12" style="margin-top:70px;">
+  <div class="panel panel-Default" style="background-color:#4b607b; padding:7px;color:white;font-size:15px;">Additional Features
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+   </div></div>
+</div>
+
+<div class="container" align="center">
+<b>Corrective Actions<b>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-md" value="view" ><span class="" style="color:green;"><b>Add Corrective Actions</b></span></button>&nbsp;&nbsp;<br><br>
+<b>Attachments<b>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-md" value="view" ><span class="" style="color:green;"><b>Attach File</b></span></button>&nbsp;&nbsp;<br><br>
+<b>Emails<b>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default btn-md" value="view" ><span class="" style="color:green;"><b>Send Mail</b></span></button>&nbsp;&nbsp;
+</div></div>
+
+<div class="container" style="margin-left:40px; margin-top: 68px;">
+<button type="button" class="btn btn-default btn-md" value="save"><span class="glyphicon glyphicon-floppy-disk"></span>&nbsp;<span class="" style="color:green"><b>Save</b></span></button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default btn-md" value="delete"><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;<span class="" style="color:green"><b>Delete</b></span></button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default btn-md" value="print"><span class="glyphicon glyphicon-print"></span>&nbsp;<span class="" style="color:green"><b>Print</b></span></button>&nbsp;&nbsp;
+<button type="button" class="btn btn-default btn-md" value="printform"><span class="glyphicon glyphicon-print"></span>&nbsp;<span class="" style="color:green"><b>Print Notification Letter</b></span></button>
+</div>
+
+<div class="container-fluid">
+    <div class="row" >
+       <div class="col-lg-12" style="margin-top:50px;">
+  <div class="panel panel-Default" style="background-color:#4b607b; padding:9px;color:white;font-size:15px;">History
+    <a data-toggle="collapse" href="#saleitem" class="panel-toggle">
+    <span class=" glyphicon glyphicon-minus-sign pull-right" id="icontoggle" style="font-size:10px;color:white;"></span></a>
+    </div>
+    <div class="panel panel-default" style="margin-top:-20px;">
+    <div class="panel-content">
+    <table class="table">
+    <thead style="background-color: #eeeeee;">
+    <tr>
+    <th></th>
+    <th style="margin-left: -30px;">User</th>
+    </tr> 
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+    </div></div></div></div></div></div>
+             
+
+
+        

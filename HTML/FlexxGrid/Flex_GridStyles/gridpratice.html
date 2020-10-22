@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .gridstyles{
+            display: grid;
+            /* display: inline-block; */
+            /* float: left; */
+            grid-template-columns:25vw 25vw 50vw;
+            grid-template-rows: 15vh 15vh 25vh 30vh 15vh;
+            height: 600px;
+            width: 800px; 
+        } 
+        .grid11{
+           
+            background-color: yellow;
+            grid-column: 1/-1;
+            grid-row: 1/2;
+        } 
+        .grid12{
+           
+            background-color: violet;
+            grid-column: 1/ -1;
+
+        } 
+        .grid13{
+
+        background-color: tomato;
+       
+        } 
+        .grid14{
+          
+            background-color: teal;
+            grid-area: 3/2 / 4/3;
+        }
+        .grid15{
+           
+           background-color: crimson;
+           grid-area: 3/3 / 5/4;
+           z-index: 1;
+       
+       } .grid16{
+           
+           background-color:green;
+       
+       } .grid17{
+           
+           background-color: blue;
+       
+       }
+       .grid18{
+           
+           background-color:black;
+           color: blanchedalmond;
+           grid-area: 5/1 / 6/4; 
+       
+       }
+    </style>
+</head>
+<body>
+    <div class="gridstyles">
+        <div class="grid11">Grid1</div>
+        <div class="grid12">Grid2</div>
+        <div class="grid13">Grid3</div>
+        <div class="grid14">Grid4</div>
+        <div class="grid15">Grid5</div>
+        <div class="grid16">Grid6</div>
+        <div class="grid17">Grid7</div>
+        <div class="grid18">Grid8</div>
+    </div>
+</body>
+</html>

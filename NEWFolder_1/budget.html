@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="nm1">
+      
+    <script>
+        var bud=()=>{
+          var x=23;
+           function funn1(a){
+                return x+a; 
+            }
+            return{
+                   funn2:(b)=>{
+                    // return funn1(28);
+                    return funn1(b);
+                   }
+            }
+        }
+        console.log(bud().funn2(20));
+        document.getElementById('nm1').addEventListener('keypress', (eve)=>{
+            // if(eve.keyCode === 13 || eve.which === 13){
+            //         console.log("Pressed");
+            //     }
+            console.log(eve);
+                    
+
+            
+        })
+        
+    
+                       
+
+        
+
+            
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // var funn1= (a)=>{
+        //     var x=20;
+        //     return x+a;
+        // }
+        //      function funn2(b){
+        //             console.log(funn1(b))
+        // }
+        // funn2(30);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(a){
+//     var x=20;
+//     return x+a
+// }
+// console.log(funn1(20));
+     
+        
+    </script>
+    
+</body>
+</html>

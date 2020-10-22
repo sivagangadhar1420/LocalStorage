@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <style>
+    .sp{
+    background-image: url('@sunderPichai.jpg');
+     background-size: 160px;  
+    height: 135px;
+    width: 135px;
+    /* padding: 20px; */
+     margin-top:5px;
+    margin-left: 5px;
+     position: relative;
+    cursor: pointer;
+    /* padding: 40px; */
+    background-repeat: no-repeat;
+    
+    
+    /* overflow: auto; */
+    /* margin: 10px; */
+    /* padding: 10px; */
+    /* padding: 5px;
+    padding-left: 5px; */
+
+}
+.dashed{
+background-color: red;
+   border-style: dashed;
+
+
+}
+.hold{
+    border: 8px solid crimson;
+}
+.hide{
+    display: none;
+}
+.whitebox{
+    background-color:greenyellow;
+    height: 145px;
+    width: 145px;
+    display: inline-block;
+    margin: 20px;
+}
+
+</style>
+    </head>
+<body>
+    <!-- <img src="1.jpg" alt="image" height="300px" width="400px" style="overflow: auto;"> -->
+<!-- <div class="whitebox" >
+    <div class="sp" draggable="true"></div>
+</div>
+<div class="whitebox" ></div>
+<div class="whitebox" ></div>
+<div class="whitebox"></div>
+<div>
+    <script>
+       
+       var imgBox=document.querySelector(".sp");
+        var wbox=document.getElementsByClassName('whitebox');
+        imgBox.addEventListener('dragstart', (g)=>{
+            g.target.className += ' hold ';
+          //this.className += 'hold';
+        setTimeout(()=>{
+            g.target.className = ' hide';
+    //m.target.className = 'hide';
+    },0) 
+})
+
+imgBox.addEventListener('dragend', (e)=>{
+    e.target.className = ' sp'; //Class name imagebox  watch careFully
+    console.log("DragEnd")
+   
+    });
+
+      for(wb of wbox){
+          wb.addEventListener('dragover', (e)=>{
+          e.preventDefault(); 
+         
+          console.log("DragOver") })
+
+          wb.addEventListener('dragenter', (e)=>{ 
+            e.target.className += ' dashed';
+              console.log("DragEnter")
+            });
+          wb.addEventListener('dragleave', (e)=>{ 
+              e.target.className = 'whiteBox'
+              console.log("DragLeave")
+            });
+          wb.addEventListener('drop',(e)=>{
+           // e.target.append('sp')  //InterestingOne
+           e.target.append(imgBox)
+              console.log("Drop Has Triggered");
+              
+            
+            });
+         }
+        </script>   -->
+
+         <script>
+             
+            //LocalStorage(gtItem ,setItem, key,clear,removeitem,length)
+          
+//          localStorage.setItem('hero', 'setini');
+//          localStorage.setItem('ice', 'icecream');
+//          console.log(localStorage.getItem('ice'))
+           
+// var m=localStorage.getItem('hero');
+// console.log(m)
+
+// console.log(localStorage.clear());
+// console.log(localStorage.getItem('hero'))
+// console.log(localStorage.getItem('ice'));
+// localStorage.removeItem('hero');
+
+        
+
+        </script> 
+</body>
+</html>

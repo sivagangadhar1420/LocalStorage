@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // class employee{
+    //     constructor(name,experience, salary, year){
+    //         this.name=name;
+    //         this.experience=experience;
+    //         this.salary=salary;
+    //         this.year=year;
+    //     }
+    //      funn1(){
+    //         return `Hey this is ${this.name} and i am carrying ${this.experience} years of Experience`
+    //     }
+    //     joiningyear(){
+    //         // return   `${this.name} has joined in year of ${this.year - this.experience}` ;
+    //         return `${this.name} has Joined in year  of ${2020 - this.experience}`;
+    //     }
+    //    static bonus(a,b){
+    //        return `${this.name} got bonus ${a + b}`
+    //     //    return  this.name  +" got bonus "  +  ( a + b );
+    //    }
+    //     }
+    //     class seniorprogrammer extends employee{
+    //             constructor(name, experience, salary,year, github, language){
+    //               super(name, experience, salary,year);
+    //                 this.github=github;
+    //                 this.language=language;
+
+    //             }
+    //             holidays(h1, h2){
+    //                     return `${this.name} has ${h1 * h2} holidays`;
+    //             }
+    //             static projects(c,d){
+    //                 return `Rajesh has ${c * d} projetcs`;
+    //                 }
+    //             favouriteLanguage(){
+    //                 if(this.language == "MERN"){
+    //                     return `Youre From Javascript Background, ${this.name} should worked on ${this.language}`;
+                        
+             
+    //                 }
+    //                 else{
+    //                     return `Your'e From Other Language Background ${this.name} should worked on Other Language`
+    //                 }
+    //                   }
+
+    //     }
+    //     var m=new seniorprogrammer("Rajesh", 3, 40000,2020, "Raju10@", "MERN");
+    
+    //     console.log(m.holidays(4,5));
+    //     console.log(seniorprogrammer.projects(4,5));
+    //     console.log(m.favouriteLanguage());
+    //     console.log(m.joiningyear());
+    //     console.log(seniorprogrammer.bonus(100000 , 10000));
+
+    //     console.log(m);
+
+    // var m=new employee("Vk", 3,450000,2020 );
+    // console.log(m.funn1());
+    // console.log(m.joiningyear())
+
+    // console.log(employee.bonus(5000 , 45000));
+    // console.log(m);
+    // // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //                     class model1{
+    //                         constructor(car1, car2){
+    //                             this.car1=car1;
+    //                             this.car2=car2;
+            
+    //                         }
+    //                         presentcar(){
+    //                             return ` I have ${this.car2}`;
+
+    //                         }
+    //                         pastcar(){
+    //                             return `in past  i have ${this.car1}  and now i have ${this.presentcar()}`
+    //                         }
+    //                         favcar(a){
+    //                         return `my fav car is:   ${a}`
+    //                         }
+    //                     }
+    //                     class model2 extends model1{
+    //                         constructor(car1, car2, car3){
+    //                             super(car1, car2);
+    //                             this.car3=car3;
+    //                         }
+    //                         better(){
+    //                             return `${this.car3} is better than Prevoius cars`;
+    //                         }
+    //                         static fuel(a){
+    //                             return  `Audi gives only ${a} millage`;
+    //                         }
+    //                         comfort(){
+    //                             return ` ${this.car2} Giving Less millage but ${this.better()} `
+    //                         }
+    //                     }
+    //                     // var d=new model1("RoolsRoyce", "Lomberginni");
+    //                     // console.log(d.presentcar());
+    //                     // console.log(d.pastcar())
+    //                     // console.log(d.favcar("VeeraSpecial"))
+    //                     // console.log(d);
+                       
+    //                     var d1=new model2("RollyRoyce", "LomberGinni", "Audi");
+    //                     console.log(d1.better());
+    //                     console.log(d1.comfort());
+    //                     console.log(model2.fuel(5));
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//     class model3{
+//         constructor(car1){
+//             this.car1=car1;
+//         }
+//         model(){
+//             return `${this.car1} is good`;
+//         }
+//     }
+
+//     class model4 extends model3{
+//    constructor(car1,car2){
+//    super(car1);
+//           }
+//         static model2(f){
+//             return ` i have ${f.car1}`
+//         }
+//     }
+//     var d=new model4("audi");
+//     console.log(model4.model2(d));
+
+
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+                                            // Normal constructor
+
+    //         function emp(name,experience, salary){
+    //         this.name=name;
+    //         this.experience=experience;
+    //         this.salary=salary;
+    //            this.emp=function(){     
+    //             return `Hey this is ${this.name} and i am carrying ${this.experience} years of Experience`
+    //     }
+    //         emp.prototype.details=`Name: ${this.name}   Experience: ${this.experience}  Salary: ${this.salary} `;
+    //         emp.prototype.permissions=function(){
+    //             return `${this.name} get permission for vk `;
+
+    //         }
+    //         emp.prototype.profession=function(n1){
+    //             return `${n1} are Sports Persons`
+    //         }
+    // }
+    // var m=new emp("ABD", 3, 450000);
+    // console.log(m.emp());
+    // console.log(m.details)
+    // console.log(m.permissions());
+    // console.log(m.profession("VkAbd"))
+    // console.log(m);
+
+    //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                    
+                    // var a= 10;
+                    // var b=29 + 10;
+                    // console.log(a+b)
+                    // console.log(10+20);
+                    // console.log("Volvo" +(parseFloat(20) + parseFloat(30)))
+                    
+                    // console.log("Volvo"+ (eval(20) + eval(30)));
+</script>
+</body>
+</html>

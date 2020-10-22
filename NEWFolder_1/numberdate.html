@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title><style>
+    #Box{
+      height:300px;
+      width: 300px;
+      background-color: brown;
+    }
+    
+    </style>
+    <script>
+    //NumberMrthods
+    /* Number ,parseInt, parseFloat, isFinite, isInteger , isFixed, toPrecision(x)  */
+   /*  // Number
+    //var a=true;
+   // var a=false;
+   // var a="20";
+    var a=20;
+    var num=Number(a);
+console.log(num);     */
+
+/*ParseInt  
+var a=" 10.23";
+var d=parseInt(a);
+console.log(d)    */
+/* ParseFloat  
+var a="Years 60";
+var a="10.30 hey age 60"
+console.log(parseFloat(a));   */
+ 
+ // ISFinite   IsInteger
+ /*
+ var f='10';
+var g="10String";
+console.log(isFinite(f));  
+console.log(isFinite(g));     
+
+var d=100;
+var b=10.3;
+var c=10-5;
+var a=false;
+var num1=Number.isInteger(d);
+var num2=Number.isInteger(b);
+var num3=Number.isInteger(c);
+var num=Number.isInteger(a)
+console.log(num);
+console.log(num1);
+console.log(num2);
+console.log(num3);      */
+
+//ToFixed  ToPrecission
+/*
+var fix=20;
+var fixed=fix.toFixed(2);;
+console.log(fixed)
+var a=20.456789;
+var f=a.toFixed(9)
+console.log(f)
+var p=20.345;
+var pr=p.toPrecision(30);
+console.log(pr)     */ 
+/*
+var fname='jane';
+var lname="jhon"
+var fullname=fname+""+ lname;
+console.log(fullname);    */
+/*
+var score=100; 
+var bonus=200;
+var finascore=(score + bonus) *2.08 ;
+var complex = (( 12 + 7 ) * 5 ) / 6;
+                   console.log(finascore, complex);
+
+                   let temprature=40;
+                   let celsius=(temprature- 32) * 5/9
+                    console.log(celsius)   */
+
+                    //WhileLoope 
+                  
+                  /*  var a=10;
+                    do{
+                        console.log(a);
+                    }
+                    while(a===10){
+                      console.log(a)
+                    }  
+
+                    var b=20;
+                    console.log(b)
+  */
+
+//DateYEAR Methods
+//new Date() , getFullYear, getMinutes, getSeconds , getTime, gtHours, 
+//setHours...., setfullyear, setTime , setSeconds, setDate, ......
+
+//var d=new Date()
+/*var d=new Date().getFullYear()
+console.log(d)    
+
+var now=new Date().getDate()
+var n=new Date().getMonth()+1;
+var y=new Date().getFullYear();
+console.log(now +"/"+ n + "/"+ y);
+
+var a=new Date();
+//console.log(a.toDateString())
+console.log(a.toUTCString())
+
+//Year Month and Date and Seconds 
+//Displaying Date Month year Time
+//UTC(Universal Time Coordinated) 
+//(Imdian Standerd Time)
+// var d = new Date("11 April, 1997");    
+//var d = new Date("October 13, 2014 11:13:00");
+//var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+//var d=new Date().getTime();
+//var d = new Date("2015-03-25");
+//var d = new Date("2020");
+//var d = new Date("03/25/2015");
+var d = new Date("2015/03/25");
+var d = new Date("Mar 25 2015");
+console.log(d)
+
+var g=new Date();
+console.log(g.getDate()) // getHours getSeconds getMilliSeconds  getDay() 
+var m=["January","February","March","April","May","June","July","August","September","October","November","December"];
+console.log(m[g.getMonth()])
+
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+
+}
+console.log(text)
+
+
+//.getMinutes() //getFullYear() .....
+//now.setFullYear(1997);
+//now.setMonth(03)
+// now.setDate(11);
+
+//now.setSeconds(10)
+//now.getMinutes(20)
+//console.log()
+console.log(now) 
+/*var res=d- 10;
+console.log(res)
+var s=new Date(20)
+s.setFullYear(1997)
+console.log(s)
+
+//(now.getMilliseconds()) //,now.getMinutes(),now.getMonth(),now.getTime(),now.setHours())
+//console.log(now.toDateString()) */
+
+//  ****************
+/*var a=new Date()
+//console.log(a.toLocaleTimeString())
+//console.log(a.toLocaleString())
+//console.log(a.toLocaleDateString())
+console.log(a.toDateString())
+//console.log(a.toString());
+
+
+
+
+
+//TIME_OUT_METHODS
+//SetTime clearTime , setInterval , clearInterval
+/*var s=setTimeout(function(){
+  console.log("Hide")
+},1500);  
+//clearTimeout(s)
+
+/* Normal function
+var settime=setTimeout(funn1, 3000);
+function funn1(){
+   console.log("Hide")
+}  */
+
+/*   var ST=setTimeout(funn1, 5000);
+function funn1(){
+ var target =document.getElementById("Box");
+ var target=document.getElementById("b1")
+ target.style.width="1000px";
+ //target.style.backgroundColor="blue";
+}
+function stopAnimation(){
+  clearTimeout(ST)
+}   */
+
+//Set_Interval  ClearInterval
+   //var si=setInterval(funn1, 2000);   //Fuun1 function name  2000 couting per 
+   
+   /*var a=0;
+    var stop=setInterval(funn1, 1000)
+   function funn1(){
+  a = a + 50;
+  if(a == 200){
+    clearInterval(stop)
+  }
+  else{
+  document.getElementById("Box").style.marginLeft= a + "px";
+   console.log(a)
+}
+ }    */
+
+ 
+ //var a=new Date("1997 January 30")
+ //console.log(a.toLocaleDateString())
+ //console.log(a.toDateString())    */
+ /*   var a=new Date()
+ var m=["January","February","March","April","May","June","July","August","September","October","November","December"];
+ var n=m[a.getDay()];   */
+  
+//var d=['Moday' ,'Tuesday', 'wednesday', 'Thursday', 'Friday','Sataurday', 'Sunday'];
+//var gd=day[day.getDay()];
+//console.log(gd)
+
+/*    var a=new Date()
+var m=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var n=m[a.getMonth()]
+ console.log(n)
+ var t=new Date()
+var s=t.getDate();
+
+var x=new Date()
+var y=x.getFullYear()
+
+ console.log(n+ " - " + s + " - " + y)   */
+ 
+    </script>
+    
+</head>
+<body>
+  <a href="#">Home</a>
+  <a href="#">Details</a>
+  <!--<div id="Box"> </div>  -->
+   <!-- <button type="buuton " id= "b1" onclick="stopAnimation()">TimeOut</button>  -->
+    <button type="button" onclick="clearInterval(s)" onmouseover="setInterval(funn2,2000)"
+    id="B">ClickMe</button> 
+   <p id="showClock"></p>
+  <script>
+   /* function funn2(){
+        var b= new Date();
+        var g=b.toLocaleTimeString()
+    document.getElementById("showClock").innerHTML='g';
+  
+      }  */
+   //Displaying Time and Seconds
+  var s=setInterval(funn1, 1000);
+    function funn1(){
+      var a=new Date();
+    var l=a.toLocaleTimeString()
+    document.getElementById("showClock").innerHTML=l;
+  //  document.getElementById("showClock").innerHTML=l;
+    }  
+    // clearInterval(s)
+    </script>
+    
+    
+</body>
+</html>

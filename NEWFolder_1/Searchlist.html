@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="inp" id="nm">
+        <ul id="myUl">
+            <li><a href="#">Raju</a></li>
+            <li><a href="#">Raje</a></li>
+            <li><a href="#">vish</a></li>
+            <li><a href="#">vish</a></li>
+            <li><a href="#">vish</a></li>
+            <li><a href="#">vina</a></li>
+            <li><a href="#">sahe</a></li>
+            <li><a href="#">swas</a></li>
+        </ul>
+
+            <!--
+                <ul id="myUl">
+             <li>Swastik</li>
+            <li>Sathwick</li>
+            <li>Vishal</li>
+            <li>Ram</li>
+            <li>Jai</li> 
+        </ul>  -->
+
+    </div>
+    <script>
+                document.getElementById('nm').addEventListener('keypress', ()=>{
+                let inp=document.getElementById('nm').value.toUpperCase();
+                let ul=document.getElementById('myUl');
+                let li =ul.getElementsByTagName('li');
+             
+                   let td="";
+                   for(var i=0; i<li.length; i++){
+                        let td=li[i].getElementsByTagName('a')[0];
+                        td1=td.textContent || td.innerHTML;
+                        if((td1).toUpperCase().indexOf(inp) != -1){
+                            li[i].style.display = "block";
+                        }
+                        else{
+                            li[i].style.display = "none";
+                        }
+                    }
+                 });
+
+                       
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx
+      
+        // document.getElementById('nm').addEventListener('keypress', ()=>{
+        //     var inp=document.getElementById('nm').value.toUpperCase();
+        //     var ul=document.getElementById('myUl');
+        //     var li=document.getElementsByTagName('li');
+        //     let td="";
+        //     for(var i=0; i< li.length; i++){
+        //         td = li[i].textContent || li[i].innerHTML;
+        //         if((td).toUpperCase().indexOf(inp) != -1){
+        //             li[i].style.display= "block";
+        //         }
+        //         else{
+        //             li[i].style.display= "none";
+               
+        //         }
+        //     }
+        // })
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        var a=[1,2,121,32,75,1,0,43,54];
+        // var b=a.reduce((c,d)=>{ return (d > c) ? d : c });
+        // console.log(b);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // var b=a.reduce((c,d)=>{
+        //         if(d > c){
+        //             c= d;
+        //         }
+        //         return c;
+        // })
+        // console.log(b);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        
+        
+        
+      
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>

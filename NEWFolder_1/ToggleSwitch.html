@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .sidebar{
+            position: absolute;
+            width: 10rem;
+            height: 100%;
+            background-color: rgb(150, 101, 111);
+            left: -18rem;
+
+        }
+         .ml{
+            list-style-type: none;
+            position: relative;
+        
+        }
+        ul li{
+            margin: 1em;
+            /* border: 3px solid red; */
+            padding: 5px;
+            color: wheat;
+            border-bottom: 2px solid  black;
+        }
+       
+        .tgbtn span{
+            display: block;
+            margin: 3px;
+            height: 5px;
+            width: 30px;
+            margin: 3px;
+            background-color: blue;
+            
+        }
+        
+        .tgbtn{
+            position: absolute;
+            left:18rem
+            
+        }
+        .active{
+            left: 0px;
+            transition-duration:2s;
+        }
+        
+     
+    
+    </style>
+</head>
+<body>
+        <div class="sidebar" id="sb">
+            <div class="tgbtn" onclick="funn1()" id="tgbtn1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="ml" id="ml"> 
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </div>
+
+        <div class="container" style="margin-left: 20rem;">
+            <label for="chk" id="chkb" style="font-size: 5rem;">&times;</label><br><br><br><br>
+            <input type="checkbox" name="" id="chk" style="visibility: hidden;">
+        </div>
+        <script>
+            function funn1(){
+            var tb=document.getElementById('sb').classList.toggle('active');
+            
+        }   
+
+        document.getElementById('chkb').addEventListener('click', ()=>{
+            document.getElementById('sb').classList.toggle('active');
+        })
+
+
+          
+       
+            </script>
+       
+</body>
+</html>

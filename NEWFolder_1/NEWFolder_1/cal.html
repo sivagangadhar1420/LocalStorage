@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AjaxTutorials</title>
+</head>
+
+<body>
+    <ul id="demo"></ul>
+    <button onclick="myFunction()">ClickMe</button>
+    <script>
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                       // CallBack Functions
+
+        // var f=(a,b, call)=>{
+        //     console.log(`:: ${a+b}`);
+        //     call();
+        //     }    
+        //     f(10,20,()=>{
+        //     console.log("Process done")
+        //     });
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // var f1=(a,b, c)=>{
+        //     console.log(`:: ${a+b}`);
+        //     c();
+        // }
+        // var f2=()=>{
+        //     console.log(`:: Process Done`);
+        // }
+        //     f1(2,4,f2);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        //     function funn1(){
+        //         console.log("I am first");
+
+        //     }
+        //     function funn2(c){
+        //     console.log("Iam Second");
+        //     c();
+        // }
+        // funn2(funn1);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // var f1=(a, b, cal)=>{
+        //       if(cal == 'add'){
+        //           console.log(a+b);
+        //       }
+        //      else if(cal == 'mltiply'){
+        //         console.log(a*b);
+        //       }
+        //       else{
+        //             console.log("do somethingh")
+        //       }
+        //       }
+        // f1(5, 4, 'add');
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+        // function add(a,b){
+        //     return a+b
+        // }
+        //     function multiply(c,d){
+        //         return c * d;
+        //     }
+        //     function substraction(e,f){
+        //         return e-f;
+        //     }
+        //     function funn1(num1, num2, CallBack){
+        //         return  CallBack(num1,num2);
+        //     }
+        //     console.log(funn1(10,20, substraction))
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+        // function funn1(a,b,c){
+        // return c(a,b);
+        //     }
+        // console.log(funn1(10,20, (a,b)=>{ return a-b }))
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // function funn1(a){
+        //     console.log(`${a}`);
+        // }
+        // function funn2(b,c){
+        //     c(b);
+        // }
+        // console.log(funn2(20,funn1));
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // function funn1(a,b){
+        //     console.log(`${a + b}`);
+        // }
+        // function funn2(a,b,c){
+        //     c(a,b);
+        // }
+        // funn2(10,20, funn1);
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+        // function funn1(a,b){
+        //     console.log(`${a + b}`);
+        // }
+        // function funn2(c){
+        //         var a=10,b=20;
+        //         c(a,b);
+        // }
+        // funn2(funn1);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        //      function funn1(a,b,c){
+        //      return c(a,b)
+        //  }
+        //  console.log(funn1(10,20,(a,b)=>{return a+b}))
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // var post=[{title:"Post1", address:"Hyderbad", Time:"9PM"},
+        //         {title:"Post2", address:"Hyderbad", Time:"6PM"},
+        //          {title:"Post3", address:"ViZak", Time:"8PM"}];
+
+        // let addPost=(newPost,calback)=>{
+        //              setTimeout(()=>{
+        //              post.push(newPost);
+        //              calback()
+        //         },7000) };
+
+        // let getPost=()=>{
+        //              setTimeout(()=>{
+        //             post.forEach((m)=>{console.log(`${m.title}`)});
+        //         },2000)
+
+        //          }
+                
+        //          let newPost=   {title:"Post4", address:"Hyderbad", Time:"16PM"};
+        //          addPost(newPost,getPost)
+                
+                
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+        // var students = [
+        //     { name: "Raju", score: 80, age: 18, gender: "Male", school: "East" },
+        //     { name: "Suresh", score: 65, age: 8, gender: "Male", school: "West" },
+        //     { name: "Ramesh", score: 70, age: 20, gender: "Male", school: "East" },
+        //     { name: "Rajini", score: 90, age: 16, gender: "Female", school: "East" }];
+
+                                // // function myFunction(){
+// let addstudent=(newstudent,calback)=>{
+//     setTimeout(()=>{
+//     students.push(newstudent);
+//    console.log(`One sTudent hasBeen Added`);
+//    calback();
+
+// },3000)
+
+// }
+// let getstudents=()=>{
+//     let str="";
+//     students.forEach((getstudent)=>{
+//         str += `<li>${getstudent.name}</li>`;
+//        })
+//     document.getElementById('demo').innerHTML =str;
+// }
+// var oneStudent={name:"Rau", score:8, age:38,gender:"Male", school:"East"};
+// addstudent(oneStudent, getstudents);
+// console.log(students);
+                                                            // // }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var students=[
+// {name:"Raju", score:80, age:18,gender:"Male", school:"East"},
+// {name:"Suresh", score:65, age:8,gender:"Male",  school:"West"},
+// {name:"Ramesh", score:70, age:20,gender:"Male",  school:"East"}, 
+// {name:"Rajini", score:90, age:16,gender:"Female",  school:"East"}];
+
+// let funn1=(data, calback)=>{
+//     for(var i=0; i<data.length; i++){
+//         if(data[i].school.toUpperCase() == "EAST"){
+//             console.log(data[i]);
+//             calback(data[i]);
+//     } }
+//     }
+// funn1(students, (p)=>{ (p.score >= 60) ? 
+//                 console.log(p.name +"  Got " + p.score + " Passed") 
+//                 : console.log("")});
+
+//      let deteremineTotal=()=>{
+//        let total=0,count=0;
+
+// funn1(students, (m)=>{
+//         total +=  m.score;
+//         count++;
+//     });
+//     console.log("Total Marks : " + total+"  And Count of members :" + count)
+
+//     }
+//     deteremineTotal();
+                                    // Total Marks Of All Students
+
+// let maxmarksAll=(m1,calback)=>{
+//     for(var i=0; i<m1.length; i++){
+//                 // console.log(m1[i].score);
+//                 calback(m1[i]);
+//                 }
+// }
+// let tm1=0; count=0;
+// maxmarksAll(students, (mm)=>{
+//     tm1 += mm.score;
+//     count++;
+
+// console.log(tm1);
+// })
+// console.log("Total Marks all Schools Students "+ tm1 + "and no of students " + count );
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // let m=(a,b)=>{
+        //  b(a);
+        // }
+        // let m1=(d)=>{
+        //     console.log("value is :" + d);
+        // }
+        // m(10,m1);
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// for(var i=0; i<students.length; i++){
+//     // if(students[i].name.length >= 5){
+//         if(students[i].score >= 60){
+//         console.log(students[i])
+//     }
+
+// }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//     let funn1=(data, calback)=>{
+//     for(var i=0; i<data.length; i++){
+//         if(data[i].school.toUpperCase() == "EAST"){
+//             if(data[i].score >= 60){
+//                 console.log(data[i].name + " got " + data[i].score+ " Passed")
+//             console.log(data[i]);
+//             if(typeof calback === "function"){
+//             calback(data[i]);
+//         }}
+//         }
+//      }
+// }
+// funn1(students);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// funn1(students, function(st){
+//         if(st.score >= 60){
+//         console.log(st.name + "  Passed" );
+//     }
+
+// });
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // var funn1=(a,b)=>{
+        //     console.log(`Hey ${a}`);
+        //     b(a);
+        // }
+        // var funn2=(d)=>{
+        //     console.log(`How Are U Mr ${d}`);
+        // }
+        // funn1("Suresh", funn2)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+        // var funn1=(b, c)=>{
+        //     console.log(`Het Boy  ${b}`);
+        //      c(b);
+        // }
+        // var funn2=(d)=>{
+        //     console.log(`Hey Girl ${d} `)
+        // }
+        // funn1(10,funn2);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // var funn1=(b)=>{
+        //     console.log(`Het Boy :`);
+        //     b();
+        // }
+        // var funn2=()=>{
+        //     console.log(`Het Girl `);
+        // }
+        // funn1(funn2)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ //    function funn1(a,b,c){
+            //        console.log(`${a + b}`);
+            //        c();
+                   
+            //    }
+            //    function funn2(){
+            //        console.log('done');
+                   
+            //    }
+            //    funn1(20,21,funn2);
+// =++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//               function funn1(a,b){
+//               console.log(`${a + b}`);
+//         }
+//         function funn2(a,b,c){
+//             c(a,b);
+//         }
+//         funn2(10,20, funn1);
+
+
+// // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//         var funn1=(b, c)=>{
+//             console.log(`Het Boy  ${b}`);
+//              c(b);
+//         }
+//         var funn2=(d)=>{
+//             console.log(`Hey Girl ${d} `)
+//         }
+//         funn1(10,funn2);
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(){
+// var rn=[1,2,3,4,5];
+// setTimeout((numbs)=>{
+//     var obj={name:"Thapa", age:20,};
+//     console.log(`My Name is ${obj.name} and i am ${obj.age} old and myRoll_No is ${numbs}`)
+// }, 1000, rn[1]);
+// }
+// funn1();
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// function funn1(a,b,c){
+//     console.log(`${a + b}`);
+//     c(a,b);
+// }
+// funn1(10,20,(a,b)=>{console.log(`${a+b}`)})
+ 
+
+//  function funn1(a,b){
+//      console.log(`${a+b}`);
+//  }
+//  function funn2(a,b,c){
+//      console.log(`${a+b}`);
+     
+//             c(a,b);
+//  }
+//  funn2(10,20, funn1);
+     
+
+
+
+
+
+
+
+
+
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    </script>
+
+
+
+
+    <script>
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                                 // ForEach
+        // var a=[10,23,333,40,56];
+        // var b=a.forEach(funn1)
+        // function funn1(i,j,k){
+                // return k[j]= i * 5;
+                // return k[j] = i + i;
+                // return k[j] = i + k[0]
+                // return k[j] = i + j;
+
+        // }
+        // console.log(a);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        //  var a=[10,23,333,40,56];
+        //  var num=0;
+        //  a.forEach((m)=>{
+        //             return num += m;
+
+        //  })
+        //  console.log(num);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                           //    Adding sibling values  //
+    //     var a=[10,23,333,40,56];
+    //       var sum=0;
+    // var b=a.forEach((m)=>{
+    //     sum += m 
+    //     console.log(sum);
+    // })
+    // console.log(sum);
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                // Reduce
+        // var a=[10,23,333,40,56];
+        // var sum=0;
+        // var b=a.reduce(funn1);
+        // function funn1(i){
+        //     return sum +=  i;
+        // }
+        // console.log(sum);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // var a=[10,23,333,40,56];
+        // var sum=0;
+        // a.reduce((m)=>{
+        //     return sum += m;
+
+        // })
+        // function ReduceFun(){
+        //     document.body.innerHTML= sum;
+
+        // }
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+    </script>
+
+</body>
+
+</html>

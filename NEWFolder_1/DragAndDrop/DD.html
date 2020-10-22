@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.whiteBox{
+    height: 10rem;
+    width: 10rem;
+    background-color: blue;
+    display: inline-block;
+    /* border: 3px solid red; */
+}
+.imgBox{
+    background-image: url('11.jpg');
+    height: 10rem;
+    position: relative;
+    width: 10rem;
+    background-repeat: no-repeat;  
+    background-size: 20rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .hold{
+      border: 3px solid red;
+  }
+  .hide{
+      display: none;
+  }
+  .dashed{
+      border: 7px dashed palevioletred;
+  }
+ 
+
+    </style>
+    
+</head>
+<body>
+    
+      <div class="whiteBox" id="gd">
+    <div class="imgBox" draggable="true"></div>
+             </div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+
+<!-- <img src="96.jpg" alt=""> -->
+
+    <script>
+
+var imgBox=document.querySelector(".imgBox");
+        var wbox=document.getElementsByClassName('whiteBox');
+        imgBox.addEventListener('dragstart', (g)=>{
+            // g.target.className += ' hold ';
+            // imgBox.classList += ' hold';
+            imgBox.className += ' hold';
+          
+        setTimeout(()=>{
+            // g.target.className = ' hide';
+            imgBox.className = 'hide';
+          //g.target.className = 'hide';
+    },0) 
+})
+
+imgBox.addEventListener('dragend', (e)=>{
+    e.target.className = 'imgBox '; //Class name imagebox  watch careFully
+    console.log("DragEnd")
+   
+    });
+
+      for(wb of wbox){
+          wb.addEventListener('dragover', (e)=>{
+          e.preventDefault(); 
+         console.log("DragOver") })
+
+          wb.addEventListener('dragenter', (e)=>{ 
+            e.target.className += ' dashed';
+              console.log("DragEnter")
+            });
+          wb.addEventListener('dragleave', (e)=>{ 
+              e.target.className = 'whiteBox';
+              console.log("DragLeave");
+            });
+          wb.addEventListener('drop',(e)=>{
+        
+            e.target.append(imgBox)
+            
+              console.log("Drop Has Triggered");
+              
+            
+            });
+         }
+
+
+   
+   
+                                                    // classLists And classNames
+//    ib.classList.add('show','show1');
+//    ib.classList.remove('show', 'show1');
+//    ib.className = 'show';
+//    wb.className = "cl";
+// console.log(wb);
+
+   
+    
+        </script>
+</body>
+</html>

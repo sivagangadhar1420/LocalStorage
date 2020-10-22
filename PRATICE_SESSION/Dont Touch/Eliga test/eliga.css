@@ -1,0 +1,57 @@
+.navbar
+{
+    background-color: rgb(9, 150, 206);
+    font-size: medium;
+    font-family: Calibri (Body);
+    font-weight:bold;
+
+}
+nav ul li a 
+{
+    color :white;
+    
+}
+.nav-link:hover
+{
+    color: #cccc !important;
+}
+html body
+{
+   background-color: #e3e7e4 ; 
+}
+#goal
+{
+    font-family: monospace;
+    font-size: x-large;
+    font-weight: bold;
+}
+.card-group
+{
+    background-color: white;
+    margin-top: 15px;
+}
+.card-title
+{
+    font-weight: bolder;
+}
+.number
+{
+    font-size: xx-large;
+}
+#icon
+{
+    padding-right: 15px;
+}
+#one
+{
+    padding-top: 5px;
+    padding-left: 5px ;
+}
+.star
+{
+    color: blue;
+}
+.positive
+{
+    border: 1px solid blue;
+}

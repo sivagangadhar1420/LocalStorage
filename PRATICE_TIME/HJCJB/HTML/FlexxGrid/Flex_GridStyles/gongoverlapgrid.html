@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .naming{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,150px);
+        }
+         .n11{
+            background-color: gray;
+            border: 3px solid red;
+            grid-row: 1 /span 3;
+            grid-column: 1 / span 3;
+            /* order: 6; */
+        }
+        .naming > div{
+            max-width: 150px;
+        }
+
+        .n12{
+            background-color: black;
+            color: honeydew;
+            border: 3px solid red;
+            /* order: 5; */
+        }
+
+        .n13{
+            background-color:blue;
+            /* grid-row: span 3; */
+            border: 3px solid red;
+            /* display: grid;
+            grid-gap:15px;
+           */
+            /* grid-template-columns: 160px 160px; */
+            /* grid-template-rows: auto; */
+             /* align-items: center; */
+            /* text-align: center; */ 
+            /* align-content: center; */
+            
+            justify-content: center;
+          
+        }
+        /* .n13 > div{
+            background-color: white;
+            color: black; */
+            /* margin: 15px; */
+            
+        /* } */
+        .n14{
+            background-color: green;
+            border: 3px solid red;
+            /* order:3; */
+        }
+        /* .n15{
+            background-color:yellow;
+            border: 3px solid red; */
+            /* order:2; */
+        /* } */
+        /* .n16{
+            background-color:violet;
+            border: 3px solid red; */
+            /* order:3; */
+        /* } */
+       
+    </style>
+</head>
+<body>
+    <div class="naming">
+        <div class="n11">Grid1</div>
+        <div class="n12">Grid2</div>
+        <div class="n13">
+            <!-- <div class="items1">SubG1</div>
+            <div class="items2">SubG2</div>
+            <div class="items3">SubG3</div> -->
+            Grid13
+        </div>
+
+        <div class="n14">Grid4</div>
+        <!-- <div class="n15">Grid5</div>
+        <div class="n16">Grid6</div> -->
+       
+    </div>
+</body>
+</html>

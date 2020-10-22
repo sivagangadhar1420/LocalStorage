@@ -1,0 +1,491 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table #t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table #t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+
+    </style>
+<!-- 
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color:blue;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px; 
+        }
+        
+    
+       
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>CSS Layout Float</h2>
+        <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+        <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+        
+        <header>
+          <h2>Cities</h2>
+        </header>
+        
+        <section>
+          <nav>
+            <ul>
+              <li><a href="#">London</a></li>
+              <li><a href="#">Paris</a></li>
+              <li><a href="#">Tokyo</a></li>
+            </ul>
+          </nav>
+          
+          <article>
+            <h1>London</h1>
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+          </article>
+        </section>
+        
+        <footer>
+          <p>Footer</p>
+        </footer>  
+     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
+   <style>
+        table , th ,tr,  td{
+            border: 2px solid green;
+            border-collapse: collapse;
+            border-spacing: 5px;
+        }
+        
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+    header{
+          background-color:blue;
+          padding: 20px;
+          text-align: center;
+          font-size: 25px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 300px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 300px; 
+        }
+        footer{
+    background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  clear: both;
+}
+#p1{
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+  nav, li, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+    <h1>CSS Layout Float</h1>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<header> <h1>Cities</h1></header>
+
+
+<section>
+<nav>
+<ul>
+            <li>Home</li>
+            <li>Home</li>
+          <li>Home</li>
+      
+        </ul>
+    </nav>
+
+<article>
+        <h1 id="p1">London</h1>
+        <p id="p1">London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p id="p1">Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      </article>
+    </section> 
+    <footer>
+        <p>Footer</p>
+    </footer> 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+ <!--   <video width="320" height="240" controls>
+        <source src="Race_Gurram_Full_Movie_in_Telugu__Allu_Arjun__Shruti_Haasan__Blockbuster_South_Movies(1080p).mp4" type="video/mp4">
+        
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+      </video>
+  
+     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+    <template>
+  <h2>Flower</h2>
+  <img src="img_white_flower.jpg" width="214" height="204">
+</template> 
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=
+    
+    <select id="cars" size="3" >
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+    <h1>TextingTag</h1>
+    <section>
+        <h1>TextingTag</h1>
+    </section>
+    <em>Emph</em>
+<code>Text</code>
+<samp>sampTE</samp>
+    <progress id="file" value="32" max="100"> 32% </progress>
+
+<table>
+    <colgroup>
+    <col span="2" style=" background-color:greenyellow">
+    <col  style="background-color: grey;">
+    </colgroup>
+    <tr>
+        <th style="background-color: green;">1</th><th>2</th><th>3</th>
+    </tr>
+    <tr >
+        <td>name</td><td>name</td><td>name</td>
+    </tr>
+    <tr>
+        <td>id</td><td>id</td><td>id</td>
+    </tr>
+</table>
+     <picture>
+        <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+      </picture>
+
+    <object data="F:\its all about you\audios\Courier Boy Kalyan (2015) __ www.Telugu4u.Net __\01 - Vaalu Kalla Pilla [ www.SravsriWap.mp3">
+        <param name="autoplay" value="true">
+        </object>
+    
+   <input type="range" id="v" name="n1" oninput="r.value=v.value">
+    <input type="number" id="r" value="50" oninput="v.value=r.value">
+    <p id="demo"></p> -->
+    <!-- <script>
+        var c1=document.getElementById("v").value;
+        var c2=document.getElementById("r").value;
+        var tot=eval(c1) + eval(c2);
+        document.getElementById("demo").innerHTML=tot;
+
+    </script>
+    
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+   <!-- <form oninput="x.value=parseInt(v.value) + parseInt(r.value)" id="p12">
+    <input type="range" id="v" name="n1" oninput="r.value=v.value">
+    <input type="number" id="r" value="50" oninput="v.value=r.value">
+    =<output name="x" for="r v"></output>
+    </form>
+    
+    
+    <p id="p1"></p>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50">
+        <input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+        </form>
+        
+     <script>
+        function funn1(){
+        var v1=document.getElementById("v").value;
+              
+    }
+    </script> -->
+
+    <!-- <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+        </nav>
+        <input type="text" id="id1" oninput="funn1()">
+        <p id="demo"></p>
+        
+        <script>
+            function funn1(){
+var m=document.getElementById("id1").value;
+document.getElementById("demo").innerHTML=m;
+            }
+        </script> -->
+
+ <!--    <label for="disk_c">Disk usage C:</label>
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter  value="1.6">90%</meter>
+
+<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+    
+     <img src="1.jpg" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+<input type="url">
+<input list="list1" name='list'>
+<datalist id="list1">
+    <option>Google</option>
+    <option>Opera</option>
+    <option>InternetExplore</option>
+    <option>Firefox</option>
+</datalist>
+
+    <img src="1.jpg"width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="#">
+  <area shape="round" coords="90,58,3" alt="Mercury" href="#">
+  <area shape="poly" coords="124,58,8" alt="Venus" href="#">
+</map>
+<h1>A txt</h1>
+
+<article>
+    <h1>Text inside</h1>
+    <p>Pragaraph</p>
+</article>
+<aside>
+    <h1>ContentPage</h1>
+    <p>paraTxt</p>
+</aside>
+<input list="browsers">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<input type="submit">
+
+<details>
+    <summary>Copyright 1999-2018.</summary>
+    <p> - by Refsnes Data. All Rights Reserved.</p>
+    <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+  </details><br>
+
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+   </fieldset>
+
+   <fieldset form="form1">
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" form="form1"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+  </fieldset>
+
+  <form action="/action_page.php" method="get">
+    <fieldset name="personalia">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname">
+    </fieldset>
+    <br>
+    <button type="button" onclick="form.personalia.style.backgroundColor='yellow'">Change background color of fieldset</button>
+    <input type="submit">
+    </form>
+
+    <form>
+        <form action="/action_page.php">
+          <fieldset disabled>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+        </form>
+
+      <embed src="F:\its all about you\audios\Mehabooba\[iSongs.info] 01 - Oh Priya Na Priya.mp3">
+         <embed src="1.jpg">
+            <audio controls>
+                <source src="F:\its all about you\audios\Mehabooba\[iSongs.info] 01 - Oh Priya Na Priya.mp3">
+            </audio><br>
+
+            <iframe src="frame1.html"name="frame1"  style="background-color: blue;">
+
+            </iframe>
+            <iframe src="frame2.html" name="frame2" style="background-color: brown;">;
+                
+            </iframe>
+            <iframe src="https://www.google.com/" style="background-color: darkblue; width: 50%;"></iframe>
+            <a href="frame1.html" target="frame2">ClickMe</a>  
+           
+            </iframe>
+            <frameset rows="50% , 50%">
+                <frame name="f1" src="frame1.html"></frame>
+                <frame name="f2" src="frame2.html"></frame>
+            </frameset>                
+            <hr>
+            <img src="1.jpg" alt="W3Schools.com" width="100" height="132" ismap>  
+            <input type ="text" autofocus>
+            <p><q>The text</q>aaaaa</p>
+            <p><blockquote>The tssssssssssssssssssssmmssext</blockquote>aaand the aaa</p>  
+
+
+           
+           
+            <table id="t01">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+              
+              
+  -->
+  
+  
+
+
+</body>
+</html>

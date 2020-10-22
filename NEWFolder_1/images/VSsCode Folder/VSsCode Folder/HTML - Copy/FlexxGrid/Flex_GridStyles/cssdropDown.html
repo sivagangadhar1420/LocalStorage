@@ -1,0 +1,176 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        
+
+
+        .menu-list .menu{
+            background-color: limegreen;
+            display: flex;
+            justify-content: center;
+           
+        }
+        .menu li{
+            margin: 20px;
+            margin-left: 80px;
+            padding: 7px;
+            list-style-type: none;
+            border-radius: 30px;
+            
+ 
+            border: 1px solid cadetblue;
+            border: 2px solid crimson;
+            width: auto;
+            /* /* flex-basis: 100%;  */
+        }
+        .menu li:not(.n){
+            border: 0px;
+          
+        }
+        .menu li a{
+            text-decoration: none;
+        }
+        .active, .menu li:hover{
+            background-color: magenta;
+
+           
+            border-radius: 30px;
+            /* width: auto; */
+
+        }
+       
+         .menu li > ul {
+            display: none;
+          
+        
+            background-color: crimson; 
+                   /* display: inline-flex; */
+         }
+       
+        .menu li:hover > ul {
+            display:block;
+            position: absolute;
+            margin-top: 37px;
+            background-color:red;
+        }
+      
+            .menu .fas{
+            margin-right: 8px;
+        }
+        .sub-menu{
+            background-color: chartreuse !important;
+            text-align: center;
+
+
+        }
+        .menu li .sub-menu li{
+            border-bottom: 2px solid black;
+            border-radius: 0px;
+                text-align: center;
+                
+                        margin-left: 19px;
+        margin-left: 1.2rem;
+        }
+        .menu ul > ul >{}
+        
+       
+    </style>
+    </head>
+
+    <body>
+        <div class="dropdown">
+
+            <div class="menu-list">
+                <ul class="menu">
+                    <li><a href="#" class="active"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i>About</a></li>
+                    <li class="n"><a href="#"><i class="fas fa-clone"></i>Contacts</a>
+                      
+                    
+                         <ul class="sub-menu">
+                        <li><a href="#"> <i class="fas fa-user"></i>Listbox</a></li>
+                        <li><a href="#"><i class="fas fa-clone"></i>Text</a></li>
+                        <li><a href="#"><i class="fas fa-clone"></i>links</a></li>
+                        <li><a href="#"><i class="fas fa-home"></i>sub-</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i>ItemBox</a></li>
+                        <li><a href="#"><i class="fas fa-clone"></i>ItemBoxes</a> </li>
+                         <ul class="sub2-menu">
+                            <li><a href="#"> <i class="fas fa-home"></i>Listbox</a></li>
+                            <li><a href="#"><i class="fas fa-clone"></i>Text</a></li>
+                            <li><a href="#"><i class="fas fa-clone"></i>links</a></li>
+                        </ul>
+                        </li>
+                         
+
+                    </ul>
+                
+
+                    <li><a href="#"><i class="fas fa-user"></i>Help</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i>Request</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    </html>
+
+    <!-- .menu-list{
+        background-color: chartreuse;
+    }
+    .menu-list .menu{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .menu li{
+        margin: 10px;
+        padding: 5px;
+        list-style-type: none;
+      
+    }
+   .menu li a{
+        
+        text-decoration: none;
+        /* padding:auto; */
+        /* margin: 10px; */
+    }
+    ul li ul li{
+        display: none;
+        background-color: cyan;
+        
+    }
+
+    .menu li a:hover{
+        background-color: crimson;
+       
+    }
+    ul li > ul li{
+        /* background-color:red; */
+        padding: 10px;
+
+    }
+    ul li  ul li:hover{
+        background-color: darkblue;
+    color:hotpink;
+    }
+ ul li:hover ul li{
+        display: block;
+        /* position: absolute; */
+        margin-top: 30px;
+
+    }
+     -->

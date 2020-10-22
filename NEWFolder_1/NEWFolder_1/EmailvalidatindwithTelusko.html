@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="fm1">
+            <input type="text" id="em" placeholder="enter Youre email">
+    <label for="em" id="lb1"></label>
+    <button type="submit">Validate</button>  
+<button type="reset">Reset</button>
+</form>
+    <script>
+        var fm=document.getElementById('fm1');
+        fm.addEventListener('submit', (e)=>{
+        var em1=document.getElementById('em').value;
+        var lb=document.getElementById('lb1');
+        
+                // let rege=/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+)(.[a-zA-Z])?$/
+                let rege=/(^[a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+).([a-z]{2,10}).([a-z]{2,10})?$/
+                if(rege.test(em1)){
+                    document.getElementById('lb1').innerHTML = "ValidMail";
+                    document.getElementById('lb1').style.color="green";
+                    document.getElementById('lb1').style.visibility="visible";
+                
+                    
+                }
+                else{
+                    document.getElementById('lb1').innerHTML = "InValidMail";
+                    document.getElementById('lb1').style.color="red";
+                    document.getElementById('lb1').style.visibility="visible";
+                
+                }
+                
+                e.preventDefault();
+                
+                
+
+        
+    })
+ 
+
+    </script>
+    
+</body>
+</html>

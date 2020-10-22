@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   
+   
+       
+    // function myFunction(){
+        
+    //        let tab=document.getElementById("tab");
+    //         let row=tab.insertRow();
+    //         let c0=row.insertCell(0);
+    //         let c1=row.insertCell(1);
+    //         let c2=row.insertCell(2);
+    //         c0.innerHTML=1;
+           
+    //         c1.innerHTML=document.getElementById('uname').value;
+    //         c2.innerHTML=document.getElementById('umail').value;
+    //     }
+    
+    </script>
+    <style>
+        body{
+            counter-reset: my-counter;
+        }
+        #sn{
+            content: " No "  counter(my-counter) " : ";
+            counter-increment: my-counter 2;
+        }
+        table th, td {
+            border: 2px solid green;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Given event to Form at script -->
+    
+ <!-- <form action="" id="fm1" >
+         <input type="text" name="name" id="uname">
+     <input type="text" name="name" id="umail">
+     
+<input type="submit"  value="ClickMe">
+   
+</form> -->
+
+
+
+            <!-- Given event at Html -->
+
+<!-- <form onsubmit="myFunction(); return false">
+    <input type="text" name="num" id="num">
+    <input type="text" name="name" id="uname">
+<input type="text" name="name" id="umail">
+<input type="reset" name="rb" id="rb" value="Cle@r">
+<button type="submit">ClickMe</button> -->
+<!-- <input type="submit" value="ClickMe"> -->
+
+<!-- </form> -->
+
+<!-- 
+    <form>
+    <input type="text" name="num" id="num">
+    <input type="text" name="name" id="uname">
+<input type="text" name="name" id="umail">
+
+<input type="reset" name="rb" id="rb" value="Cle@r">
+</form>
+<input type="submit" onclick="funn1()" value="ClickMe"> -->
+<!-- <button type="submit" id="btn1" onclick="funn1()">ClickMe</button> -->
+
+
+
+
+ <table id="tab" style="padding: 5px; border: 2px solid red;">
+    <thead>
+         <tr>
+            <th id="sn">SlNo</th>
+            <th>Name</th>
+            <th>Email</th>
+         </tr>
+        </thead>
+       
+ </table>
+<script>
+    // var dm=document.getElementById('fm1');
+    // dm.addEventListener("submit" , (e)=>{
+    //     let tab=document.getElementById("tab");
+    //         let row=tab.insertRow();
+    //         let c0=row.insertCell(0);
+    //         let c1=row.insertCell(1);
+    //         let c2=row.insertCell(2);
+    //         c0.innerHTML=1;
+           
+    //         c1.innerHTML=document.getElementById('uname').value;
+    //         c2.innerHTML=document.getElementById('umail').value;
+    //         e.preventDefault();
+ 
+    // });
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // function funn1(){
+        //     let tab=document.getElementById("tab");
+        //     let row=tab.insertRow();
+        //     let c0=row.insertCell(0);
+        //     let c1=row.insertCell(1);
+        //     let c2=row.insertCell(2);
+        //     c0.innerHTML=1;
+           
+        //     c1.innerHTML=document.getElementById('uname').value;
+        //     c2.innerHTML=document.getElementById('umail').value;
+    
+            
+        // }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            
+    
+    
+      
+
+</script>
+
+
+         
+
+
+
+<script>
+   
+    //         function generate_table() {
+//   // get the reference for the body
+//   var body = document.getElementsByTagName("body")[0];
+
+//   // creates a <table> element and a <tbody> element
+//   var tbl = document.createElement("table");
+//   var tblBody = document.createElement("tbody");
+
+//   // creating all cells
+//   for (var i = 0; i < 3; i++) {
+//     // creates a table row
+//     var row = document.createElement("tr");
+
+//     for (var j = 0; j < 4; j++) { 
+//       // Create a <td> element and a text node, make the text
+//       // node the contents of the <td>, and put the <td> at
+//       // the end of the table row
+//       var cell = document.createElement("td");
+//       var cellText = document.createTextNode("cell in row "+i+", column "+j);
+//       cell.appendChild(cellText);
+//       row.appendChild(cell);
+//     }
+
+//     // add the row to the end of the table body
+//     tblBody.appendChild(row);
+//   }
+
+//   // put the <tbody> in the <table>
+//   tbl.appendChild(tblBody);
+//   // appends <table> into <body>
+//   body.appendChild(tbl);
+//   // sets the border attribute of tbl to 2;
+//   tbl.setAttribute("border", "2");
+// }
+    </script>
+    
+</body>
+</html>

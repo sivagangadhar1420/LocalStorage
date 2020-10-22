@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // var a={
+        //     name:"Raj", age:20, 
+        //     details:function(a){
+        //         // details:function(){
+        //         // console.log(a + "  is driving the Car" );
+        //         console.log(this.name + " is driving")
+        //     }
+        // }
+        // var b=a.details("Rithu");
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //    function funn1(name, model, speed){
+    //         this.name=name;
+    //         this.model=model;
+    //         this.speed=speed;
+    //         this.avgspeed=function(){
+    //             console.log( this.speed  + " " +  this.model);
+    //         }
+
+            
+    //     }
+    //     var b=new funn1("LomberGinni","LomberGinni",200);
+    //     console.log(b);
+    //     b.avgspeed();
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    //    var funn2={
+    //        fname:"Raj",
+    //        lname:"kumar",
+    //        fullname: function(){
+    //            return this.fname + this.lname;
+    //        }
+    //    } 
+    //    console.log(funn2.fullname());
+    //    console.log(funn2);
+      
+      
+       
+     
+        // b.version=function(rv,rv1, rv2,rv3){
+            // return rv + " " + rv1  +" " + rv2  +" " + rv3;
+        // }
+        // console.log(b);
+        // var d=b.avgspeed();
+        // console.log(d);
+    //    var dm= b.version("LomberGinni","LomberGinni",200,"Latest");
+    //    console.log(dm);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var car=function(name, model, maxspeed, minspeed){
+//     this.name=name;
+//     this.model=model;
+//     this.maxspeed=maxspeed;
+//     this.minspeed=minspeed;
+//     this.fuel= function(b){
+//         return b;
+//     }
+// }
+
+// car.prototype.add=function(){
+//      console.log(this.maxspeed - this.minspeed);
+// }
+// var vehicle=new car('RRR', "RRR", 350, 100);
+// console.log(vehicle);
+// console.log(vehicle.fuel(200));
+// vehicle.add();
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function Person(first, last, age, eye, myFather1) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+//   this.myFather1=myFather1;
+// }
+
+// Person.prototype.nationality = "English";
+
+// var myFather = new Person("John", "Doe", 50, "blue", "Roller");
+// document.getElementById("demo").innerHTML =
+// "The nationality of my father" + myFather.myFather1 + "and His nationality is " + myFather.nationality; 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function funn1(n1,n2){
+//     this.n1=n1;
+//     this.n2=n2;
+// }
+// funn1.prototype.name="Rajesh";
+// var m=new funn1 ("r1", "r2");
+// var d=m.name;
+// console.log(m)
+// console.log(d)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//     let obj={name:"Bheem", proffession:"god"};
+
+//     function funn1(name){
+//         this.name=name;
+//     }
+//     funn1.prototype.getName = function(){
+//     return this.name;
+//     }
+//     funn1.prototype.setName=function(name){
+//         return this.name;
+//     }
+//     funn1.prototype.changeName=function(cn){
+//         return this.name= cn;
+//     }
+//     let md=new funn1("Rahul");
+//     console.log(md.changeName("Virat"))
+//     console.log(md.getName());
+//     console.log(md.setName());
+//     console.log(md);
+//     function Person(firstName,lastName,age,eyeColor) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.age = age;
+//   this.eyeColor = eyeColor;
+//   this.changeName = function (name) {
+//     this.lastName = name;
+//   }
+// }
+                                        // // Create a Person object
+// var myMother = new Person("Sally","Rally",48,"green");
+
+                                            // // Change last name
+// myMother.changeName("Doe");
+
+                                            // Display last name
+// document.getElementById("demo").innerHTML =
+// "My mother's last name is " + myMother.lastName;
+// // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var a=function(lang1, lang2,lang3,age){
+//     this.lang1=lang1;
+//     this.lang2=lang2;
+//     this.lang3=lang3;
+//     this.age=age;
+//     this.getLang=function(lang){
+//         return this.lang2;
+//     }
+// }
+// var m=new a("Telugu", "English", "Hindi",23);
+// var n=new a("Telugu", "English", "Hindi")
+// var d=m.age;
+// console.log(d)
+// var l=m.getLang();
+// console.log(l)
+// console.log(m);
+// console.log(n);
+
+                                                        // Deleting Key 
+// var a={age:30, name:"Rajesh", gender:"M"};
+// delete a.age;
+// console.log(a)
+                                                        // Setting Key
+    // var a={age:30,name:"Rikesh"};
+    // a.gender="male";
+    // console.log(a)
+                                                        // updating
+    // var a={age:20, name:"Rikesh"};
+    // a.age=30;
+    // console.log(a)
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                        //ForInLoop
+// var a={age:30, name:"rikesh"};
+// var txt="";
+// for( var k in a){
+//     txt += k + " : " + a[k] +"<br>" ;
+    
+// }
+// console.log(txt)
+// document.body.innerHTML= txt;
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                        //   
+// var x, txt = "";    
+// var person = {name:"John", age:50, city:"New York"};
+
+// for (x in person) {
+//   txt += x + " :  " +person[x] ;
+// };
+
+// console.log(txt );
+
+    // var a="Rohith";
+    // var b="Sharma";
+    // console.log(a+" " +b)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            // var a={name:"Raju", age:30};
+            // let txt="";
+            // for(var aa in a){
+            //     txt += aa + "  :  " + a[aa] + " ";
+            // }
+            // console.log(txt)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            // var a={name:"Raju", age:30};
+
+            // console.log(Object.keys(a));
+            // console.log(Object.values(a));
+            // console.log(Object(a));
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+            // let d1={
+            //     getName:function(){
+            //         return "This name u r getting";
+            //     },
+            //     changeName:function(name){
+            //         this.name=name;
+            //     }
+            // };
+    //         let d2=Object.create(d1);
+    //         d2.name="Rohith";
+    //         d2.roll="programmer";
+// //          d2.changeName("Virat");
+//             console.log(d2);
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            // let d1={
+            //     getName:function(){
+            //         return "This name u r getting";
+            //     },
+            //     changeName:function(name){
+            //         this.name=name;
+            //     }
+            // };
+                                                  
+    //     var d2=Object.create(d1, {
+    //     name: {value:"Rahul", writable:true},
+    //     role:{value:"Programmer"},
+    //     age:{value:29}
+ 
+
+    // })
+    // d2.changeName("Virat")
+    //         console.log(d2)
+    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+    // var emp=function(name, salary, Experience){
+    //     this.name=name;
+    //     this.salary=salary; 
+    //     this.Experience=Experience;
+    // }
+    // emp.prototype.funn1=function(){
+    //     return `${this.name} is the best programmer and carrying ${this.Experience} of experience `
+    // }
+    // var d=new emp("Roshan", 32000, 3 );
+    // console.log(d.funn1());
+    // console.log(d);
+    
+
+    
+
+      
+       
+    </script>
+</body>
+</html>

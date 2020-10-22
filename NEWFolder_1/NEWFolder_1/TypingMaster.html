@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master Speed Codeer</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: crimson;
+    }
+
+    .box {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+    }
+
+    textarea {
+        box-shadow: 5px 5px 5px blue;
+        text-shadow: 5px 5px 5px greenyellow;
+        border: 15px solid cyan;
+        border-inline-style: dashed;
+
+    }
+
+    .btn-group {
+        text-align: center;
+        align-content: center;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 85%;
+        left: 50%;
+    }
+
+    #btn {
+        padding: 8px;
+        background-color: blue;
+        color: white;
+        border-radius: 30%;
+    }
+
+    h1 {
+        text-align: center;
+        position: relative;
+        top: -5vh;
+
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Welcome To Typing master</h1>
+            <div class="msg" id="msg" style="font-size: 20px; text-align: center; color: white;"></div>
+
+            <textarea name="" id="myTxt" cols="120" rows="20"></textarea>
+        </div>
+
+        <div class="btn-group">
+            <button id="btn">StartTyping</button>
+
+        </div>
+    </div>
+    <script>
+        var txt = ['My Self Gangadhar ', 'I am From AP ',
+            'I am A Web Developer', 'I a intrested Make Videos in youtube',
+            'Fyn.... Lets See What will be our role to play in Othres  Life'];
+        // var txt='ABcdefghijklmopqrstuvwxyzabcdefghijklmopqrstuvwxyz';
+        var mywords = document.getElementById('myTxt');
+        var btn = document.getElementById('btn');
+        
+        var fres = document.getElementById('msg');
+        let startTime, endTime;
+
+        // let wordCounter= (str)=>{
+        //             let fo=str.split(" ").length;
+        //             console.log(fo);
+
+        //             return fo;
+        //     }
+                                                            // correctWords
+                //  let cwords = (str1, str2) => {
+                //     let w1 = str1.split(" ");
+                //     let w2 = str2.split(" ");
+                //     let cnt = 0;
+                //     w1.forEach(function(item ,index) {
+                //         if(item == w2[index]) {
+                //             cnt++;
+                //         }
+                //     })
+
+                 //     let errwords = (w1.length - cnt);
+                //     return (` ${cnt}   Corrrect Out of  ${w1.length}   Words and the Tottal number of erros are::   ${errwords} `);
+                // }
+               
+
+             btn.addEventListener('click', function () {
+            // console.log(this);   
+              if (this.innerText == "StartTyping") {
+                mywords.disabled = false;
+
+                var res = document.getElementById('msg');
+                let rTxt = txt[Math.floor(Math.random() * txt.length)];
+                var dt = new Date();
+                startTime = dt.getTime();
+                res.innerText = rTxt;
+                btn.innerText = "Done";
+
+            }
+
+               else if (this.innerText == "Done") {
+                var res = document.getElementById('msg');
+
+                mywords.disabled = true;
+                var dt1 = new Date();
+                endTime = dt1.getTime();
+                var totalTime = (endTime - startTime) / 1000;
+                console.log(totalTime);
+                let txtfld = mywords.value;
+                let wordCounter = () => {
+                    return mywords.value.split(" ").length;
+                }
+
+                // console.log(wordCounter());
+                let wc = wordCounter();
+                let spd = Math.round((wc / totalTime) * 60);
+
+                let cwords=(str1, str2)=>{
+                    let words1= str1.split(" ");
+                    let words2= str2.split(" ");
+                    let count=0;
+                    words1.forEach((item, index)=>{
+                        if(item == words2[index]){
+                            count++;
+                             }
+                      })
+                  let errwords = (words1.length - count);
+                  return(count + "Correct out of " + words1.length + " Wors and The Correct Number of Errors are  " + errwords);
+               }
+                var fmsg = ` You'e Typed  ${spd} Words per minute  and `;
+                 fmsg += cwords(res.innerText, mywords.value);
+                 
+               res.innerText = fmsg;
+                btn.innerText = "StartTyping";
+            }
+                
+        })
+              
+</script>
+
+</body>
+
+</html>

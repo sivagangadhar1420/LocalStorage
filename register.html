@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+   
+  </style>
+</head>
+<body >
+<nav class="navbar navbar-expand-lg bg-dark">
+  <a href="" class="navbar-brand">Registration Form</a>
+  
+  <ul class="navbar-nav ml-auto " style="line-height: 2.5rem;">
+    <li class="nav-item">
+      <a class="nav-link" href="ppavan.html"><i class="fa fa-home">&nbsp;BackTohome</i></a>
+    </li>
+
+  </ul>
+
+</nav>
+<div class="container">
+  <h2>Register Here:::</h2>
+  <form action="" id="ffm1">
+    <div class="form-group">
+      <label for="uname" id="lb1">Username:</label>
+     
+     <input type="text" name="name" id="username" class="form-control" placeholder="Enter U R Name">
+     <span id="sp1"></span>
+      <!-- <input type="text" class="form-control is-valid" id="username" placeholder="Enter username" name="uname" > -->
+    <!-- <small class="form-text valid-feedback">Go To next...Field...</small> -->
+      <small id="namevalid" class="form-text invalid-feedback">Plz enter correct details</small>
+    
+      <small id="validfeedback" class="form-text valid-feedback">Valid....</small>
+       </div>
+    
+    <div class="form-group">
+      <label for="pwd" id="pwdlb">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" >
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="pwd1" id="pwdlb1">Re_Enter U R Password:</label>
+      <input type="password" class="form-control" id="pwd1" placeholder="Repeat U R password" name="pswd1" >
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="pwd1" id="pwdlb1">Enter U R Number:</label>
+      <input type="number" class="form-control" id="numb" placeholder="Plz Eenter youre Number" name="numb" >
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"  id="chk" > I agree on blabla.
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control is-valid" id="uname" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+   
+  </form>
+</div> 
+
+<script>
+
+const n1=document.getElementById('username');
+const e1=document.getElementById('pwd');  
+const e2=document.getElementById('pwd1');
+const chk=document.getElementById('chk');
+const numb=document.getElementById('numb');
+// const fm1=document.getElementById('ffm1').addEventListener('submit', (e)=>{
+n1.addEventListener("input", ()=>{
+  // let rege=/(^[a-zA-Z])([0-9a-zA-Z]){0,20}$/;
+  
+  let rege=/(^[a-zA-Z]{5,20})([0-9a-zA-Z]{0,20})$/;
+  let txt=n1.value;
+// console.log(txt,rege)
+  if(rege.test(txt)){
+  
+// if(txt.length > 5){}
+ console.log("Matched");
+  n1.classList.add('is-valid');
+  n1.classList.remove('is-invalid');
+  document.getElementById('sp1').innerHTML= "";
+  }
+  else{
+      console.log("notMatched");
+      n1.classList.add('is-invalid');
+      n1.classList.remove('is-valid');
+      document.getElementById('sp1').innerHTML= "Name Length Must be Greater than Four Characters";
+      document.getElementById('sp1').style.color= "red";
+      
+      
+  }
+  
+})
+e1.addEventListener('input', ()=>{
+  if(e1.value.length < 5 ){
+    document.getElementById('pwd').innerHTML="Password Too short";
+    document.getElementById('pwdlb').innerHTML="Password Too short"
+  
+    document.getElementById('pwd').style.color="red";
+    
+    document.getElementById('pwdlb').style.color="red";
+  }
+  else{
+    document.getElementById('pwd').innerHTML="";
+    document.getElementById('pwdlb').innerHTML="";
+  
+  
+    document.getElementById('pwd').style.color="green";
+  
+  }
+
+})
+
+e2.addEventListener('input', ()=>{
+  
+  if(e1.value != e2.value){
+    document.getElementById('pwdlb1').innerHTML= "Password Doesnt match";
+    
+    document.getElementById('pwdlb1').style.color= "red";
+   }
+  else{
+    document.getElementById('pwdlb1').innerHTML= "Password Matched";
+    
+    document.getElementById('pwdlb1').style.color= "green";
+    }
+  })
+
+  numb.addEventListener('input', ()=>{
+    var rege=/^[7-9]\d{9}$/;
+    // var result=rege.test(numb.value);
+    if(rege.test(numb.value)){
+      numb.classList.add('is-valid');
+  numb.classList.remove('is-invalid');
+    }
+    else{
+      numb.classList.add('is-invalid');
+      numb.classList.remove('is-valid');
+    }
+  
+
+
+
+  })
+  // e.preventDefault()
+// })
+
+
+
+</script>
+</body>
+</html>

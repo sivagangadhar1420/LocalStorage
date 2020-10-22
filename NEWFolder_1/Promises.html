@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    var pr=new Promise((resolve, reject)=>{
+    //        const er=false;
+    //        if(er !== false){
+    //            console.log("Succes");
+    //            resolve();
+    //        }
+    //        else{
+    //            console.log("Somethingh Went Wrong");
+    //            reject();
+    //        }
+    //    });
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+    // var m=(a,b)=>{
+    //     return new Promise((resolve , reject)=>{
+    //         let a=10, b=20;
+    //         let d= parseFloat(a) +  parseFloat(b)
+    //         if( d == 30){
+    //             resolve();
+    //             console.log(`Sum of ${a} and ${b} is  :  ${a+b}`)
+               
+    //         }
+    //         else{
+    //             reject(`SomeThing went Wrong`);
+               
+    //         }
+    //     })
+    // }
+    // m(10,20)
+    // .then(()=>{ console.log("Added successfully") })
+    // .catch((err)=>{console.log(`${err}`)})
+    
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var pros=[{name:"Raju", age:29, id:10},
+//  {name:"Pothana", age:29, id:29}, 
+//  {name:"Ramanji", age:30, id:23}];
+
+// let frnd=(newpro, calback)=>{
+//     return new Promise((resolve, reject)=>{
+      
+//         pros.push(newpro);
+//     console.log("Succefully Added");
+//     resolve();
+
+//       reject(`Some Thingh Went Wrong`);
+
+
+// });
+
+// }
+// let getpro=()=>{
+//     let str="";
+//     pros.forEach((m)=>{
+//     console.log(`${m.name}`);
+//     str += `<li>${m.name}</li>`;
+//     document.body.innerHTML=str;
+//     // console.log("Students Has been fetched")
+//     })
+//     console.log("Students Has been fetched");
+// }
+
+// var newp={name:"Sai", age:30, id:1};
+// frnd(newp)
+// // .then(()=>{
+// //     return getpro();
+// //     }) 
+// .then(getpro)
+// .then(()=>{
+//     console.log("Added Succssfully")
+// })
+// .catch((err)=>{console.log(err)});
+// console.log(pros);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// let p1=Promise.resolve("Hello World");
+// let p2=10;
+// const promise4=fetch('https://jsonplaceholder.typicode.com/users').then((m)=>{ return m.json()});
+// Promise.all([p1,p2,promise4]).then(values =>console.log(values));
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// function funn1(){
+// return new Promise((resolve, reject)=>{
+//     var url=fetch('https://jsonplaceholder.typicode.com/users').then((m)=>{return m.json()}).then((n)=>{console.log(n)});
+//     console.log(url);
+// })
+// }
+// funn1();
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+                                          
+
+// let p11= new Promise((resolve, reject)=>{
+//         resolve("video1");
+        
+// });
+// let p12= new Promise((resolve, reject)=>{
+//         resolve("video2");s
+    
+// });
+// Promise.all([p11, p12]).then((m)=>{
+//     console.log(m)
+// })
+// // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// let m=()=>{
+//     return new Promise((resolve, reject)=>{
+//         let roomclean = true;
+//         if(!roomclean){
+//             resolve('clean')
+//         }
+//         else{
+//             reject("VeryBad Bro")
+//         }
+//     })
+// }
+// m().then((m)=>{console.log(m)}).catch((n)=>{console.log(n)})
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// let m=new Promise((resolve, reject)=>{ fetch('https://jsonplaceholder.typicode.com/users').then((m)=>{return m.json()}).then((n)=>{console.log(n)})});
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// let m=fetch('https://jsonplaceholder.typicode.com/users').then((m)=>{return m.json()});
+// Promise.all([m]).then((data)=>console.log(data));
+
+// // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// function funn1(){
+//     return new Promise((resolve, reject)=>{
+//         resolve( "Done")
+//     })
+// }
+// function funn2(){
+    
+//     return new Promise((resolve, reject)=>{
+//         resolve("NotYet")
+//     })
+// }
+// funn1().then((mn)=>{console.log(mn)}).then(()=>{return funn2().then((mn)=>{console.log(mn)})})
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // let p=new Promise((resolve, reject)=>{
+        //     var a=2;
+        //     if(a == 2){
+        //         resolve();
+        //         console.log("Ok")
+        //     }
+        //     else{
+        //         reject("Sorry..!!!!");
+
+        //     }
+        // })
+        //     p.then(()=>{console.log("Done....~~~~")}).catch((m)=>{console.log(`Ahey..${m}`)})
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    // In- CallBack Functions
+//   function funn1(c){
+//         let userleft = true;
+//           let userWatchingGame = false;
+//           if(userleft == true){
+//               c({name:"Raju", message:"Left The Studio"})
+//             // console.log({name:"Raju", message:"Left The Studio"})
+//             }
+//             else{
+//                 c({name:"Raju", message:"Playing Games"});
+//                 // console.log({name:"Raju", message:"Playing Games"});
+             
+//                 }
+//   }
+//     funn1((m)=>{console.log(m.name + " " + m.message)})
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                    // In -Promises
+//     function funn1(){
+//     return new Promise((resolve, reject)=>{
+//         let userleft = true;
+//           let userWatchingGame = false;
+//           if(userleft !== true){
+//               resolve({name:"Raju" , message:"Hasn't Left the Studio"});
+//           }
+//           else{
+//               reject({name:"Raju" , message:"Has Left the Studio"})
+//           }
+//               })
+// }
+// funn1().then((m)=>{
+//     console.log(m.name + " " + m.message);
+// }).catch((n)=>{
+//     console.log(n.name + " " + n.message);
+// });
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    // var pr=new Promise((resolve, reject)=>{
+    //             var a=4;
+    //             if(a == 4){
+    //                 resolve("yes true");
+    //                 console.log("succsFully Find")
+
+    //                   }
+    //                   else{
+    //                       reject("Soory Wrong");
+
+    //                   }
+    // })
+    // pr.then((m)=>{console.log(m)}).catch((n)=>{console.log(n)})
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // function funn1(){
+    //     return new Promise((resolve, reject)=>{
+    //         resolve('ticket')
+    //     })
+    // }
+    //     funn1().then((m)=>{console.log(`Person shows his ${m}`)})
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // const funn1=
+    //     new Promise((resolve, reject)=>{
+    //         resolve('ticket')
+        
+    //     })
+    // var second= funn1.then((t)=>{return new Promise((resolve, reject)=>{resolve(`${t}`)})})
+    //         second.then((t)=>{console.log(t)})
+
+
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                                                        // Spread Operators
+// var a=[1,2,1,3,4,9];
+// var b=[2,3,1,4,5,1,2,6,7,8];
+// var c=[...a, ...b];
+// // var c=[...a, ...b];
+// console.log([...new Set(c)])
+
+// console.log(...new Set(b))
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// var ar=[];
+// for(var i=1; i<=5; i++){
+//     ar +=prompt("Enter Number");
+// }
+// console.log([...new Set(ar)])
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var ar=[1,2,1,2,3,4,5,6,3];
+// var b=[1,2,3,4,5,6,7,8,9,1,2,6];
+// var m=[];
+// for(var i=1; i<=5; i++){
+//  m +=prompt("Enter Number");
+//  }
+// //  var d1=ar.concat(m)
+// var m1=[...new Set(m)];
+// // console.log(m1);
+//  var d1=[...ar,...m];
+//  var d2=[...b,...m];
+//  console.log([...new Set(d1)])
+//  console.log([...new Set(d2)])
+
+// // console.log(m)
+// // console.log([...new Set(b)])
+
+// // console.log([...new Set(ar)]);
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var a=[1,2,3,4,5,9,8,7,1,2,3,4];
+// var rn="";
+// for(var i=0; i<=5; i++){
+//  rn += prompt("Enter Plz");
+ // }
+// var md=[...a,...rn]
+// var md1=[...new Set(a)];
+// var md2=[...new Set(rn)];
+// var md3=[...md1,...md2]
+
+// console.log([...new Set(md3)])
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+// var a=[1,2,3,4,5];
+// for(var i=0;i<5;i++){
+//     var p=prompt("Enter aValue");
+//     a.push(p); 
+//       }
+//       var c=[...new Set(a)];
+//       console.log(c);
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+var funn5=new Promise((resolve, reject)=>{
+        var ar=[1,2,3,4,5];
+        resolve(ar);
+    })
+     
+   
+    let bioData=(rno)=>{
+        return new Promise((resolve, reject)=>{
+            let data={name:"Raju", age:30};
+            resolve(`Name is ${data.name} and i am ${data.age} Old and My RollNo is ${rno}`);
+        })
+    }
+
+funn5.then((ar)=>{
+     bioData(ar[1]).then((m)=>{console.log(m);})  
+    .catch((n)=>{
+    console.log((n));
+})
+})
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+
+   
+       
+    </script>
+</body>
+</html>

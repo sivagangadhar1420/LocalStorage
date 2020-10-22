@@ -1,0 +1,6 @@
+RxJS is a popular library among web developers. It provides functional and reactive programming patterns for working with events and streams of data and has been integrated in many web development libraries and frameworks such as Angular.
+
+RxJS makes it easy for JavaScript developers to write asynchronous code using composable Observables instead of callbacks and Promises.
+https://youtu.be/lZAP871qYDw
+
+<script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
